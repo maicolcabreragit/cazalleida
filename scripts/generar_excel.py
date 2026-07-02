@@ -37,7 +37,7 @@ C_HDR_TX     = "FFFFFF"
 
 GRUPOS = [
     # Benito Gili Florensa (presidente / coordinador)
-    [("Benito Gili Florensa",                       "40898319H",    "699 94 97 38",  "S.C",    "S.C",  True)],
+    [("Benito Gili Florensa",                       "40898319H",    "699 94 97 37",  "S.C",    "S.C",  True)],
 
     # Enric Cabré y grupo (4 personas · 300 €)
     [("Enric Cabré Solá",                           "40834218H",    "610 257 117",   "Pagado", "300€", True),
