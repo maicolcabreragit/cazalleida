@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caza del conejo y el zorzal en Lleida · Coto en Les Garrigues</title>
+<meta name="description" content="Coto privado de caza menor en Granyena de les Garrigues (Lleida). El mejor monte para cazar conejo y zorzal: terreno suave, jornadas guiadas, alojamiento y ayuda con la licencia. Reservas: 973 13 62 75.">
+<meta name="keywords" content="caza conejo Lleida, caza zorzal Granyena, coto Les Garrigues, caza menor Cataluña, prórroga zorzal, media veda">
+<meta property="og:title" content="Caza del conejo y el zorzal en Lleida · Les Garrigues">
+<meta property="og:description" content="El mejor monte para cazar conejo y zorzal en Granyena de les Garrigues. Jornadas guiadas, alojamiento y trato cercano.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/real/video-poster.jpg">
+<link rel="icon" type="image/jpeg" href="images/logos/logo-6-escopetas.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --moss:#26301f;       /* verde profundo */
+    --moss-2:#34412a;
+    --olive:#7c8a5a;      /* oliva */
+    --gold:#c79a3e;       /* ocre dorado */
+    --gold-soft:#dcb964;
+    --cream:#f4efe3;      /* crema */
+    --cream-2:#efe7d4;
+    --ink:#1c1c17;
+    --muted:#6f6a5c;
+    --shadow:0 24px 60px -20px rgba(20,26,14,.45);
+    --shadow-green:0 26px 60px -24px rgba(28,40,20,.55);
+    --gal-gap:14px;
+    --gal-radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-weight:500;line-height:1.05}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+  a{color:inherit;text-decoration:none}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 36px;transition:.4s ease;
+  }
+  header.scrolled{background:rgba(38,48,31,.92);backdrop-filter:blur(10px);padding:14px 36px;box-shadow:0 10px 30px -15px rgba(0,0,0,.5)}
+  .brand{display:flex;align-items:center;gap:12px;color:var(--cream)}
+  .brand .mark{width:48px;height:48px;flex:none;border-radius:50%;object-fit:contain;background:#f4efe3;border:1px solid rgba(199,154,62,.55);padding:2px}
+  .brand b{font-family:'Fraunces',serif;font-weight:600;font-size:21px;letter-spacing:.5px}
+  .brand span{font-size:11px;letter-spacing:3px;text-transform:uppercase;opacity:.7;display:block;margin-top:-2px}
+  nav{display:flex;align-items:center;gap:30px}
+  nav .links{display:flex;gap:28px}
+  nav a{color:var(--cream);font-size:14px;font-weight:400;opacity:.85;transition:.2s;position:relative}
+  nav a:hover{opacity:1}
+  nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold-soft);transition:.25s}
+  nav a:hover::after{width:100%}
+  .lang{display:flex;gap:2px;border:1px solid rgba(244,239,227,.3);border-radius:999px;padding:3px}
+  .lang button{background:none;border:none;color:var(--cream);font-family:inherit;font-size:12px;font-weight:600;letter-spacing:.5px;padding:5px 11px;border-radius:999px;cursor:pointer;opacity:.65;transition:.2s}
+  .lang button.active{background:var(--gold);color:var(--moss);opacity:1}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(180deg,#e8d9b0 0%,#d9c79a 32%,#a9ad7e 60%,#5f6b45 100%)}
+  .hero svg.scene{position:absolute;inset:0;width:100%;height:100%}
+  .hero .fog{position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(180deg,transparent,rgba(244,239,227,.35) 60%,rgba(244,239,227,.55))}
+  .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .hero-slideshow{position:absolute;inset:0;z-index:0;overflow:hidden;background:#26301f}
+  .hero-slideshow img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.07);transition:opacity 1.6s ease,transform 7s ease;will-change:opacity,transform}
+  .hero-slideshow img.active{opacity:1;transform:scale(1)}
+  @media(prefers-reduced-motion:reduce){.hero-slideshow img{transition:opacity .4s ease}}
+  .hero .veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(18,24,12,.52),rgba(18,24,12,.74)),radial-gradient(120% 95% at 72% 42%,transparent,rgba(18,24,12,.5))}
+  .hero-content{position:relative;z-index:5;color:var(--cream);max-width:760px;padding-top:60px}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--gold-soft);margin-bottom:22px;font-weight:600}
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--gold-soft)}
+  .hero h1{font-size:clamp(40px,6.4vw,82px);font-weight:400;letter-spacing:-1px;text-shadow:0 2px 30px rgba(20,26,14,.4)}
+  .hero h1 em{font-style:italic;color:var(--gold-soft)}
+  .hero .place{display:block;font-size:clamp(20px,2.4vw,30px);margin-top:14px;color:var(--cream);opacity:.92;letter-spacing:1px}
+  .hero p.sub{margin-top:26px;font-size:18px;max-width:520px;font-weight:300;opacity:.92}
+  .cta-row{display:flex;gap:16px;margin-top:38px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-size:14px;font-weight:600;letter-spacing:.4px;cursor:pointer;transition:.25s;border:1px solid transparent}
+  .btn-primary{background:var(--gold);color:var(--moss)}
+  .btn-primary:hover{background:var(--gold-soft);transform:translateY(-2px)}
+  .btn-ghost{border-color:rgba(244,239,227,.5);color:var(--cream)}
+  .btn-ghost:hover{background:rgba(244,239,227,.12)}
+  .scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:5;color:var(--cream);opacity:.7;font-size:11px;letter-spacing:3px;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px}
+  .scroll-hint .dot{width:5px;height:5px;border-radius:50%;background:var(--gold-soft);animation:fall 1.8s infinite}
+  @keyframes fall{0%{transform:translateY(0);opacity:0}40%{opacity:1}100%{transform:translateY(14px);opacity:0}}
+
+  /* hero split: vídeo + texto */
+  .hero{align-items:center}
+  .hero-grid{position:relative;z-index:5;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:56px;align-items:center;width:100%;padding:120px 0 88px}
+  .hero-grid .hero-content{max-width:none;padding-top:0}
+  .hero-grid h1{font-size:clamp(30px,3.6vw,54px);line-height:1.08}
+  .hero-grid .place{font-size:clamp(18px,2vw,24px);margin-top:12px}
+  .hero-grid .sub{margin-top:20px;font-size:16.5px;max-width:46ch}
+  .hero-video{position:relative;border-radius:16px;overflow:hidden;background:#0c0f08;box-shadow:0 34px 80px -28px rgba(0,0,0,.85);border:1px solid rgba(199,154,62,.55)}
+  .hero-video::after{content:"";position:absolute;inset:0;border-radius:16px;box-shadow:inset 0 0 0 1px rgba(244,239,227,.08);pointer-events:none}
+  .hero-video video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+  .hero-video .vtag{position:absolute;top:14px;left:14px;z-index:2;background:rgba(38,48,31,.82);color:var(--cream);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;border-radius:999px;font-weight:600;pointer-events:none}
+  .hero-call{display:inline-flex;align-items:center;gap:14px;margin-top:26px;padding:13px 22px;border:1px solid rgba(199,154,62,.55);border-radius:14px;background:rgba(18,24,12,.4)}
+  .hero-call .lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-soft);font-weight:600}
+  .hero-call a{font-family:'Fraunces',serif;font-size:clamp(22px,2.4vw,28px);color:var(--cream);font-weight:600;letter-spacing:1px;display:block;margin-top:2px}
+  .hero-call svg{width:24px;height:24px;color:var(--gold-soft);flex:none}
+  .hero-grid .cta-row{margin-top:26px}
+  @media(max-width:900px){
+    .hero{min-height:auto}
+    .hero-grid{grid-template-columns:1fr;gap:30px;padding:108px 0 70px;text-align:center}
+    .hero-grid .hero-content{display:flex;flex-direction:column;align-items:center}
+    .hero-grid .sub{max-width:54ch}
+    .hero-grid .cta-row{justify-content:center}
+    .scroll-hint{display:none}
+  }
+
+  /* servicios */
+  .services{padding:110px 0;background:var(--cream)}
+  .services .shead{max-width:640px;margin:0 auto 50px;text-align:center}
+  .services h2{font-size:clamp(30px,4vw,48px);color:var(--moss);margin-top:8px}
+  .services .shead p{opacity:.72;font-size:17px;font-weight:300;margin-top:12px}
+  .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+  .svc{background:#fff;border:1px solid rgba(38,48,31,.12);border-radius:18px;padding:30px 28px;transition:.3s}
+  .svc:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .svc .ic{width:42px;height:42px;color:var(--olive);margin-bottom:16px;stroke-width:1.8;fill:none;stroke:currentColor}
+  .svc h3{font-family:'Fraunces',serif;font-size:20px;color:var(--moss);margin-bottom:8px}
+  .svc p{font-size:14.5px;color:#4a463c;font-weight:300;line-height:1.55}
+
+  /* carnet de temporada */
+  .carnet{padding:110px 0;color:var(--cream);position:relative;background:#1c2416 url('images/real/caceria.jpg') center/contain no-repeat}
+  .carnet::before{content:"";position:absolute;inset:0;background:rgba(24,30,18,.68);z-index:0}
+  .carnet .wrap{position:relative;z-index:1}
+  .carnet .chead{max-width:640px;margin:0 auto 46px;text-align:center}
+  .carnet h2{font-size:clamp(30px,4vw,48px);color:var(--cream);margin-top:8px}
+  .carnet .chead p{opacity:.75;font-size:17px;font-weight:300;margin-top:12px}
+  .carnet-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+  .cperiod{background:rgba(244,239,227,.05);border:1px solid rgba(244,239,227,.14);border-radius:18px;padding:28px 26px}
+  .cperiod .num{font-family:'Fraunces',serif;font-size:30px;color:var(--gold-soft);line-height:1;margin-bottom:10px}
+  .cperiod h3{font-size:19px;margin-bottom:6px;color:var(--cream)}
+  .cperiod .dates{font-size:12.5px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-soft);opacity:.9;margin-bottom:10px}
+  .cperiod p{font-size:14px;opacity:.82;font-weight:300;line-height:1.55}
+
+  /* blog / SEO */
+  .blog{padding:110px 0;background:var(--cream-2)}
+  .blog .bhead{max-width:640px;margin:0 auto 50px;text-align:center}
+  .blog h2{font-size:clamp(30px,4vw,48px);color:var(--moss);margin-top:8px}
+  .blog .bhead p{opacity:.72;font-size:17px;font-weight:300;margin-top:12px}
+  .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+  .post{background:#fff;border:1px solid rgba(38,48,31,.12);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:.3s}
+  .post:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .post img{width:100%;height:190px;object-fit:cover}
+  .post .pbody{padding:26px 26px 30px;display:flex;flex-direction:column;flex:1}
+  .post .tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--olive);font-weight:600;margin-bottom:10px}
+  .post h3{font-family:'Fraunces',serif;font-size:21px;color:var(--moss);margin-bottom:10px;line-height:1.2}
+  .post p{font-size:14.5px;color:#4a463c;font-weight:300;line-height:1.6}
+
+  /* ---------- LOCALIZACIÓN ---------- */
+  .where{padding:120px 0;background:var(--cream);position:relative}
+  .where .grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+  .section-eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--olive);font-weight:600;margin-bottom:16px}
+  .where h2{font-size:clamp(32px,4vw,52px);color:var(--moss);margin-bottom:26px}
+  .where p{font-size:18px;color:#4a463c;margin-bottom:18px;max-width:34ch}
+  .where .ha{display:inline-flex;align-items:baseline;gap:10px;margin:8px 0 26px;color:var(--moss)}
+  .where .ha b{font-family:'Fraunces',serif;font-size:54px;font-weight:600;line-height:1}
+  .where .ha span{font-size:14px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+
+  .map-card{background:var(--moss);border-radius:22px;padding:38px;color:var(--cream);box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .map-card::before{content:"";position:absolute;inset:0;background:radial-gradient(80% 60% at 80% 0%,rgba(199,154,62,.25),transparent 60%)}
+  .map-card h3{position:relative;font-size:20px;margin-bottom:6px;color:var(--cream)}
+  .map-card .lead{position:relative;font-size:13px;opacity:.6;letter-spacing:2px;text-transform:uppercase;margin-bottom:26px}
+  .dist{position:relative;display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid rgba(244,239,227,.14)}
+  .dist:last-child{border-bottom:none}
+  .dist .city{display:flex;align-items:center;gap:13px;font-size:16px}
+  .dist .city svg{width:18px;height:18px;color:var(--gold-soft);flex:none}
+  .dist .time{font-family:'Fraunces',serif;font-size:22px;color:var(--gold-soft)}
+
+  /* ---------- ESPECIES ---------- */
+  .species{padding:110px 0;background:var(--moss);color:var(--cream)}
+  .species .head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:40px;text-align:left}
+  .species .head .text{max-width:620px}
+  .species .head h2{font-size:clamp(30px,4vw,48px);margin-bottom:12px}
+  .species .head p{opacity:.75;font-weight:300;font-size:17px}
+  .slider-controls{display:flex;gap:12px;flex:none}
+  .slider-btn{width:48px;height:48px;border-radius:50%;background:rgba(244,239,227,.08);border:1px solid rgba(244,239,227,.15);color:var(--cream);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.3s}
+  .slider-btn:hover{background:var(--gold);color:var(--moss);border-color:var(--gold);transform:scale(1.1)}
+  .slider-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .cards{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:30px;scrollbar-width:none;-ms-overflow-style:none}
+  .cards::-webkit-scrollbar{display:none}
+  .card{flex:0 0 calc(33.333% - 16px);min-width:310px;scroll-snap-align:start;background:rgba(244,239,227,.05);border:1px solid rgba(244,239,227,.12);border-radius:20px;overflow:hidden;transition:.4s}
+  .slider-wrapper{position:relative}
+  .side-btn{position:absolute;top:calc(50% - 15px);transform:translateY(-50%);z-index:10;background:var(--gold);color:var(--moss);border-color:var(--gold);width:54px;height:54px;box-shadow:0 8px 24px rgba(20,26,14,.35)}
+  .side-btn.prev-side{left:-27px}
+  .side-btn.next-side{right:-27px}
+  .side-btn:hover{background:var(--cream);transform:translateY(-50%) scale(1.1)}
+  .card:hover{background:rgba(244,239,227,.1);transform:translateY(-6px);border-color:rgba(199,154,62,.4)}
+  .card-img{width:100%;height:220px;object-fit:cover;display:block;transition:.6s}
+  .card:hover .card-img{transform:scale(1.05)}
+  .card-body{padding:24px 24px 28px}
+  .card .ic{width:46px;height:46px;color:var(--gold-soft);margin-bottom:20px}
+  .card h3{font-size:22px;margin-bottom:8px}
+  .card .when{font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-soft);opacity:.85}
+  .card p{font-size:14px;opacity:.8;margin-top:10px;font-weight:300;line-height:1.55}
+  .star{display:inline-block;font-size:11px;background:var(--gold);color:var(--moss);padding:2px 9px;border-radius:999px;font-weight:600;letter-spacing:.5px;margin-left:8px;vertical-align:middle}
+
+
+  /* ---------- FOOTER ---------- */
+  footer{background:#1b2216;color:var(--cream);padding:60px 0 34px}
+  footer .grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px;align-items:center}
+  footer .brand b{font-size:24px}
+  footer .meta{font-size:13px;opacity:.55;text-align:right}
+  footer .meta a{color:var(--gold-soft)}
+
+  /* jornada full-bleed */
+  .jornada{position:relative;min-height:82vh;display:flex;align-items:flex-end;overflow:hidden}
+  .jornada .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+  .jornada .overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(18,24,12,.88),rgba(18,24,12,.15) 58%,rgba(18,24,12,.45))}
+  .jornada-inner{position:relative;z-index:2;color:var(--cream);padding:0 0 92px;max-width:680px}
+  .jornada h2{font-size:clamp(30px,4.4vw,52px);margin:14px 0 18px}
+  .jornada p{font-size:18px;font-weight:300;opacity:.92;max-width:48ch}
+  .section-eyebrow.light{color:var(--gold-soft)}
+
+  /* packs / tarifas */
+  .packs{padding:110px 0;background:var(--cream-2)}
+  .packs .phead{text-align:center;max-width:640px;margin:0 auto 54px}
+  .packs .phead h2{font-size:clamp(30px,4vw,48px);color:var(--moss);margin-top:8px}
+  .packs .phead p{opacity:.72;font-size:17px;font-weight:300;margin-top:12px}
+  .pack-grid{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 20px;scrollbar-width:none;-ms-overflow-style:none}
+  .pack-grid::-webkit-scrollbar{display:none}
+  .pack{flex:0 0 300px;scroll-snap-align:start;background:#fff;border:1px solid rgba(38,48,31,.12);border-radius:20px;padding:34px 30px;display:flex;flex-direction:column;transition:.3s}
+  .pack:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .pack.featured{background:var(--moss);color:var(--cream);border-color:var(--moss)}
+  .pack .tier{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--olive);font-weight:600}
+  .pack.featured .tier{color:var(--gold-soft)}
+  .badge-pop{display:inline-block;font-size:11px;background:var(--gold);color:var(--moss);padding:3px 11px;border-radius:999px;font-weight:700;letter-spacing:.5px;margin-bottom:12px}
+  .pack h3{font-family:'Fraunces',serif;font-weight:600;font-size:25px;color:var(--moss);margin:4px 0 6px}
+  .pack.featured h3{color:var(--cream)}
+  .pack .dur{font-size:14px;opacity:.72;margin-bottom:22px}
+  .pack ul{list-style:none;margin:0 0 26px;display:flex;flex-direction:column;gap:12px;flex:1}
+  .pack li{display:flex;gap:10px;font-size:15px;line-height:1.45}
+  .pack li svg{width:18px;height:18px;color:var(--olive);flex:none;margin-top:3px}
+  .pack.featured li svg{color:var(--gold-soft)}
+  .pack .btn{width:100%;justify-content:center}
+  .btn-outline{border-color:rgba(38,48,31,.4);color:var(--moss)}
+  .btn-outline:hover{background:var(--moss);color:var(--cream)}
+
+  /* galería — mosaico CSS Grid */
+  .gallery{padding:clamp(72px,9vw,120px) 0;background:var(--cream)}
+  .gallery .ghead{text-align:center;max-width:620px;margin:0 auto clamp(32px,5vw,52px)}
+  .gallery h2{font-size:clamp(30px,4vw,48px);color:var(--moss);margin-top:8px}
+  .gal-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+    grid-auto-rows:200px;
+    grid-auto-flow:dense;
+    gap:var(--gal-gap);
+  }
+  .gal-item{
+    position:relative;margin:0;
+    border-radius:var(--gal-radius);overflow:hidden;cursor:zoom-in;
+    background:var(--moss-2);
+    box-shadow:0 10px 30px -18px rgba(20,26,14,.5);
+    isolation:isolate;
+  }
+  .gal-item img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .5s ease;
+  }
+  @media(hover:hover){
+    .gal-item:hover img{transform:scale(1.07);filter:brightness(1.04)}
+  }
+  .gal-item.wide{grid-column:span 2}
+  .gal-item.tall{grid-row:span 2}
+  .gal-item.big{grid-column:span 2;grid-row:span 2}
+  @media(prefers-reduced-motion:reduce){
+    .gal-item img{transition:none}
+    .gal-item figcaption{transition:opacity .2s ease}
+  }
+  @media(max-width:760px){
+    .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
+    .gal-item.big{grid-column:span 2;grid-row:span 1}
+    .gal-item.wide{grid-column:span 2}
+    .gal-item.tall{grid-row:span 1}
+  }
+  @media(max-width:460px){
+    .gal-grid{grid-template-columns:1fr;grid-auto-rows:240px}
+    .gal-item.wide,.gal-item.big,.gal-item.tall{grid-column:auto;grid-row:auto}
+  }
+
+  /* lightbox */
+  .lightbox{position:fixed;inset:0;z-index:200;background:rgba(12,15,8,.93);display:none;align-items:center;justify-content:center;padding:30px}
+  .lightbox.open{display:flex;animation:lbIn .25s ease}
+  .lightbox img{max-width:92vw;max-height:88vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+  .lightbox .lb-close{position:absolute;top:20px;right:28px;color:var(--cream);font-size:38px;line-height:1;cursor:pointer;opacity:.85;font-family:sans-serif}
+  .lightbox .lb-close:hover{opacity:1}
+  .lightbox .lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(244,239,227,.12);border:1px solid rgba(244,239,227,.28);color:var(--cream);width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:30px;transition:.2s;user-select:none}
+  .lightbox .lb-nav:hover{background:var(--gold);color:var(--moss);border-color:var(--gold)}
+  .lightbox .lb-prev{left:22px}
+  .lightbox .lb-next{right:22px}
+  @keyframes lbIn{from{opacity:0}to{opacity:1}}
+  @media(max-width:540px){.lightbox .lb-nav{width:44px;height:44px;font-size:24px}}
+
+  /* contacto */
+  .contact{padding:110px 0;background:linear-gradient(120deg,#34412a,#26301f);color:var(--cream)}
+  .contact .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
+  .contact h2{font-size:clamp(30px,4vw,48px);margin:12px 0 18px;color:var(--cream)}
+  .contact h2 em{font-style:italic;color:var(--gold-soft)}
+  .contact .lead{font-size:18px;opacity:.85;font-weight:300;max-width:42ch;margin-bottom:26px}
+  .contact-info{list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:8px}
+  .contact-info li{display:flex;align-items:center;gap:12px;font-size:16px;opacity:.92}
+  .contact-info svg{width:19px;height:19px;color:var(--gold-soft);flex:none}
+  .lead-form{background:rgba(244,239,227,.06);border:1px solid rgba(244,239,227,.14);border-radius:20px;padding:32px}
+  .lead-form .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .field{margin-bottom:15px}
+  .field label{display:block;font-size:12px;letter-spacing:.6px;text-transform:uppercase;opacity:.65;margin-bottom:6px}
+  .field input,.field select,.field textarea{width:100%;background:rgba(18,24,12,.4);border:1px solid rgba(244,239,227,.18);border-radius:10px;padding:12px 14px;color:var(--cream);font-family:inherit;font-size:15px;transition:.2s}
+  .field input::placeholder,.field textarea::placeholder{color:rgba(244,239,227,.4)}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold-soft);background:rgba(18,24,12,.6)}
+  .field select option{color:#1c1c17}
+  .field textarea{min-height:96px;resize:vertical}
+  .lead-form .btn{width:100%;justify-content:center;margin-top:4px}
+  .form-note{font-size:12px;opacity:.5;margin-top:14px;text-align:center}
+  .form-ok{display:none;background:rgba(199,154,62,.16);border:1px solid var(--gold-soft);padding:16px;border-radius:12px;margin-top:16px;font-size:15px}
+
+  /* ---------- REFINAMIENTOS UI ---------- */
+  /* tarjetas: hover más cinematográfico + sombra con tinte verde */
+  .svc,.post,.pack{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s ease,border-color .3s ease}
+  .svc:hover,.post:hover{transform:translateY(-6px);box-shadow:var(--shadow-green);border-color:rgba(199,154,62,.35)}
+  .pack:hover{transform:translateY(-8px);box-shadow:var(--shadow-green)}
+  .pack.featured{box-shadow:0 30px 70px -28px rgba(199,154,62,.45)}
+  .post{overflow:hidden}
+  .post img{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+  .post:hover img{transform:scale(1.06)}
+
+  /* eyebrows / textos pequeños: contraste AA */
+  .section-eyebrow{color:#5f6b3f}
+  .services .shead p,.packs .phead p,.blog .bhead p{opacity:.82}
+
+  /* hero: scrim de legibilidad + CTA con presencia */
+  .hero-content{position:relative}
+  .hero-content::before{content:"";position:absolute;inset:-30px -40px;z-index:-1;background:radial-gradient(120% 100% at 30% 50%,rgba(18,24,12,.55),transparent 70%);border-radius:30px}
+  .hero .btn-primary{box-shadow:0 16px 34px -14px rgba(199,154,62,.6)}
+  .hero-call{opacity:.92}
+  @media(max-width:900px){.hero-content::before{inset:-20px -22px}}
+
+  /* formulario: labels legibles, inputs más altos, anillo de foco */
+  .field label{font-size:13px;letter-spacing:.3px;text-transform:none;font-weight:500;opacity:.85;color:var(--cream)}
+  .field input,.field select,.field textarea{background:rgba(244,239,227,.08);border:1px solid rgba(244,239,227,.22);padding:14px 15px;border-radius:12px}
+  .field input::placeholder,.field textarea::placeholder{color:rgba(244,239,227,.5)}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold-soft);background:rgba(18,24,12,.55);box-shadow:0 0 0 3px rgba(220,185,100,.25)}
+  .lead-form .btn{padding:16px 28px;font-size:15px}
+  .lead-form .btn-primary:hover{transform:translateY(-2px);filter:brightness(1.05)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(28px);transition:.8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  .menu-toggle{display:none;background:none;border:none;color:var(--cream);cursor:pointer;width:30px;height:30px;margin-left:16px}
+  .menu-toggle svg{width:100%;height:100%;stroke-linecap:round;stroke-linejoin:round}
+  @media(max-width:880px){
+    .menu-toggle{display:block}
+    nav .links{position:absolute;top:100%;left:0;right:0;background:rgba(38,48,31,.98);backdrop-filter:blur(10px);flex-direction:column;padding:24px;gap:20px;opacity:0;pointer-events:none;transform:translateY(-10px);transition:.3s;border-top:1px solid rgba(244,239,227,.1)}
+    nav .links.open{opacity:1;pointer-events:auto;transform:translateY(0)}
+    .where .grid{grid-template-columns:1fr;gap:44px}
+    .contact .grid{grid-template-columns:1fr;gap:40px}
+    .pack-grid{gap:16px}
+    .pack{flex-basis:80%}
+    .species .head{flex-direction:column;align-items:flex-start}
+    .slider-controls, .side-btn{display:none} /* Hide buttons on mobile, swipe is better */
+    header{padding:16px 20px}
+    .wrap{padding:0 20px}
+  }
+  @media(max-width:540px){
+    .card{flex:0 0 85%}
+    .lead-form .row{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <a class="brand" href="#">
+    <img class="mark" src="images/logos/logo-6-escopetas.jpg" alt="Caza Lleida">
+    <div><b>Caza Lleida</b><span>Les Garrigues</span></div>
+  </a>
+  <nav>
+    <div class="links" id="navLinks">
+      <a href="#where" data-i18n="nav_where">El coto</a>
+      <a href="#species" data-i18n="nav_species">La caza</a>
+      <a href="#packs" data-i18n="nav_packs">Tarifas</a>
+      <a href="#services" data-i18n="nav_services">Servicios</a>
+      <a href="#gallery" data-i18n="nav_gallery">Galería</a>
+      <a href="#blog" data-i18n="nav_blog">Blog</a>
+      <a href="#contact" data-i18n="nav_contact">Contacto</a>
+    </div>
+    <div class="lang">
+      <button data-lang="es" class="active">ES</button>
+      <button data-lang="fr">FR</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="it">IT</button>
+    </div>
+    <button class="menu-toggle" id="menuBtn" aria-label="Menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-slideshow">
+    <picture><source srcset="images/real/hero1.webp" type="image/webp"><img class="active" src="images/real/hero1.jpg" alt="Paisaje del coto de caza en Granyena de les Garrigues"></picture>
+    <picture><source srcset="images/real/hero2.webp" type="image/webp"><img src="images/real/hero2.jpg" alt="Campos y monte del coto de Les Garrigues"></picture>
+    <picture><source srcset="images/real/hero3.webp" type="image/webp"><img src="images/real/hero3.jpg" alt="Vista del terreno de caza del coto"></picture>
+    <picture><source srcset="images/real/coto-paisaje.webp" type="image/webp"><img src="images/real/coto-paisaje.jpg" alt="Terreno del coto al atardecer"></picture>
+  </div>
+  <div class="veil"></div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-video reveal">
+      <span class="vtag" data-i18n="hero_vtag">El coto en vídeo</span>
+      <video poster="images/real/video-poster.jpg" autoplay muted loop playsinline controls preload="metadata">
+        <source src="videos/coto-cinematica-web.mp4" type="video/mp4">
+        <source src="videos/coto-cinematica-new.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-content">
+      <span class="eyebrow" data-i18n="hero_eyebrow">Coto privado · Caza menor</span>
+      <h1 data-i18n="hero_title">Descubre el mejor monte para la caza del <em>conejo y el zorzal</em>
+        <span class="place" data-i18n="hero_place">Les Garrigues, Lleida</span>
+      </h1>
+      <p class="sub" data-i18n="hero_sub">Más de 3.000 hectáreas de monte, pinares y siembras: el conejo manda todo el año y, en otoño, llega el zorzal. Caza tradicional, a tu ritmo.</p>
+      <div class="hero-call">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+        <div>
+          <span class="lbl" data-i18n="hero_call_label">Para reservar, llama</span><br>
+          <a href="tel:+34973136275">973 13 62 75</a>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero_cta1">Solicita tu jornada →</a>
+        <a href="#where" class="btn btn-ghost" data-i18n="hero_cta2">Conoce el coto</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint"><span data-i18n="scroll">Desliza</span><span class="dot"></span></div>
+</section>
+
+<!-- ============ DÓNDE ESTAMOS ============ -->
+<section class="where" id="where">
+  <div class="wrap grid">
+    <div class="reveal">
+      <div class="section-eyebrow" data-i18n="where_eyebrow">Dónde estamos</div>
+      <h2 data-i18n="where_title">En el corazón de Les Garrigues</h2>
+      <p data-i18n="where_p1">Nuestro coto está en el término de Granyena de les Garrigues. Una finca privada de monte bajo, pinares y campos de siembra.</p>
+      <div class="ha"><b data-i18n="where_ha_num">+3.000</b><span data-i18n="where_ha_txt">hectáreas<br>de terreno privado</span></div>
+      <p data-i18n="where_p2">Llegar es fácil: estamos a un paso de las grandes ciudades, pero rodeados de campo de verdad.</p>
+    </div>
+    <div class="map-card reveal">
+      <h3 data-i18n="map_title">A tiro de piedra</h3>
+      <div class="lead" data-i18n="map_lead">Tiempo en coche</div>
+      <div class="dist"><span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.5-7-11a7 7 0 1114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Barcelona</span><span class="time">1 h 30</span></div>
+      <div class="dist"><span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.5-7-11a7 7 0 1114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Tarragona</span><span class="time">1 h</span></div>
+      <div class="dist"><span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.5-7-11a7 7 0 1114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Zaragoza</span><span class="time">1 h 30</span></div>
+      <div class="dist"><span class="city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.5-7-11a7 7 0 1114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Girona</span><span class="time">2 h</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LA JORNADA ============ -->
+<section class="jornada" id="jornada">
+  <img class="bg" src="images/real/cazadores.jpg" alt="Cazadores en una jornada en el coto de Granyena de les Garrigues">
+  <div class="overlay"></div>
+  <div class="wrap jornada-inner reveal">
+    <div class="section-eyebrow light" data-i18n="jor_eyebrow">Un día en el coto</div>
+    <h2 data-i18n="jor_title">Cómo es cazar aquí</h2>
+    <p data-i18n="jor_p">Se sale temprano, con la escarcha todavía en los olivos. Un guía que conoce el terreno palmo a palmo te lleva a los mejores puestos. A media mañana, un alto para almorzar. Por la tarde, otra vuelta hasta que cae el sol. Sin prisas.</p>
+  </div>
+</section>
+
+<!-- ============ ESPECIES ============ -->
+<section class="species" id="species">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="text">
+        <h2 data-i18n="sp_title">Qué se caza aquí</h2>
+        <p data-i18n="sp_sub">Especies cinegéticas más habituales en nuestra zona.</p>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn prev" id="spPrev" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="slider-btn next" id="spNext" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+    </div>
+    <div class="slider-wrapper">
+      <button class="slider-btn side-btn prev-side" id="spPrevSide" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <div class="cards" id="spCards">
+        <div class="card reveal">
+        <img class="card-img" src="images/conejo.jpg" alt="Conejo de campo">
+        <div class="card-body">
+          <h3 data-i18n="sp1_n">Conejo<span class="star" data-i18n="sp_star">El rey</span></h3>
+          <div class="when" data-i18n="sp1_w">Casi todo el año</div>
+          <p data-i18n="sp1_d">En los últimos cinco años se ha multiplicado muchísimo. Hay tanto conejo que en verano nos toca hacer descaste para evitar daños en la agricultura.</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img class="card-img" src="images/zorzal.jpg" alt="Zorzal sobre una rama de olivo">
+        <div class="card-body">
+          <h3 data-i18n="sp2_n">Zorzal</h3>
+          <div class="when" data-i18n="sp2_w">Oct · Feb</div>
+          <p data-i18n="sp2_d">Ave migratoria que llega cada otoño buscando la aceituna. Lleida cae en plena ruta de paso, así que cuando entran lo hacen por miles. Es lo que más ilusión le hace al cazador francés.</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img class="card-img" src="images/perdiz.jpg" alt="Perdiz roja">
+        <div class="card-body">
+          <h3 data-i18n="sp3_n">Perdiz roja</h3>
+          <div class="when" data-i18n="sp3_w">Oct · Ene</div>
+          <p data-i18n="sp3_d">La perdiz roja salvaje es muy escasa en nuestra zona, pero cada temporada realizamos unas cuantas sueltas para reforzar su presencia en nuestro terreno.</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img class="card-img" src="images/paloma.jpg" alt="Paloma torcaz">
+        <div class="card-body">
+          <h3 data-i18n="sp4_n">Paloma zurita y torcaz</h3>
+          <div class="when" data-i18n="sp4_w">Pasos de temporada</div>
+          <p data-i18n="sp4_d">Estas especies son cada vez más presentes durante todo el año, siendo su momento más óptimo en la media veda en verano.</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img class="card-img" src="images/becada.png" alt="Becada">
+        <div class="card-body">
+          <h3 data-i18n="sp5_n">Becada</h3>
+          <div class="when" data-i18n="sp5_w">Tiempo de nevadas</div>
+          <p data-i18n="sp5_d">La Becada es cada vez más frecuente en nuestro territorio siendo un ave migratoria que durante el tiempo más frío en Europa nos visitan huyendo de las fuertes nevadas que le impiden comer con su largo pico lombrices, etc.</p>
+        </div>
+      </div>
+      </div>
+      <button class="slider-btn side-btn next-side" id="spNextSide" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TARIFAS / PACKS ============ -->
+<section class="packs" id="packs">
+  <div class="wrap">
+    <div class="phead reveal">
+      <div class="section-eyebrow" data-i18n="pk_eyebrow">Tarifas</div>
+      <h2 data-i18n="pk_title">Packs de caza</h2>
+      <p data-i18n="pk_sub">Cada jornada se adapta al grupo y a las fechas. Dinos qué buscas y te pasamos precio.</p>
+      <p data-i18n="pk_acc" style="margin-top:20px; font-weight:500; color:var(--moss)">El coto dispone de alojamiento en el centro del propio cazadero, a 5 minutos. Media pensión, parking privado y tu perro puede dormir contigo en la habitación.</p>
+    </div>
+    <div class="slider-wrapper">
+      <button class="slider-btn side-btn prev-side" id="pkPrevSide" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <div class="pack-grid" id="pkGrid">
+
+      <div class="pack reveal">
+        <div class="tier" data-i18n="pk1_tier">Un día</div>
+        <h3 data-i18n="pk1_name">Jornada de caza</h3>
+        <div class="dur" data-i18n="pk1_dur">Ideal para una escapada</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk1_l1">Guía que conoce el terreno</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk1_l2">Acceso a las +3.000 ha del coto</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk1_l3">Conejo, perdiz o zorzal según la fecha</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-outline" data-i18n="pk_cta">Pide precio →</a>
+      </div>
+
+      <div class="pack featured reveal">
+        <span class="badge-pop" data-i18n="pk_pop">El más popular</span>
+        <div class="tier" data-i18n="pk2_tier">2–3 días</div>
+        <h3 data-i18n="pk2_name">Escapada de fin de semana</h3>
+        <div class="dur" data-i18n="pk2_dur">Caza, alojamiento y buena mesa</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk2_l1">Varias jornadas guiadas</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk2_l2">Alojamiento en media pensión</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk2_l3">Sitio para los perros y el material</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk2_l4">Te echamos una mano con licencia y seguro</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" data-i18n="pk_cta">Pide precio →</a>
+      </div>
+
+      <div class="pack reveal">
+        <div class="tier" data-i18n="pk3_tier">5–6 días</div>
+        <h3 data-i18n="pk3_name">Semana de zorzal</h3>
+        <div class="dur" data-i18n="pk3_dur">En plena migración de otoño</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk3_l1">Los mejores días del paso</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk3_l2">Alojamiento en media pensión</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk3_l3">Pensado para grupos de cazadores</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk3_l4">El pack estrella para los franceses</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-outline" data-i18n="pk_cta">Pide precio →</a>
+      </div>
+
+      <div class="pack reveal">
+        <div class="tier" data-i18n="pk4_tier">Temporada</div>
+        <h3 data-i18n="pk4_name">Tarjeta de temporada</h3>
+        <div class="dur" data-i18n="pk4_dur">3 días a la semana</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk4_l1">Caza jueves, sábados, domingos y festivos</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk4_l2">Acceso regular durante toda la temporada</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk4_l3">Ideal para el cazador habitual</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-outline" data-i18n="pk_cta">Pide precio →</a>
+      </div>
+
+      <div class="pack reveal">
+        <div class="tier" data-i18n="pk5_tier">A medida</div>
+        <h3 data-i18n="pk5_name">Pase de día</h3>
+        <div class="dur" data-i18n="pk5_dur">Días sueltos</div>
+        <div style="font-family:'Fraunces',serif;font-size:30px;color:var(--moss);line-height:1;margin:2px 0 16px"><span data-i18n="pk5_from">Desde</span> 50&nbsp;€ <span style="font-family:'Inter',sans-serif;font-size:13px;color:var(--muted)" data-i18n="pk5_unit">/ pase de zorzal</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk5_l1">Caza en nuestra área privada</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk5_l2">Precio variable según las especies a cazar</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk5_l3">Flexibilidad total para tu escapada</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-outline" data-i18n="pk_cta">Pide precio →</a>
+      </div>
+
+    </div>
+      <button class="slider-btn side-btn next-side" id="pkNextSide" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="shead reveal">
+      <div class="section-eyebrow" data-i18n="sv_eyebrow">Servicios</div>
+      <h2 data-i18n="sv_title">Te lo ponemos fácil</h2>
+      <p data-i18n="sv_sub">Pensado sobre todo para quien viene de fuera: te ayudamos con los trámites y con todo lo que necesites para cazar tranquilo.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg>
+        <h3 data-i18n="sv1_t">Licencia de caza</h3>
+        <p data-i18n="sv1_d">Te ayudamos a tramitar la licencia de caza de Cataluña y a tener en regla el seguro obligatorio. Un servicio muy útil para cazadores de Francia e Italia.</p>
+      </div>
+      <div class="svc reveal">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+        <h3 data-i18n="sv2_t">Alojamiento y media pensión</h3>
+        <p data-i18n="sv2_d">Dormirás en el centro del cazadero, a cinco minutos del monte. Media pensión, parking privado y tu perro puede dormir contigo en la habitación.</p>
+      </div>
+      <div class="svc reveal">
+        <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="9" r="3.5"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg>
+        <h3 data-i18n="sv3_t">Perreras para tus perros</h3>
+        <p data-i18n="sv3_d">Tenemos sitio para los perros que traen nuestros clientes, siempre que sean de talla mediana o pequeña y de pelo corto.</p>
+      </div>
+      <div class="svc reveal">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3 data-i18n="sv4_t">Cupos de piezas</h3>
+        <p data-i18n="sv4_d">El número de piezas por día (zorzal, perdiz o conejo) se concreta según la fecha y el tipo de jornada. Consúltanos y te lo dejamos claro antes de venir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARNET DE TEMPORADA ============ -->
+<section class="carnet" id="carnet">
+  <div class="wrap">
+    <div class="chead reveal">
+      <div class="section-eyebrow light" data-i18n="cn_eyebrow">Carnet de temporada 2026–2027</div>
+      <h2 data-i18n="cn_title">Qué incluye el carnet</h2>
+      <p data-i18n="cn_sub">Un carnet para toda la temporada con cuatro periodos de caza bien diferenciados.</p>
+    </div>
+    <div class="carnet-grid">
+      <div class="cperiod reveal">
+        <div class="num">01</div>
+        <h3 data-i18n="cn1_t">Descaste de conejo</h3>
+        <div class="dates" data-i18n="cn1_dt">Mes de julio</div>
+        <p data-i18n="cn1_d">Conejo con perros y escopetas durante el mes de julio, los días que autorice la dirección del coto.</p>
+      </div>
+      <div class="cperiod reveal">
+        <div class="num">02</div>
+        <h3 data-i18n="cn2_t">Media veda</h3>
+        <div class="dates" data-i18n="cn2_dt">15 ago – 15 sep · sáb y dom</div>
+        <p data-i18n="cn2_d">Conejo, paloma torcaz y tórtola. Del 15 de agosto al 15 de septiembre, sábados y domingos.</p>
+      </div>
+      <div class="cperiod reveal">
+        <div class="num">03</div>
+        <h3 data-i18n="cn3_t">Temporada general</h3>
+        <div class="dates" data-i18n="cn3_dt">Temporada 2026–2027</div>
+        <p data-i18n="cn3_d">Todas las especies cinegéticas permitidas por la ley de caza vigente.</p>
+      </div>
+      <div class="cperiod reveal">
+        <div class="num">04</div>
+        <h3 data-i18n="cn4_t">Prórroga del zorzal</h3>
+        <div class="dates" data-i18n="cn4_dt">Todo febrero</div>
+        <p data-i18n="cn4_d">Durante febrero, todos los días autorizados hasta el final de mes según la orden de vedas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="ghead reveal">
+      <div class="section-eyebrow" data-i18n="gal_eyebrow">Galería</div>
+      <h2 data-i18n="gal_title">El coto en imágenes</h2>
+    </div>
+    <div class="gal-grid reveal">
+      <figure class="gal-item wide"><picture><source srcset="images/real/coto-paisaje.webp" type="image/webp"><img src="images/real/coto-paisaje.jpg" width="653" height="490" loading="lazy" decoding="async" alt="Paisaje del coto de Granyena de les Garrigues"></picture></figure>
+      <figure class="gal-item"><img src="images/real/cazadores.jpg" width="600" height="338" loading="lazy" decoding="async" alt="Cazadores en una jornada en el coto"></figure>
+      <figure class="gal-item"><img src="images/real/perros.jpg" width="184" height="154" loading="lazy" decoding="async" alt="Perros conejeros trabajando en el campo"></figure>
+      <figure class="gal-item big"><picture><source srcset="images/real/perchas-zorzal.webp" type="image/webp"><img src="images/real/perchas-zorzal.jpg" width="1600" height="1200" loading="lazy" decoding="async" alt="Percha de zorzales en Granyena de les Garrigues"></picture></figure>
+      <figure class="gal-item wide"><img src="images/real/dormida.jpg" width="498" height="300" loading="lazy" decoding="async" alt="Dormida de zorzales al atardecer"></figure>
+
+      <figure class="gal-item"><img src="images/real/tordos-escopetas.jpg" width="489" height="357" loading="lazy" decoding="async" alt="Escopetas y zorzales tras la jornada"></figure>
+      <figure class="gal-item"><img src="images/real/caceria.jpg" width="362" height="241" loading="lazy" decoding="async" alt="Cacería en el monte de Les Garrigues"></figure>
+      <figure class="gal-item"><img src="images/real/perchas-tordos.jpg" width="368" height="309" loading="lazy" decoding="async" alt="Percha de tordos"></figure>
+      <figure class="gal-item"><img src="images/real/perdices.jpg" width="244" height="187" loading="lazy" decoding="async" alt="Perdices del coto"></figure>
+      <figure class="gal-item"><img src="images/real/perros2.jpg" width="184" height="154" loading="lazy" decoding="async" alt="Perros de caza en el coto"></figure>
+      <figure class="gal-item"><img src="images/real/dormida2.jpg" width="356" height="200" loading="lazy" decoding="async" alt="Atardecer sobre el campo antes de la dormida"></figure>
+      <figure class="gal-item"><img src="images/real/restaurante2.jpg" width="540" height="360" loading="lazy" decoding="async" alt="Mesa del restaurante del coto"></figure>
+      <figure class="gal-item big"><picture><source srcset="images/real/hero1.webp" type="image/webp"><img src="images/real/hero1.jpg" width="1632" height="1224" loading="lazy" decoding="async" alt="Paisaje del coto de Granyena de les Garrigues"></picture></figure>
+      <figure class="gal-item wide"><picture><source srcset="images/real/hero2.webp" type="image/webp"><img src="images/real/hero2.jpg" width="1632" height="1224" loading="lazy" decoding="async" alt="Campos de siembra y monte del coto"></picture></figure>
+      <figure class="gal-item"><picture><source srcset="images/real/hero3.webp" type="image/webp"><img src="images/real/hero3.jpg" width="1632" height="1224" loading="lazy" decoding="async" alt="Vista del terreno de caza"></picture></figure>
+      <figure class="gal-item wide"><img src="images/real/coto1.jpg" width="454" height="220" loading="lazy" decoding="async" alt="Monte bajo y pinares del coto"></figure>
+      <figure class="gal-item"><img src="images/real/coto2.jpg" width="454" height="220" loading="lazy" decoding="async" alt="Paisaje de Les Garrigues en el coto"></figure>
+      <figure class="gal-item wide"><img src="images/real/coto3.jpg" width="454" height="220" loading="lazy" decoding="async" alt="Terreno del coto de caza"></figure>
+      <figure class="gal-item"><img src="images/real/galeria1.jpg" width="400" height="300" loading="lazy" decoding="async" alt="Jornada de caza en el coto"></figure>
+      <figure class="gal-item"><img src="images/real/galeria2.jpg" width="400" height="300" loading="lazy" decoding="async" alt="Momento de la cacería en Granyena"></figure>
+      <figure class="gal-item tall"><img src="images/real/galeria3.jpg" width="400" height="500" loading="lazy" decoding="async" alt="Cazadores en el coto"></figure>
+      <figure class="gal-item"><img src="images/real/galeria4.jpg" width="400" height="320" loading="lazy" decoding="async" alt="Imagen del coto de caza"></figure>
+      <figure class="gal-item big"><picture><source srcset="images/real/equipo.webp" type="image/webp"><img src="images/real/equipo.jpg" width="1400" height="1050" loading="lazy" decoding="async" alt="Benito y el equipo del coto"></picture></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG / SEO ============ -->
+<section class="blog" id="blog">
+  <div class="wrap">
+    <div class="bhead reveal">
+      <div class="section-eyebrow" data-i18n="bl_eyebrow">Blog</div>
+      <h2 data-i18n="bl_title">Consejos y vida del coto</h2>
+      <p data-i18n="bl_sub">Lo que cuenta Benito sobre cazar en Granyena de les Garrigues.</p>
+    </div>
+    <div class="blog-grid">
+      <article class="post reveal">
+        <img src="images/real/coto-paisaje.jpg" alt="Terreno suave y abierto del coto en Les Garrigues">
+        <div class="pbody">
+          <div class="tag" data-i18n="bl1_tag">El coto</div>
+          <h3 data-i18n="bl1_t">Por qué cazar en Granyena de les Garrigues</h3>
+          <p data-i18n="bl1_d">El terreno es suave y se anda con facilidad, así que es un coto cómodo también para gente de más edad. Y las especies que más abundan, el zorzal y el conejo, dan jornadas muy entretenidas casi todo el año.</p>
+        </div>
+      </article>
+      <article class="post reveal">
+        <img src="images/real/dormida.jpg" alt="Dormida de zorzales al caer la tarde">
+        <div class="pbody">
+          <div class="tag" data-i18n="bl2_tag">Zorzal</div>
+          <h3 data-i18n="bl2_t">Cómo es un día perfecto de zorzal</h3>
+          <p data-i18n="bl2_d">El día redondo empieza con un buen paso matinal, con mucha densidad de pájaros sobre el campo, y se cierra con una buena dormida por la tarde para rematar y celebrar la jornada.</p>
+        </div>
+      </article>
+      <article class="post reveal">
+        <img src="images/real/perdices.jpg" alt="Perdiz roja en el coto">
+        <div class="pbody">
+          <div class="tag" data-i18n="bl3_tag">Perdiz roja</div>
+          <h3 data-i18n="bl3_t">Consejo para cazar la perdiz roja</h3>
+          <p data-i18n="bl3_d">Si vienes a por la perdiz roja salvaje, lo mejor es quedar antes con la dirección del coto para preparar un día a la carta centrado en esta especie.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="contact" id="contact">
+  <div class="wrap grid">
+    <div class="reveal">
+      <div class="section-eyebrow light" data-i18n="ct_eyebrow">Contacto</div>
+      <h2 data-i18n="ct_title">Cuéntanos y <em>preparamos tu jornada</em></h2>
+      <p class="lead" data-i18n="ct_p">Contacta con nosotros y preparamos tu cacería a medida para ti o tu grupo.</p>
+      <ul class="contact-info">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.5-7-11a7 7 0 1114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Granyena de les Garrigues, Lleida</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@cazalleida.com">info@cazalleida.com</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg><a href="tel:+34973136275">973 13 62 75</a></li>
+      </ul>
+      <a href="https://wa.me/34973136275" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:6px" data-i18n="ct_wa">Escríbenos por WhatsApp</a>
+    </div>
+    <form class="lead-form reveal" id="leadForm">
+      <div class="row">
+        <div class="field"><label data-i18n="ct_f_name">Nombre</label><input type="text" name="nombre" required></div>
+        <div class="field"><label data-i18n="ct_f_email">Email</label><input type="email" name="email" required></div>
+      </div>
+      <div class="row">
+        <div class="field"><label data-i18n="ct_f_phone">Teléfono</label><input type="tel" name="telefono"></div>
+        <div class="field"><label data-i18n="ct_f_hunters">Núm. de cazadores</label><input type="number" name="cazadores" min="1" max="50" placeholder="1"></div>
+      </div>
+      <div class="row">
+        <div class="field"><label data-i18n="ct_f_prey">Qué quieres cazar</label>
+          <select name="presa">
+            <option data-i18n="opt_conejo">Conejo</option>
+            <option data-i18n="opt_zorzal">Zorzal</option>
+            <option data-i18n="opt_perdiz">Perdiz</option>
+            <option data-i18n="opt_paloma">Paloma</option>
+            <option data-i18n="opt_becada">Becada</option>
+            <option data-i18n="opt_mixto">Mixto</option>
+          </select></div>
+        <div class="field"><label data-i18n="ct_f_dates">Fechas</label><input type="text" name="fechas" placeholder="Oct – Feb"></div>
+      </div>
+      <div class="row">
+        <div class="field"><label data-i18n="ct_f_acc">¿Alojamiento?</label>
+          <select name="alojamiento">
+            <option value="no" data-i18n="opt_no">No</option>
+            <option value="yes" data-i18n="opt_yes">Sí</option>
+          </select>
+        </div>
+        <div class="field"><label data-i18n="ct_f_dogs">¿Trae perros?</label>
+          <select name="perros">
+            <option value="no" data-i18n="opt_no">No</option>
+            <option value="yes" data-i18n="opt_yes">Sí</option>
+          </select>
+        </div>
+      </div>
+      <div class="field"><label data-i18n="ct_f_msg">Mensaje extra / Dudas</label><textarea name="mensaje"></textarea></div>
+      <button type="submit" class="btn btn-primary" data-i18n="ct_send">Enviar solicitud →</button>
+      <div class="form-note" data-i18n="ct_note">Te responderemos lo antes posible. No compartimos tus datos.</div>
+      <div class="form-ok" id="formOk" data-i18n="ct_ok">¡Gracias! Hemos recibido tu solicitud. Te contestamos enseguida.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap grid">
+    <a class="brand" href="#"><img class="mark" src="images/logos/logo-6-escopetas.jpg" alt="Caza Lleida"><div><b>Caza Lleida</b><span>Les Garrigues · Lleida</span></div></a>
+    <div class="meta">
+      Granyena de les Garrigues, Lleida · <a href="tel:+34973136275">973 13 62 75</a> · <a href="mailto:info@cazalleida.com">info@cazalleida.com</a><br>
+      <span data-i18n="foot">Sociedad de Cazadores de Granyena · Coto privado de caza menor · Temporada 2026–2027</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox galería -->
+<div class="lightbox" id="lightbox">
+  <span class="lb-close" id="lbClose">&times;</span>
+  <span class="lb-nav lb-prev" id="lbPrev">&#8249;</span>
+  <img id="lbImg" src="" alt="">
+  <span class="lb-nav lb-next" id="lbNext">&#8250;</span>
+</div>
+
+<script>
+  // ---- header scroll ----
+  const hdr=document.getElementById('hdr');
+  addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>60));
+
+  // ---- hero slideshow ----
+  const heroSlides=[...document.querySelectorAll('.hero-slideshow img')];
+  if(heroSlides.length>1){
+    let hs=0;
+    setInterval(()=>{
+      heroSlides[hs].classList.remove('active');
+      hs=(hs+1)%heroSlides.length;
+      heroSlides[hs].classList.add('active');
+    },6000);
+  }
+
+  // ---- mobile menu ----
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  if(menuBtn) {
+    menuBtn.onclick = () => navLinks.classList.toggle('open');
+    navLinks.querySelectorAll('a').forEach(a => a.onclick = () => navLinks.classList.remove('open'));
+  }
+
+  // ---- reveal on scroll ----
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // ---- i18n ----
+  const T={
+    es:{nav_where:"El coto",nav_species:"La caza",nav_contact:"Contacto",
+      hero_eyebrow:"Coto privado · Caza menor",
+      hero_title:'Descubre el mejor monte para la caza del <em>conejo y el zorzal</em><span class="place">Les Garrigues, Lleida</span>',
+      hero_sub:"Más de 3.000 hectáreas de monte, pinares y siembras: el conejo manda todo el año y, en otoño, llega el zorzal. Caza tradicional, a tu ritmo.",
+      hero_cta1:"Solicita tu jornada →",hero_cta2:"Conoce el coto",scroll:"Desliza",
+      where_eyebrow:"Dónde estamos",where_title:"En el corazón de Les Garrigues",
+      where_p1:"Nuestro coto está en el término de Granyena de les Garrigues. Una finca privada de monte bajo, pinares y campos de siembra.",
+      where_ha_num:"+3.000",where_ha_txt:"hectáreas<br>de terreno privado",
+      where_p2:"Llegar es fácil: estamos a un paso de las grandes ciudades, pero rodeados de campo de verdad.",
+      map_title:"A tiro de piedra",map_lead:"Tiempo en coche",
+      sp_title:"Qué se caza aquí",sp_sub:"Especies cinegéticas más habituales en nuestra zona.",
+      sp_star:"El rey",sp1_n:"Conejo",sp1_w:"Casi todo el año",sp1_d:"En los últimos cinco años se ha multiplicado muchísimo. Hay tanto conejo que en verano nos toca hacer descaste para evitar daños en la agricultura.",
+      sp2_n:"Zorzal",sp2_w:"Oct · Feb",sp2_d:"Ave migratoria que llega cada otoño buscando la aceituna. Lleida cae en plena ruta de paso, así que cuando entran lo hacen por miles. Es lo que más ilusión le hace al cazador francés.",
+      sp3_n:"Perdiz roja",sp3_w:"Oct · Ene",sp3_d:"La perdiz roja salvaje es muy escasa en nuestra zona, pero cada temporada realizamos unas cuantas sueltas para reforzar su presencia en nuestro terreno.",
+      sp4_n:"Paloma zurita y torcaz",sp4_w:"Pasos de temporada",sp4_d:"Estas especies son cada vez más presentes durante todo el año, siendo su momento más óptimo en la media veda en verano.",
+      sp5_n:"Becada",sp5_w:"Tiempo de nevadas",sp5_d:"La Becada es cada vez más frecuente en nuestro territorio siendo un ave migratoria que durante el tiempo más frío en Europa nos visitan huyendo de las fuertes nevadas que le impiden comer con su largo pico lombrices, etc.",
+      jor_eyebrow:"Un día en el coto",jor_title:"Cómo es cazar aquí",
+      jor_p:"Se sale temprano, con la escarcha todavía en los olivos. Un guía que conoce el terreno palmo a palmo te lleva a los mejores puestos. A media mañana, un alto para almorzar. Por la tarde, otra vuelta hasta que cae el sol. Sin prisas.",
+      nav_gallery:"Galería",
+      gal_eyebrow:"Galería",gal_title:"El coto en imágenes",
+      ct_eyebrow:"Contacto",ct_title:'Cuéntanos y <em>preparamos tu jornada</em>',
+      ct_p:"Contacta con nosotros y preparamos tu cacería a medida para ti o tu grupo.",
+      ct_wa:"Escríbenos por WhatsApp",
+      ct_f_name:"Nombre",ct_f_phone:"Teléfono",ct_f_email:"Email",
+      ct_f_hunters:"Núm. de cazadores",ct_f_prey:"Qué quieres cazar",ct_f_dates:"Fechas aproximadas",
+      ct_f_acc:"¿Necesita alojamiento?",ct_f_dogs:"¿Trae perros?",ct_f_msg:"Mensaje extra / Dudas",
+      opt_conejo:"Conejo",opt_zorzal:"Zorzal",opt_perdiz:"Perdiz",opt_paloma:"Paloma",opt_becada:"Becada",opt_mixto:"Mixto",
+      opt_yes:"Sí",opt_no:"No",
+      ct_send:"Enviar solicitud →",ct_note:"Te responderemos lo antes posible. No compartimos tus datos.",
+      ct_ok:"¡Gracias! Hemos recibido tu solicitud. Te contestamos enseguida.",
+      nav_packs:"Tarifas",
+      pk_eyebrow:"Tarifas",pk_title:"Packs de caza",pk_sub:"Cada jornada se adapta al grupo y a las fechas. Dinos qué buscas y te pasamos precio.",
+      pk_acc:"El coto dispone de alojamiento en el centro del propio cazadero, a 5 minutos. Media pensión, parking privado y tu perro puede dormir contigo en la habitación.",
+      pk_pop:"El más popular",pk_cta:"Pide precio →",
+      pk1_tier:"Un día",pk1_name:"Jornada de caza",pk1_dur:"Ideal para una escapada",
+      pk1_l1:"Guía que conoce el terreno",pk1_l2:"Acceso a las +3.000 ha del coto",pk1_l3:"Conejo, perdiz o zorzal según la fecha",
+      pk2_tier:"2–3 días",pk2_name:"Escapada de fin de semana",pk2_dur:"Caza, alojamiento y buena mesa",
+      pk2_l1:"Varias jornadas guiadas",pk2_l2:"Alojamiento en media pensión",pk2_l3:"Sitio para los perros y el material",pk2_l4:"Te echamos una mano con licencia y seguro",
+      pk3_tier:"5–6 días",pk3_name:"Semana de zorzal",pk3_dur:"En plena migración de otoño",
+      pk3_l1:"Los mejores días del paso",pk3_l2:"Alojamiento en media pensión",pk3_l3:"Pensado para grupos de cazadores",pk3_l4:"El pack estrella para los franceses",
+      pk4_tier:"Temporada",pk4_name:"Tarjeta de temporada",pk4_dur:"3 días a la semana",
+      pk4_l1:"Caza jueves, sábados, domingos y festivos",pk4_l2:"Acceso regular durante toda la temporada",pk4_l3:"Ideal para el cazador habitual",
+      pk5_tier:"A medida",pk5_name:"Pase de día",pk5_dur:"Días sueltos",
+      pk5_l1:"Caza en nuestra área privada",pk5_l2:"Precio variable según las especies a cazar",pk5_l3:"Flexibilidad total para tu escapada",
+      foot:"Sociedad de Cazadores de Granyena · Coto privado de caza menor · Temporada 2026–2027",
+      nav_services:"Servicios",nav_blog:"Blog",
+      hero_vtag:"El coto en vídeo",hero_call_label:"Para reservar, llama",
+      pk5_from:"Desde",pk5_unit:"/ pase de zorzal",
+      sv_eyebrow:"Servicios",sv_title:"Te lo ponemos fácil",sv_sub:"Pensado sobre todo para quien viene de fuera: te ayudamos con los trámites y con todo lo que necesites para cazar tranquilo.",
+      sv1_t:"Licencia de caza",sv1_d:"Te ayudamos a tramitar la licencia de caza de Cataluña y a tener en regla el seguro obligatorio. Un servicio muy útil para cazadores de Francia e Italia.",
+      sv2_t:"Alojamiento y media pensión",sv2_d:"Dormirás en el centro del cazadero, a cinco minutos del monte. Media pensión, parking privado y tu perro puede dormir contigo en la habitación.",
+      sv3_t:"Perreras para tus perros",sv3_d:"Tenemos sitio para los perros que traen nuestros clientes, siempre que sean de talla mediana o pequeña y de pelo corto.",
+      sv4_t:"Cupos de piezas",sv4_d:"El número de piezas por día (zorzal, perdiz o conejo) se concreta según la fecha y el tipo de jornada. Consúltanos y te lo dejamos claro antes de venir.",
+      cn_eyebrow:"Carnet de temporada 2026–2027",cn_title:"Qué incluye el carnet",cn_sub:"Un carnet para toda la temporada con cuatro periodos de caza bien diferenciados.",
+      cn1_t:"Descaste de conejo",cn1_dt:"Mes de julio",cn1_d:"Conejo con perros y escopetas durante el mes de julio, los días que autorice la dirección del coto.",
+      cn2_t:"Media veda",cn2_dt:"15 ago – 15 sep · sáb y dom",cn2_d:"Conejo, paloma torcaz y tórtola. Del 15 de agosto al 15 de septiembre, sábados y domingos.",
+      cn3_t:"Temporada general",cn3_dt:"Temporada 2026–2027",cn3_d:"Todas las especies cinegéticas permitidas por la ley de caza vigente.",
+      cn4_t:"Prórroga del zorzal",cn4_dt:"Todo febrero",cn4_d:"Durante febrero, todos los días autorizados hasta el final de mes según la orden de vedas.",
+      bl_eyebrow:"Blog",bl_title:"Consejos y vida del coto",bl_sub:"Lo que cuenta Benito sobre cazar en Granyena de les Garrigues.",
+      bl1_tag:"El coto",bl1_t:"Por qué cazar en Granyena de les Garrigues",bl1_d:"El terreno es suave y se anda con facilidad, así que es un coto cómodo también para gente de más edad. Y las especies que más abundan, el zorzal y el conejo, dan jornadas muy entretenidas casi todo el año.",
+      bl2_tag:"Zorzal",bl2_t:"Cómo es un día perfecto de zorzal",bl2_d:"El día redondo empieza con un buen paso matinal, con mucha densidad de pájaros sobre el campo, y se cierra con una buena dormida por la tarde para rematar y celebrar la jornada.",
+      bl3_tag:"Perdiz roja",bl3_t:"Consejo para cazar la perdiz roja",bl3_d:"Si vienes a por la perdiz roja salvaje, lo mejor es quedar antes con la dirección del coto para preparar un día a la carta centrado en esta especie."},
+    fr:{nav_where:"Le territoire",nav_species:"La chasse",nav_contact:"Contact",
+      hero_eyebrow:"Réserve privée · Petit gibier",
+      hero_title:'Découvrez le meilleur terrain pour la chasse au <em>lapin et à la grive</em><span class="place">Les Garrigues, Lérida</span>',
+      hero_sub:"Plus de 3 000 hectares de garrigue, de pinèdes et de cultures : le lapin règne toute l'année et, à l'automne, arrive la grive. Une chasse traditionnelle, à votre rythme.",
+      hero_cta1:"Demandez votre séjour →",hero_cta2:"Découvrir le territoire",scroll:"Défiler",
+      where_eyebrow:"Où nous trouver",where_title:"Au cœur des Garrigues",
+      where_p1:"Notre territoire se situe sur la commune de Granyena de les Garrigues. Une propriété privée de garrigue, de pinèdes et de champs cultivés.",
+      where_ha_num:"+3 000",where_ha_txt:"hectares<br>de terrain privé",
+      where_p2:"Facile d'accès : à deux pas des grandes villes, mais en pleine campagne.",
+      map_title:"À deux pas",map_lead:"Temps en voiture",
+      sp_title:"Ce que l'on chasse ici",sp_sub:"Les espèces cynégétiques les plus présentes chez nous.",
+      sp_star:"Le roi",sp1_n:"Lapin",sp1_w:"Presque toute l'année",sp1_d:"Il s'est multiplié énormément ces cinq dernières années. Il y en a tellement qu'en été nous devons réguler la population pour éviter les dégâts dans les cultures.",
+      sp2_n:"Grive",sp2_w:"Oct · Fév",sp2_d:"Oiseau migrateur qui arrive chaque automne pour les olives. Lleida est en plein couloir de passage : quand elles entrent, c'est par milliers. C'est ce qui fait le plus rêver le chasseur français.",
+      sp3_n:"Perdrix rouge",sp3_w:"Oct · Jan",sp3_d:"La perdrix rouge sauvage se fait rare dans notre région, mais chaque saison nous effectuons quelques lâchers pour renforcer sa présence sur notre territoire.",
+      sp4_n:"Pigeon colombin et ramier",sp4_w:"Passages de saison",sp4_d:"Ces espèces sont de plus en plus présentes tout au long de l'année, leur période optimale étant la demi-saison en été.",
+      sp5_n:"Bécasse",sp5_w:"Période de neige",sp5_d:"La bécasse est de plus en plus fréquente sur notre territoire, étant un oiseau migrateur qui nous rend visite pendant les périodes les plus froides en Europe, fuyant les fortes chutes de neige qui l'empêchent de manger des vers de terre avec son long bec.",
+      jor_eyebrow:"Une journée sur le territoire",jor_title:"Comment on chasse ici",
+      jor_p:"On part tôt, alors que le givre couvre encore les oliviers. Un guide qui connaît le terrain par cœur vous mène aux meilleurs postes. En milieu de matinée, une pause pour casser la croûte. L'après-midi, une nouvelle sortie jusqu'au coucher du soleil. Sans précipitation.",
+      nav_gallery:"Galerie",
+      gal_eyebrow:"Galerie",gal_title:"Le territoire en images",
+      ct_eyebrow:"Contact",ct_title:'Écrivez-nous et <em>on prépare votre séjour</em>',
+      ct_p:"Contactez-nous et nous préparerons une chasse sur mesure pour vous ou votre groupe.",
+      ct_wa:"Écrivez-nous sur WhatsApp",
+      ct_f_name:"Nom",ct_f_phone:"Téléphone",ct_f_email:"Email",
+      ct_f_hunters:"Nb. de chasseurs",ct_f_prey:"Que voulez-vous chasser",ct_f_dates:"Dates approx.",
+      ct_f_acc:"Besoin d'hébergement ?",ct_f_dogs:"Vous venez avec des chiens ?",ct_f_msg:"Message / Questions",
+      opt_conejo:"Lapin",opt_zorzal:"Grive",opt_perdiz:"Perdrix",opt_paloma:"Pigeon / Tourterelle",opt_becada:"Bécasse",opt_mixto:"Mixte",
+      opt_yes:"Oui",opt_no:"Non",
+      ct_send:"Envoyer la demande →",ct_note:"Nous vous répondrons au plus vite. Vos données restent confidentielles.",
+      ct_ok:"Merci ! Nous avons bien reçu votre demande. On revient vers vous très vite.",
+      nav_packs:"Tarifs",
+      pk_eyebrow:"Tarifs",pk_title:"Formules de chasse",pk_sub:"Chaque sortie s'adapte au groupe et aux dates. Dites-nous ce que vous cherchez et on vous fait un prix.",
+      pk_acc:"Le domaine dispose d'un hébergement au centre même du territoire de chasse, à 5 minutes. Demi-pension, parking privé et votre chien peut dormir avec vous dans la chambre.",
+      pk_pop:"Le plus demandé",pk_cta:"Demander le prix →",
+      pk1_tier:"Une journée",pk1_name:"Journée de chasse",pk1_dur:"Idéale pour une échappée",
+      pk1_l1:"Un guide qui connaît le terrain",pk1_l2:"Accès aux +3 000 ha du territoire",pk1_l3:"Lapin, perdrix ou grive selon la date",
+      pk2_tier:"2–3 jours",pk2_name:"Week-end de chasse",pk2_dur:"Chasse, logement et bonne table",
+      pk2_l1:"Plusieurs sorties guidées",pk2_l2:"Logement en demi-pension",pk2_l3:"De la place pour les chiens et le matériel",pk2_l4:"On vous aide pour le permis et l'assurance",
+      pk3_tier:"5–6 jours",pk3_name:"Semaine de la grive",pk3_dur:"En pleine migration d'automne",
+      pk3_l1:"Les meilleurs jours du passage",pk3_l2:"Logement en demi-pension",pk3_l3:"Pensé pour les groupes de chasseurs",pk3_l4:"La formule phare pour les Français",
+      pk4_tier:"Saison",pk4_name:"Carte de saison",pk4_dur:"3 jours par semaine",
+      pk4_l1:"Chasse les jeudis, samedis, dimanches et jours fériés",pk4_l2:"Accès régulier pendant toute la saison",pk4_l3:"Idéal pour le chasseur régulier",
+      pk5_tier:"Sur mesure",pk5_name:"Pass journalier",pk5_dur:"Jours isolés",
+      pk5_l1:"Chassez dans notre domaine privé",pk5_l2:"Prix variable selon les espèces",pk5_l3:"Flexibilité totale pour votre séjour",
+      foot:"Société de Chasseurs de Granyena · Réserve privée de petit gibier · Saison 2026–2027",
+      nav_services:"Services",nav_blog:"Blog",
+      hero_vtag:"Le territoire en vidéo",hero_call_label:"Pour réserver, appelez",
+      pk5_from:"À partir de",pk5_unit:"/ pass grive",
+      sv_eyebrow:"Services",sv_title:"On vous simplifie la vie",sv_sub:"Pensé surtout pour ceux qui viennent de loin : on vous aide avec les démarches et tout ce qu'il faut pour chasser tranquille.",
+      sv1_t:"Permis de chasse",sv1_d:"Nous vous aidons à obtenir le permis de chasse de Catalogne et à être en règle avec l'assurance obligatoire. Un service très utile pour les chasseurs français et italiens.",
+      sv2_t:"Hébergement en demi-pension",sv2_d:"Vous dormirez au centre du territoire, à cinq minutes du terrain. Demi-pension, parking privé et votre chien peut dormir avec vous dans la chambre.",
+      sv3_t:"Chenils pour vos chiens",sv3_d:"Nous avons de la place pour les chiens de nos clients, à condition qu'ils soient de taille moyenne ou petite et à poil court.",
+      sv4_t:"Quotas de prises",sv4_d:"Le nombre de prises par jour (grive, perdrix ou lapin) se précise selon la date et le type de sortie. Demandez-nous et on vous le dit clairement avant de venir.",
+      cn_eyebrow:"Carte de saison 2026–2027",cn_title:"Ce que comprend la carte",cn_sub:"Une carte pour toute la saison avec quatre périodes de chasse bien distinctes.",
+      cn1_t:"Régulation du lapin",cn1_dt:"Mois de juillet",cn1_d:"Lapin avec chiens et fusils pendant le mois de juillet, les jours autorisés par la direction du territoire.",
+      cn2_t:"Demi-saison",cn2_dt:"15 août – 15 sept · sam et dim",cn2_d:"Lapin, pigeon ramier et tourterelle. Du 15 août au 15 septembre, les samedis et dimanches.",
+      cn3_t:"Saison générale",cn3_dt:"Saison 2026–2027",cn3_d:"Toutes les espèces chassables autorisées par la loi de chasse en vigueur.",
+      cn4_t:"Prolongation de la grive",cn4_dt:"Tout février",cn4_d:"En février, tous les jours autorisés jusqu'à la fin du mois selon l'arrêté de fermeture.",
+      bl_eyebrow:"Blog",bl_title:"Conseils et vie du territoire",bl_sub:"Ce que raconte Benito sur la chasse à Granyena de les Garrigues.",
+      bl1_tag:"Le territoire",bl1_t:"Pourquoi chasser à Granyena de les Garrigues",bl1_d:"Le terrain est doux et facile à parcourir, c'est donc un territoire confortable aussi pour les personnes plus âgées. Et les espèces les plus abondantes, la grive et le lapin, offrent des sorties très animées presque toute l'année.",
+      bl2_tag:"Grive",bl2_t:"À quoi ressemble une journée de grive parfaite",bl2_d:"La journée idéale commence par un beau passage matinal, avec une grande densité d'oiseaux sur les champs, et se termine par une belle dormida l'après-midi pour conclure et fêter la journée.",
+      bl3_tag:"Perdrix rouge",bl3_t:"Conseil pour chasser la perdrix rouge",bl3_d:"Si vous venez pour la perdrix rouge sauvage, le mieux est de convenir d'abord avec la direction du territoire pour préparer une journée à la carte centrée sur cette espèce."},
+    en:{nav_where:"The estate",nav_species:"The hunt",nav_contact:"Contact",
+      hero_eyebrow:"Private estate · Small game",
+      hero_title:'Discover the finest ground to hunt <em>rabbit and thrush</em><span class="place">Les Garrigues, Lleida</span>',
+      hero_sub:"Over 3,000 hectares of scrubland, pine woods and farmland: rabbit all year round and thrush in autumn. Traditional hunting, at your own pace.",
+      hero_cta1:"Request your stay →",hero_cta2:"Explore the estate",scroll:"Scroll",
+      where_eyebrow:"Where we are",where_title:"In the heart of Les Garrigues",
+      where_p1:"Our estate sits in Granyena de les Garrigues. A private ground of scrubland, pine woods and farmland.",
+      where_ha_num:"+3,000",where_ha_txt:"hectares<br>of private land",
+      where_p2:"Easy to reach: a short drive from the big cities, yet surrounded by real countryside.",
+      map_title:"A stone's throw away",map_lead:"By car",
+      sp_title:"What you'll hunt here",sp_sub:"The game species you'll most often find in our area.",
+      sp_star:"The king",sp1_n:"Rabbit",sp1_w:"Almost all year",sp1_d:"It has boomed over the last five years. There's so much of it that in summer we have to thin the population to keep it from damaging the crops.",
+      sp2_n:"Thrush",sp2_w:"Oct · Feb",sp2_d:"A migratory bird that arrives every autumn for the olives. Lleida sits right on the migration route, so when they come in, they come in their thousands. It's what French hunters look forward to most.",
+      sp3_n:"Red partridge",sp3_w:"Oct · Jan",sp3_d:"Wild red partridge is quite scarce in our area, but every season we carry out a few releases to reinforce its presence on our land.",
+      sp4_n:"Stock dove & wood pigeon",sp4_w:"Seasonal passage",sp4_d:"These species are increasingly present all year round, being at their best during the summer half-season.",
+      sp5_n:"Woodcock",sp5_w:"Snow season",sp5_d:"The woodcock is increasingly frequent in our territory. It is a migratory bird that visits us during the coldest periods in Europe, fleeing from heavy snowfalls that prevent it from eating earthworms with its long beak.",
+      jor_eyebrow:"A day on the estate",jor_title:"What hunting here feels like",
+      jor_p:"You set out early, frost still on the olive trees. A guide who knows the ground inside out takes you to the best spots. Mid-morning, a break to eat. In the afternoon, another round until the sun goes down. No rush.",
+      nav_gallery:"Gallery",
+      gal_eyebrow:"Gallery",gal_title:"The estate in pictures",
+      ct_eyebrow:"Contact",ct_title:'Tell us and <em>we\'ll plan your day</em>',
+      ct_p:"Contact us and we will prepare a tailor-made hunting experience for you or your group.",
+      ct_wa:"Message us on WhatsApp",
+      ct_f_name:"Name",ct_f_phone:"Phone",ct_f_email:"Email",
+      ct_f_hunters:"No. of hunters",ct_f_prey:"What to hunt",ct_f_dates:"Approx. dates",
+      ct_f_acc:"Need accommodation?",ct_f_dogs:"Bringing dogs?",ct_f_msg:"Extra details / Questions",
+      opt_conejo:"Rabbit",opt_zorzal:"Thrush",opt_perdiz:"Partridge",opt_paloma:"Pigeon / Dove",opt_becada:"Woodcock",opt_mixto:"Mixed",
+      opt_yes:"Yes",opt_no:"No",
+      ct_send:"Send request →",ct_note:"We'll reply as soon as we can. We never share your data.",
+      ct_ok:"Thanks! We've received your request and will get back to you shortly.",
+      nav_packs:"Rates",
+      pk_eyebrow:"Rates",pk_title:"Hunting packages",pk_sub:"Every outing is tailored to your group and dates. Tell us what you're after and we'll quote you.",
+      pk_acc:"The estate offers accommodation right in the center of the hunting ground, just 5 minutes away. Half board, private parking and your dog can sleep with you in the room.",
+      pk_pop:"Most popular",pk_cta:"Get a price →",
+      pk1_tier:"One day",pk1_name:"Day hunt",pk1_dur:"Great for a quick escape",
+      pk1_l1:"A guide who knows the ground",pk1_l2:"Access to the 3,000+ ha estate",pk1_l3:"Rabbit, partridge or thrush by season",
+      pk2_tier:"2–3 days",pk2_name:"Weekend escape",pk2_dur:"Hunting, lodging and good food",
+      pk2_l1:"Several guided outings",pk2_l2:"Lodging with half board",pk2_l3:"Room for the dogs and the gear",pk2_l4:"We help with the licence and insurance",
+      pk3_tier:"5–6 days",pk3_name:"Thrush week",pk3_dur:"At the peak of the autumn migration",
+      pk3_l1:"The best days of the passage",pk3_l2:"Lodging with half board",pk3_l3:"Made for groups of hunters",pk3_l4:"The flagship package for French hunters",
+      pk4_tier:"Season",pk4_name:"Season Card",pk4_dur:"3 days a week",
+      pk4_l1:"Hunt on Thursdays, Saturdays, Sundays and holidays",pk4_l2:"Regular access throughout the season",pk4_l3:"Ideal for the regular hunter",
+      pk5_tier:"Custom",pk5_name:"Day Pass",pk5_dur:"Single days",
+      pk5_l1:"Hunt in our private area",pk5_l2:"Price varies depending on the species",pk5_l3:"Total flexibility for your getaway",
+      foot:"Granyena Hunters' Association · Private small-game estate · 2026–2027 season",
+      nav_services:"Services",nav_blog:"Blog",
+      hero_vtag:"The estate on video",hero_call_label:"To book, call",
+      pk5_from:"From",pk5_unit:"/ thrush pass",
+      sv_eyebrow:"Services",sv_title:"We make it easy",sv_sub:"Designed above all for those coming from abroad: we help with the paperwork and everything you need to hunt with peace of mind.",
+      sv1_t:"Hunting licence",sv1_d:"We help you obtain the Catalan hunting licence and sort out the compulsory insurance. A very useful service for French and Italian hunters.",
+      sv2_t:"Lodging with half board",sv2_d:"You'll sleep in the centre of the hunting ground, five minutes from the field. Half board, private parking and your dog can sleep with you in the room.",
+      sv3_t:"Kennels for your dogs",sv3_d:"We have space for our clients' dogs, as long as they are medium or small in size and short-haired.",
+      sv4_t:"Bag limits",sv4_d:"The number of birds per day (thrush, partridge or rabbit) is set according to the date and type of outing. Ask us and we'll make it clear before you come.",
+      cn_eyebrow:"Season card 2026–2027",cn_title:"What the card includes",cn_sub:"One card for the whole season with four clearly defined hunting periods.",
+      cn1_t:"Rabbit control",cn1_dt:"Month of July",cn1_d:"Rabbit with dogs and shotguns during July, on the days authorised by the estate management.",
+      cn2_t:"Half-season",cn2_dt:"15 Aug – 15 Sep · Sat & Sun",cn2_d:"Rabbit, wood pigeon and turtle dove. From 15 August to 15 September, Saturdays and Sundays.",
+      cn3_t:"General season",cn3_dt:"2026–2027 season",cn3_d:"All game species permitted by the hunting law in force.",
+      cn4_t:"Thrush extension",cn4_dt:"All of February",cn4_d:"During February, every authorised day until the end of the month according to the closing order.",
+      bl_eyebrow:"Blog",bl_title:"Tips and life on the estate",bl_sub:"What Benito has to say about hunting in Granyena de les Garrigues.",
+      bl1_tag:"The estate",bl1_t:"Why hunt in Granyena de les Garrigues",bl1_d:"The terrain is gentle and easy to walk, so it's a comfortable estate for older hunters too. And the most abundant species, thrush and rabbit, make for lively outings almost all year round.",
+      bl2_tag:"Thrush",bl2_t:"What a perfect thrush day looks like",bl2_d:"The ideal day starts with a good morning passage, with plenty of birds over the fields, and ends with a fine evening roost to round off and celebrate the day.",
+      bl3_tag:"Red partridge",bl3_t:"A tip for hunting red partridge",bl3_d:"If you're after wild red partridge, it's best to arrange it first with the estate management to set up a tailor-made day focused on this species."},
+    it:{nav_where:"La riserva",nav_species:"La caccia",nav_contact:"Contatti",
+      hero_eyebrow:"Riserva privata · Piccola selvaggina",
+      hero_title:'Scopri il miglior terreno per la caccia a <em>coniglio e tordo</em><span class="place">Les Garrigues, Lleida</span>',
+      hero_sub:"Oltre 3.000 ettari di macchia, pinete e coltivazioni: il coniglio regna tutto l'anno e, in autunno, arriva il tordo. Caccia tradizionale, al tuo ritmo.",
+      hero_cta1:"Richiedi la tua giornata →",hero_cta2:"Scopri la riserva",scroll:"Scorri",
+      where_eyebrow:"Dove siamo",where_title:"Nel cuore delle Garrigues",
+      where_p1:"La nostra riserva si trova nel comune di Granyena de les Garrigues. Una tenuta privata di macchia, pinete e campi coltivati.",
+      where_ha_num:"+3.000",where_ha_txt:"ettari<br>di terreno privato",
+      where_p2:"Facile da raggiungere: a un passo dalle grandi città, ma immersi nella vera campagna.",
+      map_title:"A due passi",map_lead:"Tempo in auto",
+      sp_title:"Cosa si caccia qui",sp_sub:"Le specie venatorie più comuni nella nostra zona.",
+      sp_star:"Il re",sp1_n:"Coniglio",sp1_w:"Quasi tutto l'anno",sp1_d:"Negli ultimi cinque anni si è moltiplicato tantissimo. C'è così tanto coniglio che in estate dobbiamo fare abbattimenti per evitare danni all'agricoltura.",
+      sp2_n:"Tordo",sp2_w:"Ott · Feb",sp2_d:"Uccello migratore che arriva ogni autunno in cerca di olive. Lleida si trova in piena rotta migratoria, quindi quando entrano lo fanno a migliaia. È ciò che più fa sognare il cacciatore francese.",
+      sp3_n:"Pernice rossa",sp3_w:"Ott · Gen",sp3_d:"La pernice rossa selvatica è molto scarsa nella nostra zona, ma ogni stagione effettuiamo alcuni rilasci per rafforzare la sua presenza nel nostro terreno.",
+      sp4_n:"Colombella e colombaccio",sp4_w:"Passi stagionali",sp4_d:"Queste specie sono sempre più presenti tutto l'anno, con il loro momento ottimale nella mezza stagione in estate.",
+      sp5_n:"Beccaccia",sp5_w:"Tempo di nevicate",sp5_d:"La beccaccia è sempre più frequente nel nostro territorio. È un uccello migratore che durante i periodi più freddi in Europa ci visita fuggendo dalle forti nevicate che le impediscono di mangiare lombrichi con il suo lungo becco.",
+      jor_eyebrow:"Una giornata nella riserva",jor_title:"Com'è cacciare qui",
+      jor_p:"Si esce presto, con la brina ancora sugli ulivi. Una guida che conosce il terreno palmo a palmo ti porta nelle migliori postazioni. A metà mattinata, una pausa per pranzare. Nel pomeriggio, un altro giro fino al tramonto. Senza fretta.",
+      nav_gallery:"Galleria",
+      gal_eyebrow:"Galleria",gal_title:"La riserva in immagini",
+      ct_eyebrow:"Contatti",ct_title:'Scrivici e <em>prepariamo la tua giornata</em>',
+      ct_p:"Contattaci e prepariamo la tua caccia su misura per te o per il tuo gruppo.",
+      ct_wa:"Scrivici su WhatsApp",
+      ct_f_name:"Nome",ct_f_phone:"Telefono",ct_f_email:"Email",
+      ct_f_hunters:"Num. di cacciatori",ct_f_prey:"Cosa vuoi cacciare",ct_f_dates:"Date approx.",
+      ct_f_acc:"Hai bisogno di alloggio?",ct_f_dogs:"Porti cani?",ct_f_msg:"Messaggio / Domande",
+      opt_conejo:"Coniglio",opt_zorzal:"Tordo",opt_perdiz:"Pernice",opt_paloma:"Colombella",opt_becada:"Beccaccia",opt_mixto:"Misto",
+      opt_yes:"Sì",opt_no:"No",
+      ct_send:"Invia richiesta →",ct_note:"Ti risponderemo il prima possibile. Non condividiamo i tuoi dati.",
+      ct_ok:"Grazie! Abbiamo ricevuto la tua richiesta. Ti risponderemo a breve.",
+      nav_packs:"Tariffe",
+      pk_eyebrow:"Tariffe",pk_title:"Pacchetti di caccia",pk_sub:"Ogni giornata si adatta al gruppo e alle date. Dicci cosa cerchi e ti forniremo il prezzo.",
+      pk_acc:"La riserva dispone di alloggi nel centro della stessa zona di caccia, a soli 5 minuti. Mezza pensione, parcheggio privato e il tuo cane può dormire con te in camera.",
+      pk_pop:"Il più popolare",pk_cta:"Richiedi prezzo →",
+      pk1_tier:"Un giorno",pk1_name:"Giornata di caccia",pk1_dur:"Ideale per una fuga",
+      pk1_l1:"Guida che conosce il terreno",pk1_l2:"Accesso ai +3.000 ha della riserva",pk1_l3:"Coniglio, pernice o tordo a seconda del periodo",
+      pk2_tier:"2–3 giorni",pk2_name:"Fuga di fine settimana",pk2_dur:"Caccia, alloggio e buona cucina",
+      pk2_l1:"Diverse giornate guidate",pk2_l2:"Alloggio in mezza pensione",pk2_l3:"Spazio per i cani e l'attrezzatura",pk2_l4:"Ti aiutiamo con licenza e assicurazione",
+      pk3_tier:"5–6 giorni",pk3_name:"Settimana del tordo",pk3_dur:"In piena migrazione autunnale",
+      pk3_l1:"I migliori giorni di passo",pk3_l2:"Alloggio in mezza pensione",pk3_l3:"Pensato per gruppi di cacciatori",pk3_l4:"Il pacchetto di punta per i francesi",
+      pk4_tier:"Stagione",pk4_name:"Tessera stagionale",pk4_dur:"3 giorni a settimana",
+      pk4_l1:"Caccia il giovedì, sabato, domenica e festivi",pk4_l2:"Accesso costante durante la stagione",pk4_l3:"Ideale per i cacciatori più assidui",
+      pk5_tier:"Su misura",pk5_name:"Pass giornaliero",pk5_dur:"Giornate singole",
+      pk5_l1:"Caccia nella nostra area privata",pk5_l2:"Prezzo variabile a seconda delle specie",pk5_l3:"Massima flessibilità",
+      foot:"Società di Cacciatori di Granyena · Riserva privata di piccola selvaggina · Stagione 2026–2027",
+      nav_services:"Servizi",nav_blog:"Blog",
+      hero_vtag:"La riserva in video",hero_call_label:"Per prenotare, chiama",
+      pk5_from:"Da",pk5_unit:"/ pass tordo",
+      sv_eyebrow:"Servizi",sv_title:"Ti semplifichiamo tutto",sv_sub:"Pensato soprattutto per chi viene da fuori: ti aiutiamo con le pratiche e con tutto ciò che ti serve per cacciare tranquillo.",
+      sv1_t:"Licenza di caccia",sv1_d:"Ti aiutiamo a ottenere la licenza di caccia della Catalogna e a essere in regola con l'assicurazione obbligatoria. Un servizio molto utile per i cacciatori francesi e italiani.",
+      sv2_t:"Alloggio in mezza pensione",sv2_d:"Dormirai nel centro della zona di caccia, a cinque minuti dal terreno. Mezza pensione, parcheggio privato e il tuo cane può dormire con te in camera.",
+      sv3_t:"Recinti per i tuoi cani",sv3_d:"Abbiamo spazio per i cani dei nostri clienti, purché siano di taglia media o piccola e a pelo corto.",
+      sv4_t:"Carnieri",sv4_d:"Il numero di capi al giorno (tordo, pernice o coniglio) si stabilisce in base alla data e al tipo di giornata. Chiedici e te lo diciamo chiaramente prima di venire.",
+      cn_eyebrow:"Tessera stagionale 2026–2027",cn_title:"Cosa include la tessera",cn_sub:"Una tessera per tutta la stagione con quattro periodi di caccia ben distinti.",
+      cn1_t:"Controllo del coniglio",cn1_dt:"Mese di luglio",cn1_d:"Coniglio con cani e fucili durante il mese di luglio, nei giorni autorizzati dalla direzione della riserva.",
+      cn2_t:"Mezza stagione",cn2_dt:"15 ago – 15 set · sab e dom",cn2_d:"Coniglio, colombaccio e tortora. Dal 15 agosto al 15 settembre, sabato e domenica.",
+      cn3_t:"Stagione generale",cn3_dt:"Stagione 2026–2027",cn3_d:"Tutte le specie cacciabili consentite dalla legge sulla caccia in vigore.",
+      cn4_t:"Proroga del tordo",cn4_dt:"Tutto febbraio",cn4_d:"A febbraio, tutti i giorni autorizzati fino alla fine del mese secondo l'ordinanza di chiusura.",
+      bl_eyebrow:"Blog",bl_title:"Consigli e vita della riserva",bl_sub:"Cosa racconta Benito sulla caccia a Granyena de les Garrigues.",
+      bl1_tag:"La riserva",bl1_t:"Perché cacciare a Granyena de les Garrigues",bl1_d:"Il terreno è dolce e facile da percorrere, quindi è una riserva comoda anche per i cacciatori più anziani. E le specie più abbondanti, il tordo e il coniglio, regalano giornate molto divertenti quasi tutto l'anno.",
+      bl2_tag:"Tordo",bl2_t:"Com'è una giornata perfetta di tordo",bl2_d:"La giornata ideale inizia con un buon passo mattutino, con grande densità di uccelli sui campi, e si chiude con una bella dormida nel pomeriggio per concludere e festeggiare la giornata.",
+      bl3_tag:"Pernice rossa",bl3_t:"Un consiglio per cacciare la pernice rossa",bl3_d:"Se vieni per la pernice rossa selvatica, è meglio accordarsi prima con la direzione della riserva per organizzare una giornata su misura dedicata a questa specie."}
+  };
+  function setLang(l){
+    if(!T[l]) l='es';
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-i18n]').forEach(el=>{
+      const v=T[l][el.dataset.i18n];
+      if(v!=null) el.innerHTML=v;
+    });
+    document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));
+    try{localStorage.setItem('lang',l);}catch(e){}
+  }
+  document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>setLang(b.dataset.lang));
+
+  // ---- idioma automático: elección guardada > idioma del navegador > español ----
+  (function(){
+    const supported=['es','fr','en','it'];
+    let saved=null;
+    try{saved=localStorage.getItem('lang');}catch(e){}
+    let lang=(saved && supported.includes(saved)) ? saved : null;
+    if(!lang){
+      const navs=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language||'es'];
+      for(const n of navs){
+        const code=String(n).toLowerCase().slice(0,2);
+        if(supported.includes(code)){lang=code;break;}
+      }
+    }
+    setLang(lang||'es');
+  })();
+
+  // ---- slider ----
+  const spCards = document.getElementById('spCards');
+  if(spCards) {
+    const scrollLeft = () => spCards.scrollBy({left: -350, behavior: 'smooth'});
+    const scrollRight = () => spCards.scrollBy({left: 350, behavior: 'smooth'});
+    document.getElementById('spPrev').onclick = scrollLeft;
+    document.getElementById('spNext').onclick = scrollRight;
+    const spPrevSide = document.getElementById('spPrevSide');
+    const spNextSide = document.getElementById('spNextSide');
+    if(spPrevSide) spPrevSide.onclick = scrollLeft;
+    if(spNextSide) spNextSide.onclick = scrollRight;
+  }
+
+  // ---- slider packs ----
+  const pkGrid = document.getElementById('pkGrid');
+  if(pkGrid){
+    const step = 322;
+    const pkPrev = document.getElementById('pkPrevSide');
+    const pkNext = document.getElementById('pkNextSide');
+    if(pkPrev) pkPrev.onclick = () => pkGrid.scrollBy({left:-step, behavior:'smooth'});
+    if(pkNext) pkNext.onclick = () => pkGrid.scrollBy({left:step, behavior:'smooth'});
+  }
+
+  // ---- formulario: envía el lead por WhatsApp (con respaldo a email) ----
+  const lf=document.getElementById('leadForm');
+  if(lf) lf.addEventListener('submit',e=>{
+    e.preventDefault();
+    if(!lf.reportValidity()) return;
+    const g=n=>{const el=lf.elements[n];return el&&el.value?el.value.trim():''};
+    const yesno=v=>v==='yes'?'Sí':'No';
+    const L=[
+      'Nueva solicitud de jornada — cazalleida.com','',
+      'Nombre: '+(g('nombre')||'—'),
+      'Email: '+(g('email')||'—'),
+      'Teléfono: '+(g('telefono')||'—'),
+      'Nº de cazadores: '+(g('cazadores')||'—'),
+      'Quiere cazar: '+(g('presa')||'—'),
+      'Fechas: '+(g('fechas')||'—'),
+      'Alojamiento: '+yesno(g('alojamiento')),
+      'Trae perros: '+yesno(g('perros'))
+    ];
+    if(g('mensaje')) L.push('Mensaje: '+g('mensaje'));
+    const body=L.join('\n');
+    // 1) WhatsApp directo al coto
+    window.open('https://wa.me/34973136275?text='+encodeURIComponent(body),'_blank','noopener');
+    // 2) Respaldo: cliente de correo
+    window.location.href='mailto:info@cazalleida.com?subject='
+      +encodeURIComponent('Solicitud de jornada de caza')+'&body='+encodeURIComponent(body);
+    lf.reset();
+    const ok=document.getElementById('formOk');
+    if(ok) ok.style.display='block';
+  });
+
+  // ---- lightbox galería ----
+  const galImgs=[...document.querySelectorAll('.gal-grid img')];
+  const lb=document.getElementById('lightbox');
+  const lbImg=document.getElementById('lbImg');
+  let lbIdx=0;
+  function showLb(i){lbIdx=(i+galImgs.length)%galImgs.length;lbImg.src=galImgs[lbIdx].src;lbImg.alt=galImgs[lbIdx].alt;}
+  function openLb(i){showLb(i);lb.classList.add('open');document.body.style.overflow='hidden';}
+  function closeLb(){lb.classList.remove('open');document.body.style.overflow='';}
+  galImgs.forEach((im,i)=>im.addEventListener('click',()=>openLb(i)));
+  const lbClose=document.getElementById('lbClose');
+  const lbPrev=document.getElementById('lbPrev');
+  const lbNext=document.getElementById('lbNext');
+  if(lbClose) lbClose.onclick=closeLb;
+  if(lbPrev) lbPrev.onclick=e=>{e.stopPropagation();showLb(lbIdx-1);};
+  if(lbNext) lbNext.onclick=e=>{e.stopPropagation();showLb(lbIdx+1);};
+  if(lb) lb.addEventListener('click',e=>{if(e.target===lb)closeLb();});
+  addEventListener('keydown',e=>{
+    if(!lb||!lb.classList.contains('open'))return;
+    if(e.key==='Escape')closeLb();
+    if(e.key==='ArrowLeft')showLb(lbIdx-1);
+    if(e.key==='ArrowRight')showLb(lbIdx+1);
+  });
+</script>
+</body>
+</html>

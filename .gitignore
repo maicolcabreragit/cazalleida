@@ -1,0 +1,13 @@
+# Secretos — nunca subir
+.env
+*.key
+
+# Dependencias / temporales
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Vídeos (demasiado pesados para GitHub)
+videos/
