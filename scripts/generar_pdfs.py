@@ -3,14 +3,12 @@
 """Genera un PDF A4 por cada cazador a partir de la plantilla HTML."""
 import base64, os, re, subprocess, sys, unicodedata
 
-ROOT = "/vercel/share/v0-project"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE = os.path.join(ROOT, "autorizacion-caza-conejo.html")
 LOGO = os.path.join(ROOT, "images", "logo-cazalleida-sm.png")
 BUILD = os.path.join(ROOT, "build_pdf")
 OUTDIR = os.path.join(ROOT, "pdfs")
-CHROME = os.path.expanduser(
-    "~/.agent-browser/browsers/chrome-150.0.7871.46/chrome"
-)
+CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 
 # (numero, nombre, dni)  ── DNI del nº30 sin "(And)"
 CAZADORES = [
@@ -100,7 +98,7 @@ def render(html, name, dni, out_pdf):
     cmd = [
         CHROME, "--headless=new", "--disable-gpu", "--no-sandbox",
         "--disable-dev-shm-usage",
-        "--user-data-dir=/tmp/chrome-pdf-profile",
+        "--user-data-dir=" + os.path.join(os.environ.get("TEMP", "C:\\Temp"), "chrome-pdf-profile"),
         "--no-pdf-header-footer",
         "--run-all-compositor-stages-before-draw",
         "--virtual-time-budget=2000",

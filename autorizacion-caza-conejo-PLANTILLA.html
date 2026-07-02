@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Autorización Especial de Caza del Conejo · Granyena de les Garrigues · PLANTILLA</title>
+<style>
+  :root{
+    --verde:#1f3d2b;
+    --verde-claro:#2f5a3f;
+    --dorado:#a9852f;
+    --crema:#f7f3e8;
+    --tinta:#123a8f;
+    --texto:#20211d;
+    --linea:#c9bfa4;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ background:#5c5c5c; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--texto);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:24px;
+  }
+  .barra{
+    display:flex; gap:14px; align-items:center; justify-content:center;
+    margin-bottom:20px; font-family:Arial,sans-serif; color:#eee; font-size:14px;
+  }
+  .barra button{
+    font-family:Arial,sans-serif; font-weight:bold; font-size:13px; cursor:pointer;
+    background:var(--dorado); color:#20211d; border:none; border-radius:8px; padding:10px 20px;
+  }
+  .barra button:hover{ filter:brightness(1.08); }
+
+  /* Hoja A4 */
+  .hoja{
+    position:relative;
+    width:210mm;
+    min-height:297mm;
+    background:var(--crema);
+    padding:22mm 24mm;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 8px 30px rgba(0,0,0,.35);
+    overflow:hidden;
+  }
+  .marco{ position:absolute; inset:11mm; border:2px solid var(--verde); pointer-events:none; }
+  .marco::after{ content:""; position:absolute; inset:3mm; border:1px solid var(--dorado); }
+  .contenido{ position:relative; z-index:2; display:flex; flex-direction:column; flex:1; }
+
+  /* Cabecera */
+  header{ text-align:center; }
+  .logo{ width:135px; height:135px; object-fit:contain; margin:0 auto 8px; display:block; }
+  .coto{ font-size:26px; letter-spacing:1px; color:var(--verde); font-weight:bold; }
+  .matricula{
+    font-size:13px; letter-spacing:3px; color:var(--dorado); text-transform:uppercase;
+    margin-top:4px; font-family:Arial,sans-serif; font-weight:bold;
+  }
+  .sep{ width:90px; height:3px; background:var(--dorado); margin:16px auto 0; border-radius:2px; }
+
+  /* Título */
+  .titulo{ text-align:center; margin:30px 0 10px; }
+  .titulo h1{
+    font-size:23px; line-height:1.4; color:var(--verde);
+    text-transform:uppercase; letter-spacing:.5px;
+  }
+
+  /* Bloques */
+  .bloque{ margin-top:30px; }
+  .etiqueta{
+    font-family:Arial,sans-serif; font-size:12px; letter-spacing:2px; text-transform:uppercase;
+    color:var(--verde-claro); font-weight:bold; margin-bottom:8px;
+    border-bottom:1px solid var(--linea); padding-bottom:5px;
+  }
+  .texto-dias{ font-size:18px; line-height:1.7; text-align:center; padding:12px 6px; }
+  .texto-dias strong{ color:var(--verde); }
+
+  /* Persona autorizada */
+  .campo{ margin-top:22px; font-size:17px; display:flex; align-items:flex-end; gap:12px; }
+  .campo .lab{ white-space:nowrap; }
+  .valor{
+    flex:1; color:var(--tinta); font-weight:bold; font-size:19px;
+    border-bottom:1px solid #9a9a9a; padding:0 6px 4px; min-height:28px;
+    font-family:"Georgia",serif;
+  }
+  /* Plantilla: líneas más largas y visibles para rellenar a mano */
+  .valor.vacio{
+    color:transparent; /* texto invisible — la línea queda visible */
+    border-bottom:1.5px solid #555;
+  }
+  .campo.dni .valor{ flex:1; }
+
+  /* Firma */
+  .firma{ margin-top:auto; padding-top:40px; text-align:right; }
+  .firma .rol{ font-size:16px; margin-bottom:6px; }
+  .firma-linea{ display:inline-block; width:240px; border-bottom:1px solid #555; margin-top:38px; }
+  .firma .fdo{ font-size:14px; color:#555; margin-top:8px; }
+
+  /* Pie */
+  footer{
+    margin-top:26px; padding-top:14px; border-top:2px solid var(--verde);
+    display:flex; justify-content:space-between; align-items:center;
+    font-family:Arial,sans-serif; font-size:12.5px; color:var(--verde);
+  }
+  footer .web{ font-weight:bold; letter-spacing:1px; }
+  footer .tel span{ color:var(--dorado); font-weight:bold; }
+
+  @media print{
+    html,body{ background:#fff; }
+    body{ padding:0; }
+    .barra{ display:none; }
+    .hoja{ box-shadow:none; width:auto; min-height:auto; margin:0; }
+    @page{ size:A4; margin:0; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="barra">
+    <span>Plantilla en blanco · Documento A4</span>
+    <button onclick="window.print()">Imprimir / Guardar PDF</button>
+  </div>
+
+  <div class="hoja">
+    <div class="marco"></div>
+    <div class="contenido">
+      <header>
+        <img class="logo" src="images/logo-cazalleida.png" alt="Escudo Cazalleida" />
+        <div class="coto">Granyena de les Garrigues</div>
+        <div class="matricula">A.P.C L-10.199 · Julio 2026</div>
+        <div class="sep"></div>
+      </header>
+
+      <div class="titulo">
+        <h1>Autorización Especial de Caza<br />del Conejo por Daños a la Agricultura</h1>
+      </div>
+
+      <div class="bloque">
+        <div class="etiqueta">Días autorizados</div>
+        <p class="texto-dias">
+          Todos los <strong>sábados y domingos</strong> del mes de <strong>Julio</strong>,
+          hasta las <strong>12 del mediodía</strong> exclusivamente,
+          <strong>sin límite de capturas</strong>.
+        </p>
+      </div>
+
+      <div class="bloque">
+        <div class="etiqueta">Persona autorizada</div>
+        <div class="campo nombre">
+          <span class="lab">Nombre y Apellidos:</span>
+          <span class="valor vacio" data-field="nombre">&nbsp;</span>
+        </div>
+        <div class="campo dni">
+          <span class="lab">D.N.I:</span>
+          <span class="valor vacio" data-field="dni">&nbsp;</span>
+        </div>
+      </div>
+
+      <div class="firma">
+        <div class="rol">Autoriza el Presidente de la A.P.C.</div>
+        <div class="firma-linea"></div>
+        <div class="fdo">Fdo.: El Presidente</div>
+      </div>
+
+      <footer>
+        <div class="web">cazalleida.com</div>
+        <div class="tel">Contacto · Benito Gili · <span>+34 699 94 97 38</span></div>
+      </footer>
+    </div>
+  </div>
+
+</body>
+</html>
