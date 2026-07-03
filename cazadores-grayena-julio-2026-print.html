@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cazadores Grayena Julio 2026</title>
+<style>
+  :root {
+    --verde: #1f3d2b;
+    --dorado: #a9852f;
+    --crema: #f7f3e8;
+    --gris: #666;
+  }
+  
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  html { background: #5c5c5c; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 10px;
+  }
+  
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    padding: 15mm;
+    box-shadow: 0 8px 30px rgba(0,0,0,.35);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--verde);
+  }
+  
+  h1 {
+    color: var(--verde);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+  }
+  
+  .subtitle {
+    color: var(--dorado);
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 3px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    font-size: 9px;
+  }
+  
+  thead th {
+    background: var(--verde);
+    color: white;
+    padding: 6px 4px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 9px;
+    border: 1px solid var(--verde);
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background: #f0f0f0;
+  }
+  
+  td {
+    padding: 4px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  
+  td:first-child {
+    text-align: center;
+    font-weight: bold;
+    color: var(--verde);
+    width: 25px;
+  }
+  
+  td:nth-child(3) { /* DNI */
+    font-family: 'Courier New', monospace;
+    font-size: 8.5px;
+  }
+  
+  td:nth-child(4) { /* TEL */
+    font-family: 'Courier New', monospace;
+    font-size: 8.5px;
+  }
+  
+  .indent {
+    padding-left: 15px;
+    color: var(--gris);
+    font-size: 8.5px;
+  }
+  
+  .status-pagado {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .status-falta {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  .status-sc {
+    color: #6c757d;
+    font-weight: bold;
+  }
+  
+  .resumen {
+    margin-top: 20px;
+    padding: 12px;
+    background: var(--crema);
+    border-left: 4px solid var(--dorado);
+  }
+  
+  .resumen h2 {
+    color: var(--verde);
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .resumen-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    font-size: 9.5px;
+  }
+  
+  .resumen-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    background: white;
+    border-radius: 3px;
+  }
+  
+  .resumen-label {
+    font-weight: normal;
+  }
+  
+  .resumen-value {
+    font-weight: bold;
+    color: var(--verde);
+  }
+  
+  footer {
+    margin-top: 15px;
+    padding-top: 8px;
+    border-top: 2px solid var(--verde);
+    text-align: center;
+    font-size: 9px;
+    color: var(--gris);
+  }
+  
+  @media print {
+    html, body { background: white; }
+    body { padding: 0; }
+    .page { box-shadow: none; margin: 0; min-height: auto; }
+    @page { size: A4; margin: 15mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header>
+    <h1>COTO GRANYENA DE LES GARRIGUES · A.P.C L-10.199 · JULIO 2026</h1>
+    <div class="subtitle">AUTORIZACIÓN ESPECIAL DE CAZA DEL CONEJO POR DAÑOS A LA AGRICULTURA</div>
+  </header>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nº</th>
+        <th>NOMBRE Y APELLIDOS</th>
+        <th>DNI</th>
+        <th>TELÉFONO</th>
+        <th>PAGO</th>
+        <th>IMPORTE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Benito Gili Florensa</td><td>40898319H</td><td>699 94 97 37</td><td class="status-sc">S.C</td><td>—</td></tr>
+      <tr><td>2</td><td>Diego Jose Galera Quisano</td><td>39473017-A</td><td>617 731 219</td><td class="status-pagado">Pagado</td><td>500 €</td></tr>
+      <tr><td>3</td><td>Emilio Useno Castno</td><td>37323935H</td><td>696 624 264</td><td class="status-pagado">Pagado</td><td>600 €</td></tr>
+      <tr><td>4</td><td>Enric Cabré Solá</td><td>40834218H</td><td>610 257 117</td><td class="status-pagado">Pagado</td><td>300 €</td></tr>
+      <tr><td></td><td class="indent">Antonio Sunalla Raimat</td><td>40838458A</td><td>—</td><td class="status-pagado">Pagado</td><td>300 €</td></tr>
+      <tr><td></td><td class="indent">Jordi Sans Pascuet</td><td>40841054T</td><td>—</td><td class="status-pagado">Pagado</td><td>300 €</td></tr>
+      <tr><td></td><td class="indent">Josep Cots Pelegri</td><td>40847530J</td><td>—</td><td class="status-pagado">Pagado</td><td>300 €</td></tr>
+      <tr><td>5</td><td>Ferran Galcerà Solé</td><td>47936701-D</td><td>636 451 78</td><td class="status-sc">S.C</td><td>—</td></tr>
+      <tr><td>6</td><td>Francesc Sánchez Besora</td><td>46723855E</td><td>627 476 830</td><td class="status-falta">Falta</td><td>600 €</td></tr>
+      <tr><td>7</td><td>Francisco Zarza Garcia</td><td>39699060W</td><td>674 918 163</td><td class="status-pagado">Pagado</td><td>600 €</td></tr>
+      <tr><td></td><td class="indent">Victor Manuel Zarza Garcia</td><td>39699767L</td><td>—</td><td class="status-pagado">Pagado</td><td>600 €</td></tr>
+      <tr><td></td><td class="indent">Yeray Zarza Callejón</td><td>49316079P</td><td>—</td><td class="status-pagado">Pagado</td><td>600 €</td></tr>
+      <tr><td>8</td><td>Joaquin Feixo Fannagoldo</td><td>06643116 (And)</td><td>604 119 191</td><td class="status-pagado">Pagado</td><td>600 €</td></tr>
+      <tr><td>9</td><td>Jordi Vidal García</td><td>39938597V</td><td>660 964 600</td><td class="status-falta">Falta</td><td>300 €</td></tr>
+      <tr><td></td><td class="indent">Jorge Vidal Miró</td><td>39874279F</td><td>—</td><td class="status-falta">Falta</td><td>300 €</td></tr>
+      <tr><td>10</td><td>José A. Galera Gea</td><td>39728517L</td><td>722 222 795</td><td class="status-pagado">Pagado</td><td>500 €</td></tr>
+      <tr><td>11</td><td>Jose A. Rodriguez Sanchez</td><td>43499011P</td><td>689 421 078</td><td class="status-falta">Falta</td><td>600 €</td></tr>
+      <tr><td>12</td><td>Jose Bernal Marnenda</td><td>43500907-H</td><td>600 321 681</td><td class="status-pagado">Pagado</td><td>600 €</td></tr>
+      <tr><td></td><td class="indent">Abel Bernal Galvez</td><td>53033535C</td><td>—</td><td class="status-falta">Falta</td><td>600 €</td></tr>
+      <tr><td>13</td><td>Josep María Reves</td><td>78050679H</td><td>618 295 499</td><td class="status-sc">S.C</td><td>—</td></tr>
+      <tr><td>14</td><td>Juan Antonio Fdez. Suarez</td><td>39675622R</td><td>676 847 710</td><td class="status-pagado">Pagado</td><td>500 €</td></tr>
+      <tr><td></td><td class="indent">Sebastian Hervás Soriano</td><td>39854673C</td><td>—</td><td class="status-pagado">Pagado</td><td>500 €</td></tr>
+      <tr><td></td><td class="indent">Adrian Fdez Izquierdo</td><td>49647703H</td><td>—</td><td class="status-pagado">Pagado</td><td>500 €</td></tr>
+      <tr><td>15</td><td>Juan Corominas de Dios</td><td>77260203Y</td><td>606 449 319</td><td class="status-pagado">Pagado</td><td>600 €</td></tr>
+      <tr><td></td><td class="indent">Inga Ermolova</td><td>47918378V</td><td>—</td><td class="status-pagado">Pagado</td><td>600 €</td></tr>
+      <tr><td>16</td><td>Juan Francisco de la Cruz Sanchez Plana</td><td>40876029S</td><td>686 943 349</td><td class="status-sc">S.C</td><td>—</td></tr>
+      <tr><td>17</td><td>Llorenç Ruiz Sala</td><td>34758374S</td><td>638 387 588</td><td class="status-pagado">Pagado</td><td>600 €</td></tr>
+      <tr><td>18</td><td>Manuel Castillo Lopez</td><td>4498318P</td><td>628 504 033</td><td class="status-pagado">Pagado</td><td>600 €</td></tr>
+      <tr><td></td><td class="indent">Carlos Castillo Leon</td><td>77795483F</td><td>—</td><td class="status-falta">Falta</td><td>600 €</td></tr>
+      <tr><td>19</td><td>Miquel Angel Rodriguez</td><td>46719456Q</td><td>692 589 875</td><td class="status-pagado">Pagado</td><td>500 €</td></tr>
+      <tr><td></td><td class="indent">Miquel Jaldo Pelegrino</td><td>46518981D</td><td>—</td><td class="status-pagado">Pagado</td><td>500 €</td></tr>
+      <tr><td></td><td class="indent">Miquel Jaldo Delpino</td><td>49288378E</td><td>—</td><td class="status-pagado">Pagado</td><td>500 €</td></tr>
+      <tr><td></td><td class="indent">Jesus Jaldo Pelegrina</td><td>46537187E</td><td>—</td><td class="status-pagado">Pagado</td><td>500 €</td></tr>
+      <tr><td>20</td><td>Miquel Galcerà Altés</td><td>78575149-L</td><td>—</td><td class="status-sc">S.C</td><td>—</td></tr>
+      <tr><td>21</td><td>Ramón Vidal Sabaté</td><td>40880798T</td><td>680 702 577</td><td class="status-sc">S.C</td><td>—</td></tr>
+      <tr><td>22</td><td>Sebastia Ros Barbera</td><td>40864924L</td><td>625 146 666</td><td class="status-falta">Falta</td><td>600 €</td></tr>
+      <tr><td></td><td class="indent">Adriá Ros Pujol</td><td>78089599E</td><td>—</td><td class="status-falta">Falta</td><td>600 €</td></tr>
+      <tr><td>23</td><td>Sebastian Altemir Riba</td><td>53332504N</td><td>—</td><td class="status-falta">Falta</td><td>600 €</td></tr>
+      <tr><td>24</td><td>Sergio Valera Guerrero</td><td>39888316Z</td><td>652 916 065</td><td class="status-falta">Falta</td><td>600 €</td></tr>
+      <tr><td></td><td class="indent">Iker Valera Gisbert</td><td>39940528Q</td><td>—</td><td class="status-falta">Falta</td><td>600 €</td></tr>
+      <tr><td></td><td class="indent">Juan Varela Ortiz</td><td>25912415V</td><td>—</td><td class="status-falta">Falta</td><td>600 €</td></tr>
+    </tbody>
+  </table>
+
+  <div class="resumen">
+    <h2>📊 RESUMEN DE PAGOS</h2>
+    <div class="resumen-grid">
+      <div class="resumen-item">
+        <span class="resumen-label">Total cazadores registrados:</span>
+        <span class="resumen-value">41</span>
+      </div>
+      <div class="resumen-item">
+        <span class="resumen-label">✓ Pagados:</span>
+        <span class="resumen-value">23</span>
+      </div>
+      <div class="resumen-item">
+        <span class="resumen-label">✗ Pendientes de pago:</span>
+        <span class="resumen-value">12</span>
+      </div>
+      <div class="resumen-item">
+        <span class="resumen-label">· Sin coste (S.C):</span>
+        <span class="resumen-value">6</span>
+      </div>
+      <div class="resumen-item">
+        <span class="resumen-label">€ Total recaudado:</span>
+        <span class="resumen-value">11.700 €</span>
+      </div>
+      <div class="resumen-item">
+        <span class="resumen-label">€ Total pendiente:</span>
+        <span class="resumen-value">6.600 €</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <strong>Coto Granyena de les Garrigues</strong> · A.P.C L-10.199 · Julio 2026<br>
+    Documento generado para impresión A4 · cazalleida.com
+  </footer>
+</div>
+
+</body>
+</html>
