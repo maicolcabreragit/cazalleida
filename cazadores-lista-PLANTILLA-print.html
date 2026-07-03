@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de Cazadores - Plantilla</title>
+<style>
+  :root {
+    --verde: #1f3d2b;
+    --dorado: #a9852f;
+    --crema: #f7f3e8;
+    --gris: #666;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { background: #5c5c5c; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 12px;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    padding: 15mm;
+    box-shadow: 0 8px 30px rgba(0,0,0,.35);
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--verde);
+  }
+
+  h1 {
+    color: var(--verde);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  .subtitle {
+    color: var(--dorado);
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 3px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    font-size: 11px;
+  }
+
+  thead th {
+    background: var(--verde);
+    color: white;
+    padding: 6px 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 11px;
+    border: 1px solid var(--verde);
+  }
+
+  tbody tr td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    height: 22px;
+  }
+
+  td:first-child {
+    text-align: center;
+    font-weight: bold;
+    color: var(--verde);
+    width: 30px;
+    background: #f5f5f5;
+  }
+
+  td:nth-child(2) { width: 38%; }  /* Nombre */
+  td:nth-child(3) { width: 16%; font-family: 'Courier New', monospace; font-size: 10px; } /* DNI */
+  td:nth-child(4) { width: 16%; font-family: 'Courier New', monospace; font-size: 10px; } /* Tel */
+  td:nth-child(5) { width: 10%; } /* Pago */
+  td:nth-child(6) { width: 10%; } /* Importe */
+
+  tbody tr:nth-child(even) { background: #fafafa; }
+
+  footer {
+    margin-top: 15px;
+    padding-top: 8px;
+    border-top: 2px solid var(--verde);
+    text-align: center;
+    font-size: 10px;
+    color: var(--gris);
+  }
+
+  @media print {
+    html, body { background: white; }
+    body { padding: 0; }
+    .page { box-shadow: none; margin: 0; min-height: auto; }
+    @page { size: A4; margin: 15mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header>
+    <h1>COTO GRANYENA DE LES GARRIGUES · A.P.C L-10.199</h1>
+    <div class="subtitle">Lista de cazadores · Temporada ___________</div>
+  </header>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nº</th>
+        <th>NOMBRE Y APELLIDOS</th>
+        <th>DNI</th>
+        <th>TELÉFONO</th>
+        <th>PAGO</th>
+        <th>IMPORTE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>4</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>5</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>6</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>7</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>8</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>9</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>10</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>11</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>12</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>13</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>14</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>15</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>16</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>17</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>18</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>19</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>20</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>21</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>22</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>23</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>24</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>25</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>26</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>27</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>28</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>29</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>31</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>32</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>33</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>34</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>35</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>36</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>37</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>38</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>39</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>40</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>41</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>42</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>43</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>44</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>45</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>46</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>47</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>48</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>49</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>50</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <strong>Coto Granyena de les Garrigues</strong> · A.P.C L-10.199
+  </footer>
+</div>
+
+</body>
+</html>
