@@ -117,6 +117,10 @@
   .vsubs button:hover{opacity:1;border-color:var(--gold-soft)}
   .vsubs button.active{background:var(--gold);border-color:var(--gold);color:var(--moss);opacity:1}
   video::cue{background:rgba(12,15,8,.78);color:#f4efe3;font-family:'Inter',sans-serif;font-size:17px;line-height:1.4}
+  .vyt{display:flex;align-items:center;gap:10px;padding:12px 14px;background:rgba(12,15,8,.94);border-top:1px solid rgba(244,239,227,.1);color:var(--cream);font-size:13.5px;font-weight:500;opacity:.85;transition:.2s}
+  .vyt:hover{opacity:1;color:var(--gold-soft)}
+  .vyt svg{width:20px;height:20px;flex:none;fill:#e33}
+  .vyt .arr{margin-left:auto;color:var(--gold-soft)}
   .grain{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 
   /* banda de datos */
@@ -536,6 +540,11 @@
         <button data-sub="fr">FRA</button>
         <button data-sub="it">ITA</button>
       </div>
+      <a class="vyt" href="https://www.youtube.com/watch?v=SwW8byXoGrI" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M23 7.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 3.6 12 3.6 12 3.6s-4.6 0-7.8.3c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S.8 9.1.8 11v1.9c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2.1.9 2.6 1 1.9.2 7.5.3 7.5.3s4.6 0 7.8-.4c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8V11c0-1.9-.2-3.8-.2-3.8zM9.9 15.1V8.4l6.2 3.4-6.2 3.3z"/></svg>
+        <span data-i18n="vyt">Mira también el reportaje del coto de 2016</span>
+        <span class="arr">→</span>
+      </a>
     </div>
     <div class="hero-content">
       <span class="eyebrow" data-i18n="hero_eyebrow">Coto de caza menor</span>
@@ -593,7 +602,7 @@
 
 <!-- ============ LA JORNADA ============ -->
 <section class="jornada" id="jornada">
-  <img class="bg" src="images/real/cazadores.jpg" alt="Cazadores en una jornada en el coto de Granyena de les Garrigues">
+  <img class="bg" src="images/real/cazadores.jpg?v=2" alt="Cazadores en una jornada en el coto de Granyena de les Garrigues">
   <div class="overlay"></div>
   <div class="wrap jornada-inner reveal">
     <div class="section-eyebrow light" data-i18n="jor_eyebrow">Un día en el coto</div>
@@ -850,7 +859,7 @@
     </div>
     <div class="gal-grid reveal">
       <figure data-cat="vida" class="gal-item wide"><picture><source srcset="images/real/coto-paisaje.webp" type="image/webp"><img src="images/real/coto-paisaje.jpg" width="653" height="490" loading="lazy" decoding="async" alt="Paisaje del coto de Granyena de les Garrigues"></picture></figure>
-      <figure data-cat="vida" class="gal-item"><img src="images/real/cazadores.jpg" width="600" height="338" loading="lazy" decoding="async" alt="Cazadores en una jornada en el coto"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/cazadores.jpg?v=2" width="600" height="338" loading="lazy" decoding="async" alt="Cazadores en una jornada en el coto"></figure>
       <figure data-cat="vida" class="gal-item"><img src="images/real/perros.jpg" width="184" height="154" loading="lazy" decoding="async" alt="Perros conejeros trabajando en el campo"></figure>
       <figure data-cat="vida" class="gal-item big"><picture><source srcset="images/real/perchas-zorzal.webp" type="image/webp"><img src="images/real/perchas-zorzal.jpg" width="1600" height="1200" loading="lazy" decoding="async" alt="Percha de zorzales en Granyena de les Garrigues"></picture></figure>
       <figure data-cat="vida" class="gal-item wide"><img src="images/real/dormida.jpg" width="498" height="300" loading="lazy" decoding="async" alt="Dormida de zorzales al atardecer"></figure>
@@ -1039,6 +1048,7 @@
       foot:"Sociedad de Cazadores de Granyena · Coto de caza menor · Temporada 2026–2027",
       nav_services:"Servicios",nav_blog:"Blog",
       hero_vtag:"Reportaje del coto 2026",hero_call_label:"Para reservar, llama",
+      vyt:"Mira también el reportaje del coto de 2016",
       subs_label:"Subtítulos",subs_off:"No",
       st1:"hectáreas de coto",st2:"cazando desde",st3:"especies principales",st4:"desde Barcelona",
       cal_title:"Calendario de temporada",cal_note:"Fechas orientativas. Cada temporada se ajusta a la orden de vedas vigente.",
@@ -1109,6 +1119,7 @@
       foot:"Société de Chasseurs de Granyena · Territoire de petit gibier · Saison 2026–2027",
       nav_services:"Services",nav_blog:"Blog",
       hero_vtag:"Reportage du territoire 2026",hero_call_label:"Pour réserver, appelez",
+      vyt:"Regardez aussi le reportage du territoire de 2016",
       subs_label:"Sous-titres",subs_off:"Non",
       st1:"hectares de territoire",st2:"à la chasse depuis",st3:"espèces principales",st4:"depuis Barcelone",
       cal_title:"Calendrier de la saison",cal_note:"Dates indicatives. Chaque saison s'ajuste à l'arrêté de chasse en vigueur.",
@@ -1179,6 +1190,7 @@
       foot:"Granyena Hunters' Association · Small-game hunting ground · 2026–2027 season",
       nav_services:"Services",nav_blog:"Blog",
       hero_vtag:"2026 estate report",hero_call_label:"To book, call",
+      vyt:"Also watch the 2016 estate report",
       subs_label:"Subtitles",subs_off:"Off",
       st1:"hectares of hunting ground",st2:"hunting since",st3:"main game species",st4:"from Barcelona",
       cal_title:"Season calendar",cal_note:"Approximate dates. Each season follows the official hunting order.",
@@ -1249,6 +1261,7 @@
       foot:"Società di Cacciatori di Granyena · Riserva di piccola selvaggina · Stagione 2026–2027",
       nav_services:"Servizi",nav_blog:"Blog",
       hero_vtag:"Reportage della riserva 2026",hero_call_label:"Per prenotare, chiama",
+      vyt:"Guarda anche il reportage della riserva del 2016",
       subs_label:"Sottotitoli",subs_off:"No",
       st1:"ettari di riserva",st2:"a caccia dal",st3:"specie principali",st4:"da Barcellona",
       cal_title:"Calendario della stagione",cal_note:"Date indicative. Ogni stagione segue il calendario venatorio vigente.",
