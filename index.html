@@ -457,8 +457,8 @@
     .slider-controls{display:none}
     .side-btn.prev-side{display:none}
     .side-btn.next-side{width:46px;height:46px;right:2px} /* flecha visible: indica que se desliza a la derecha */
-    header{padding:16px 20px}
-    .wrap{padding:0 20px}
+    header{padding:16px 20px;background:rgba(38,48,31,.96);backdrop-filter:blur(10px)} /* menú siempre sólido en móvil: nada se superpone */
+    .wrap{padding-left:20px;padding-right:20px} /* solo horizontal: no pisar el padding superior del hero */
   }
   @media(max-width:540px){
     .card{flex:0 0 85%}
