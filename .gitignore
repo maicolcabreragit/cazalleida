@@ -9,5 +9,13 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# Vídeos (demasiado pesados para GitHub)
-videos/
+# Vídeos pesados: solo se sube el vídeo web (<100 MB) y los subtítulos
+videos/*
+!videos/videocaza-web-720.mp4
+!videos/subs/
+
+# Originales del cliente (pesados; las versiones web ya están en images/)
+VIDEOCAZA.MP4
+FOTOS CAZA/
+fotos galeria/
+fotos coto paisaje/

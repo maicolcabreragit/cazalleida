@@ -4,13 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Caza del conejo y el zorzal en Lleida · Coto en Les Garrigues</title>
-<meta name="description" content="Coto privado de caza menor en Granyena de les Garrigues (Lleida). El mejor monte para cazar conejo y zorzal: terreno suave, jornadas guiadas, alojamiento y ayuda con la licencia. Reservas: 973 13 62 75.">
+<meta name="description" content="Coto de caza menor en Granyena de les Garrigues (Lleida). El mejor monte para cazar conejo y zorzal: terreno suave, jornadas guiadas, alojamiento y ayuda con la licencia. Reservas: 699 94 97 37.">
 <meta name="keywords" content="caza conejo Lleida, caza zorzal Granyena, coto Les Garrigues, caza menor Cataluña, prórroga zorzal, media veda">
 <meta property="og:title" content="Caza del conejo y el zorzal en Lleida · Les Garrigues">
-<meta property="og:description" content="El mejor monte para cazar conejo y zorzal en Granyena de les Garrigues. Jornadas guiadas, alojamiento y trato cercano.">
+<meta property="og:description" content="El mejor monte para cazar conejo y zorzal en Granyena de les Garrigues. Jornadas guiadas, alojamiento y trato cercano. Reservas: 699 94 97 37.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="images/real/video-poster.jpg">
-<link rel="icon" type="image/jpeg" href="images/logos/logo-6-escopetas.jpg">
+<meta property="og:url" content="https://www.cazalleida.com/">
+<meta property="og:site_name" content="Caza Lleida — cazalleida.com">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://www.cazalleida.com/images/logo-oficial-512.jpg">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.cazalleida.com/images/logo-oficial-512.jpg">
+<link rel="icon" type="image/jpeg" href="images/logo-oficial-512.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -102,6 +110,73 @@
   .hero-video::after{content:"";position:absolute;inset:0;border-radius:16px;box-shadow:inset 0 0 0 1px rgba(244,239,227,.08);pointer-events:none}
   .hero-video video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
   .hero-video .vtag{position:absolute;top:14px;left:14px;z-index:2;background:rgba(38,48,31,.82);color:var(--cream);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;border-radius:999px;font-weight:600;pointer-events:none}
+  .hero-video .vdur{position:absolute;top:14px;right:14px;z-index:2;background:rgba(199,154,62,.92);color:var(--moss);font-size:11px;letter-spacing:1px;padding:6px 12px;border-radius:999px;font-weight:700;pointer-events:none}
+  .vsubs{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 14px;background:rgba(12,15,8,.94);border-top:1px solid rgba(199,154,62,.3)}
+  .vsubs .sl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-soft);font-weight:700;margin-right:2px}
+  .vsubs button{background:none;border:1px solid rgba(244,239,227,.25);color:var(--cream);font-family:inherit;font-size:11.5px;font-weight:600;letter-spacing:.5px;padding:4px 12px;border-radius:999px;cursor:pointer;opacity:.7;transition:.2s}
+  .vsubs button:hover{opacity:1;border-color:var(--gold-soft)}
+  .vsubs button.active{background:var(--gold);border-color:var(--gold);color:var(--moss);opacity:1}
+  video::cue{background:rgba(12,15,8,.78);color:#f4efe3;font-family:'Inter',sans-serif;font-size:17px;line-height:1.4}
+  .grain{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+  /* banda de datos */
+  .stats{background:linear-gradient(120deg,#1e2617,#26301f);border-top:1px solid rgba(199,154,62,.28);border-bottom:1px solid rgba(199,154,62,.28)}
+  .stats .row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:44px 0}
+  .stat{text-align:center;color:var(--cream);position:relative}
+  .stat+.stat::before{content:"";position:absolute;left:-9px;top:12%;bottom:12%;width:1px;background:rgba(244,239,227,.14)}
+  .stat b{display:block;font-family:'Fraunces',serif;font-weight:600;font-size:clamp(30px,3.6vw,44px);color:var(--gold-soft);line-height:1.1}
+  .stat span{display:block;margin-top:6px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;opacity:.72}
+  @media(max-width:880px){.stats .row{grid-template-columns:1fr 1fr;row-gap:30px}.stat:nth-child(3)::before{display:none}}
+
+  /* calendario de temporada */
+  .season{margin-top:64px;background:rgba(244,239,227,.05);border:1px solid rgba(244,239,227,.14);border-radius:20px;padding:34px 32px 26px;overflow-x:auto}
+  .season h3{font-size:24px;color:var(--cream);margin-bottom:4px}
+  .season .snote{font-size:13px;opacity:.6;font-weight:300;margin-bottom:22px}
+  .cal{min-width:640px}
+  .cal .crow{display:grid;grid-template-columns:170px repeat(12,1fr);gap:6px;align-items:center;padding:7px 0;border-bottom:1px solid rgba(244,239,227,.08)}
+  .cal .crow:last-child{border-bottom:none}
+  .cal .chead{border-bottom:1px solid rgba(199,154,62,.35);padding-bottom:10px}
+  .cal .chead b{font-size:11px;letter-spacing:1px;color:var(--gold-soft);text-align:center;font-weight:700}
+  .cal .csp{font-size:14.5px;color:var(--cream);font-weight:500;white-space:nowrap}
+  .cal .dot{width:14px;height:14px;border-radius:50%;margin:0 auto}
+  .cal .dot.on{background:var(--gold);box-shadow:0 0 8px rgba(199,154,62,.5)}
+  .cal .dot.mid{background:transparent;border:2px solid var(--gold-soft)}
+  .cal .dot.off{background:rgba(244,239,227,.09)}
+  .season .legend{display:flex;gap:22px;margin-top:18px;font-size:12.5px;color:var(--cream);opacity:.75;flex-wrap:wrap}
+  .season .legend span{display:inline-flex;align-items:center;gap:8px}
+  .season .legend .dot{margin:0}
+
+  /* contacto sin formulario */
+  .contact-solo{max-width:640px;margin:0 auto;text-align:center}
+  .contact-solo .lead{margin-left:auto;margin-right:auto}
+  .contact-solo .contact-info{align-items:center;margin-top:26px}
+  .contact-solo .contact-info li{justify-content:center}
+  .big-call{display:flex;flex-direction:column;align-items:center;gap:18px;margin:30px 0 8px}
+  .big-call .phone{display:inline-flex;align-items:center;gap:14px;font-family:'Fraunces',serif;font-weight:600;font-size:clamp(34px,6vw,52px);color:var(--gold-soft);letter-spacing:1px;transition:.2s}
+  .big-call .phone:hover{color:var(--gold)}
+  .big-call .phone svg{width:34px;height:34px;flex:none}
+
+  /* banner archivo histórico */
+  .archive-cta{display:flex;align-items:center;justify-content:space-between;gap:30px;margin-top:36px;padding:44px 48px;border-radius:20px;position:relative;overflow:hidden;border:1px solid rgba(199,154,62,.55);background:linear-gradient(100deg,rgba(18,24,12,.93) 30%,rgba(18,24,12,.55)),url("images/real/perchas-zorzal.jpg") center 35%/cover no-repeat;color:var(--cream);transition:.3s;box-shadow:var(--shadow-green)}
+  .archive-cta:hover{transform:translateY(-4px);box-shadow:0 34px 80px -26px rgba(20,26,14,.65)}
+  .archive-cta .acta-eyebrow{font-size:11.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-soft);font-weight:700}
+  .archive-cta h3{font-size:clamp(24px,3vw,34px);margin:10px 0 8px;color:var(--cream)}
+  .archive-cta p{font-size:15.5px;font-weight:300;opacity:.85;max-width:52ch}
+  .archive-cta .btn{flex:none}
+  @media(max-width:760px){.archive-cta{flex-direction:column;align-items:flex-start;padding:32px 26px}}
+
+  /* WhatsApp flotante */
+  .wa-fab{position:fixed;right:22px;bottom:22px;z-index:80;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.5);transition:.25s}
+  .wa-fab:hover{transform:scale(1.08)}
+  .wa-fab svg{width:30px;height:30px;fill:#fff}
+  .wa-fab::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(37,211,102,.55);animation:waPulse 2.2s infinite}
+  @keyframes waPulse{0%{transform:scale(.9);opacity:.9}70%{transform:scale(1.25);opacity:0}100%{opacity:0}}
+
+  ::selection{background:var(--gold);color:var(--moss)}
+  ::-webkit-scrollbar{width:11px}
+  ::-webkit-scrollbar-track{background:#1b2216}
+  ::-webkit-scrollbar-thumb{background:#4a5a38;border-radius:8px}
+  ::-webkit-scrollbar-thumb:hover{background:var(--olive)}
   .hero-call{display:inline-flex;align-items:center;gap:14px;margin-top:26px;padding:13px 22px;border:1px solid rgba(199,154,62,.55);border-radius:14px;background:rgba(18,24,12,.4)}
   .hero-call .lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-soft);font-weight:600}
   .hero-call a{font-family:'Fraunces',serif;font-size:clamp(22px,2.4vw,28px);color:var(--cream);font-weight:600;letter-spacing:1px;display:block;margin-top:2px}
@@ -129,8 +204,8 @@
   .svc p{font-size:14.5px;color:#4a463c;font-weight:300;line-height:1.55}
 
   /* carnet de temporada */
-  .carnet{padding:110px 0;color:var(--cream);position:relative;background:#1c2416 url('images/real/caceria.jpg') center/contain no-repeat}
-  .carnet::before{content:"";position:absolute;inset:0;background:rgba(24,30,18,.68);z-index:0}
+  .carnet{padding:110px 0;color:var(--cream);position:relative;background:#1c2416 url('images/carnet-bg.jpg') center 30%/cover no-repeat}
+  .carnet::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,30,18,.72),rgba(24,30,18,.55) 50%,rgba(24,30,18,.78));z-index:0}
   .carnet .wrap{position:relative;z-index:1}
   .carnet .chead{max-width:640px;margin:0 auto 46px;text-align:center}
   .carnet h2{font-size:clamp(30px,4vw,48px);color:var(--cream);margin-top:8px}
@@ -358,6 +433,31 @@
 
   .menu-toggle{display:none;background:none;border:none;color:var(--cream);cursor:pointer;width:30px;height:30px;margin-left:16px}
   .menu-toggle svg{width:100%;height:100%;stroke-linecap:round;stroke-linejoin:round}
+
+  /* móvil cómodo: letra y botones grandes (pensado para gente mayor) */
+  @media(max-width:880px){
+    .menu-toggle{width:42px;height:42px;padding:6px}
+    nav .links a{font-size:18.5px;padding:8px 0}
+    .lang button{padding:10px 15px;font-size:13.5px}
+    .vsubs{gap:10px;padding:13px 14px}
+    .vsubs button{padding:10px 18px;font-size:14px}
+    .vsubs .sl{font-size:11px}
+    .btn{padding:17px 30px;font-size:15.5px}
+    .card p{font-size:16px;line-height:1.6}
+    .card .when{font-size:14px}
+    .card h3{font-size:24px}
+    .cal .csp{font-size:15.5px}
+    .season .snote,.season .legend{font-size:14px}
+    .pack li{font-size:16px}
+    .svc p{font-size:16px}
+    .cperiod p{font-size:16px}
+    .contact-info li{font-size:17.5px}
+    .archive-cta p{font-size:16px}
+    .stat span{font-size:13px}
+    footer .meta{font-size:14.5px;line-height:1.8}
+    .wa-fab{width:64px;height:64px}
+    .wa-fab svg{width:34px;height:34px}
+  }
   @media(max-width:880px){
     .menu-toggle{display:block}
     nav .links{position:absolute;top:100%;left:0;right:0;background:rgba(38,48,31,.98);backdrop-filter:blur(10px);flex-direction:column;padding:24px;gap:20px;opacity:0;pointer-events:none;transform:translateY(-10px);transition:.3s;border-top:1px solid rgba(244,239,227,.1)}
@@ -381,7 +481,7 @@
 
 <header id="hdr">
   <a class="brand" href="#">
-    <img class="mark" src="images/logos/logo-6-escopetas.jpg" alt="Caza Lleida">
+    <img class="mark" src="images/logo-oficial-512.jpg" alt="cazalleida.com">
     <div><b>Caza Lleida</b><span>Les Garrigues</span></div>
   </a>
   <nav>
@@ -415,26 +515,39 @@
     <picture><source srcset="images/real/coto-paisaje.webp" type="image/webp"><img src="images/real/coto-paisaje.jpg" alt="Terreno del coto al atardecer"></picture>
   </div>
   <div class="veil"></div>
+  <div class="grain"></div>
 
   <div class="wrap hero-grid">
     <div class="hero-video reveal">
-      <span class="vtag" data-i18n="hero_vtag">El coto en vídeo</span>
-      <video poster="images/real/video-poster.jpg" autoplay muted loop playsinline controls preload="metadata">
-        <source src="videos/coto-cinematica-web.mp4" type="video/mp4">
-        <source src="videos/coto-cinematica-new.mp4" type="video/mp4">
+      <span class="vtag" data-i18n="hero_vtag">Reportaje del coto 2026</span>
+      <span class="vdur">13 min</span>
+      <video id="cotoFilm" poster="images/real/video-poster-new.jpg" playsinline controls preload="metadata">
+        <source src="videos/videocaza-web-720.mp4" type="video/mp4">
+        <track kind="subtitles" label="Català" srclang="ca" src="videos/subs/videocaza.ca.vtt">
+        <track kind="subtitles" label="Español" srclang="es" src="videos/subs/videocaza.es.vtt">
+        <track kind="subtitles" label="Français" srclang="fr" src="videos/subs/videocaza.fr.vtt">
+        <track kind="subtitles" label="Italiano" srclang="it" src="videos/subs/videocaza.it.vtt">
       </video>
+      <div class="vsubs" id="vsubs">
+        <span class="sl" data-i18n="subs_label">Subtítulos</span>
+        <button data-sub="off" class="active" data-i18n="subs_off">No</button>
+        <button data-sub="ca">CAT</button>
+        <button data-sub="es">ESP</button>
+        <button data-sub="fr">FRA</button>
+        <button data-sub="it">ITA</button>
+      </div>
     </div>
     <div class="hero-content">
-      <span class="eyebrow" data-i18n="hero_eyebrow">Coto privado · Caza menor</span>
+      <span class="eyebrow" data-i18n="hero_eyebrow">Coto de caza menor</span>
       <h1 data-i18n="hero_title">Descubre el mejor monte para la caza del <em>conejo y el zorzal</em>
-        <span class="place" data-i18n="hero_place">Les Garrigues, Lleida</span>
+        <span class="place" data-i18n="hero_place">Granyena de les Garrigues · Lleida</span>
       </h1>
-      <p class="sub" data-i18n="hero_sub">Más de 3.000 hectáreas de monte, pinares y siembras: el conejo manda todo el año y, en otoño, llega el zorzal. Caza tradicional, a tu ritmo.</p>
+      <p class="sub" data-i18n="hero_sub">Cerca de 3.000 hectáreas de monte bajo, olivares, siembras y pinares: el conejo está presente todo el año y, en otoño, el coto se llena de especies migratorias como el zorzal y la becada.</p>
       <div class="hero-call">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
         <div>
           <span class="lbl" data-i18n="hero_call_label">Para reservar, llama</span><br>
-          <a href="tel:+34973136275">973 13 62 75</a>
+          <a href="tel:+34699949737">699 94 97 37</a>
         </div>
       </div>
       <div class="cta-row">
@@ -447,14 +560,24 @@
   <div class="scroll-hint"><span data-i18n="scroll">Desliza</span><span class="dot"></span></div>
 </section>
 
+<!-- ============ BANDA DE DATOS ============ -->
+<section class="stats">
+  <div class="wrap row">
+    <div class="stat"><b data-count="3000">0</b><span data-i18n="st1">hectáreas de coto</span></div>
+    <div class="stat"><b>1995</b><span data-i18n="st2">cazando desde</span></div>
+    <div class="stat"><b data-count="6">0</b><span data-i18n="st3">especies principales</span></div>
+    <div class="stat"><b>1h 30</b><span data-i18n="st4">desde Barcelona</span></div>
+  </div>
+</section>
+
 <!-- ============ DÓNDE ESTAMOS ============ -->
 <section class="where" id="where">
   <div class="wrap grid">
     <div class="reveal">
       <div class="section-eyebrow" data-i18n="where_eyebrow">Dónde estamos</div>
-      <h2 data-i18n="where_title">En el corazón de Les Garrigues</h2>
-      <p data-i18n="where_p1">Nuestro coto está en el término de Granyena de les Garrigues. Una finca privada de monte bajo, pinares y campos de siembra.</p>
-      <div class="ha"><b data-i18n="where_ha_num">+3.000</b><span data-i18n="where_ha_txt">hectáreas<br>de terreno privado</span></div>
+      <h2 data-i18n="where_title">En el corazón de la comarca leridana de Les Garrigues</h2>
+      <p data-i18n="where_p1">Nuestro coto está en el término municipal de Granyena de les Garrigues. Se llega fácil: la zona de caza está bien comunicada por las carreteras principales.</p>
+      <div class="ha"><span data-i18n="where_approx">cerca de</span><b data-i18n="where_ha_num">3.000</b><span data-i18n="where_ha_txt">hectáreas<br>de terreno de caza</span></div>
       <p data-i18n="where_p2">Llegar es fácil: estamos a un paso de las grandes ciudades, pero rodeados de campo de verdad.</p>
     </div>
     <div class="map-card reveal">
@@ -475,7 +598,7 @@
   <div class="wrap jornada-inner reveal">
     <div class="section-eyebrow light" data-i18n="jor_eyebrow">Un día en el coto</div>
     <h2 data-i18n="jor_title">Cómo es cazar aquí</h2>
-    <p data-i18n="jor_p">Se sale temprano, con la escarcha todavía en los olivos. Un guía que conoce el terreno palmo a palmo te lleva a los mejores puestos. A media mañana, un alto para almorzar. Por la tarde, otra vuelta hasta que cae el sol. Sin prisas.</p>
+    <p data-i18n="jor_p">La mañana empieza con la escarcha todavía en los olivos. Si lo necesitas, un lugareño que se conoce el terreno palmo a palmo te acompaña hasta los mejores puestos. Al mediodía, parada para saborear la gastronomía tradicional de la zona. Y por la tarde, otra vuelta hasta que cae el sol, esperando una buena dormida de zorzales.</p>
   </div>
 </section>
 
@@ -496,7 +619,7 @@
       <button class="slider-btn side-btn prev-side" id="spPrevSide" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
       <div class="cards" id="spCards">
         <div class="card reveal">
-        <img class="card-img" src="images/conejo.jpg" alt="Conejo de campo">
+        <img class="card-img" src="images/conejo.jpg?v=2" alt="Conejo de campo">
         <div class="card-body">
           <h3 data-i18n="sp1_n">Conejo<span class="star" data-i18n="sp_star">El rey</span></h3>
           <div class="when" data-i18n="sp1_w">Casi todo el año</div>
@@ -504,15 +627,31 @@
         </div>
       </div>
       <div class="card reveal">
-        <img class="card-img" src="images/zorzal.jpg" alt="Zorzal sobre una rama de olivo">
+        <img class="card-img" src="images/zorzal.jpg?v=2" alt="Zorzal común sobre una rama de olivo">
         <div class="card-body">
-          <h3 data-i18n="sp2_n">Zorzal</h3>
+          <h3 data-i18n="sp2_n">Zorzal común</h3>
           <div class="when" data-i18n="sp2_w">Oct · Feb</div>
-          <p data-i18n="sp2_d">Ave migratoria que llega cada otoño buscando la aceituna. Lleida cae en plena ruta de paso, así que cuando entran lo hacen por miles. Es lo que más ilusión le hace al cazador francés.</p>
+          <p data-i18n="sp2_d">El de toda la vida: pecho moteado y vuelo rápido entre olivos. Llega en octubre buscando la aceituna y se queda todo el invierno. Lleida cae en plena ruta de paso, así que cuando entran lo hacen por miles.</p>
         </div>
       </div>
       <div class="card reveal">
-        <img class="card-img" src="images/perdiz.jpg" alt="Perdiz roja">
+        <img class="card-img" src="images/zorzal-alirrojo.jpg?v=2" alt="Zorzal alirrojo">
+        <div class="card-body">
+          <h3 data-i18n="sp6_n">Zorzal alirrojo</h3>
+          <div class="when" data-i18n="sp6_w">Nov · Feb</div>
+          <p data-i18n="sp6_d">Se le conoce por la ceja clara y el rojo teja que asoma bajo las alas. Entra más tarde que el común, empujado por los fríos fuertes del norte, y en los años buenos llena las dormidas.</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img class="card-img" src="images/becada.jpg?v=2" alt="Becada en el suelo del bosque">
+        <div class="card-body">
+          <h3 data-i18n="sp5_n">Becada</h3>
+          <div class="when" data-i18n="sp5_w">Tiempo de nevadas</div>
+          <p data-i18n="sp5_d">La Becada es cada vez más frecuente en nuestro territorio siendo un ave migratoria que durante el tiempo más frío en Europa nos visitan huyendo de las fuertes nevadas que le impiden comer con su largo pico lombrices, etc.</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img class="card-img" src="images/perdiz.jpg?v=2" alt="Perdiz roja">
         <div class="card-body">
           <h3 data-i18n="sp3_n">Perdiz roja</h3>
           <div class="when" data-i18n="sp3_w">Oct · Ene</div>
@@ -520,23 +659,32 @@
         </div>
       </div>
       <div class="card reveal">
-        <img class="card-img" src="images/paloma.jpg" alt="Paloma torcaz">
+        <img class="card-img" src="images/paloma.jpg?v=2" alt="Paloma torcaz">
         <div class="card-body">
           <h3 data-i18n="sp4_n">Paloma zurita y torcaz</h3>
           <div class="when" data-i18n="sp4_w">Pasos de temporada</div>
           <p data-i18n="sp4_d">Estas especies son cada vez más presentes durante todo el año, siendo su momento más óptimo en la media veda en verano.</p>
         </div>
       </div>
-      <div class="card reveal">
-        <img class="card-img" src="images/becada.png" alt="Becada">
-        <div class="card-body">
-          <h3 data-i18n="sp5_n">Becada</h3>
-          <div class="when" data-i18n="sp5_w">Tiempo de nevadas</div>
-          <p data-i18n="sp5_d">La Becada es cada vez más frecuente en nuestro territorio siendo un ave migratoria que durante el tiempo más frío en Europa nos visitan huyendo de las fuertes nevadas que le impiden comer con su largo pico lombrices, etc.</p>
-        </div>
-      </div>
       </div>
       <button class="slider-btn side-btn next-side" id="spNextSide" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+
+    <div class="season reveal">
+      <h3 data-i18n="cal_title">Calendario de temporada</h3>
+      <p class="snote" data-i18n="cal_note">Fechas orientativas. Cada temporada se ajusta a la orden de vedas vigente.</p>
+      <div class="cal">
+        <div class="crow chead"><span></span><b>E</b><b>F</b><b>M</b><b>A</b><b>M</b><b>J</b><b>J</b><b>A</b><b>S</b><b>O</b><b>N</b><b>D</b></div>
+        <div class="crow" data-cal="on on off off off off mid mid mid on on on"><span class="csp" data-i18n="cal_sp1">Conejo</span></div>
+        <div class="crow" data-cal="on on off off off off off off off on on on"><span class="csp" data-i18n="cal_sp2">Zorzal común y alirrojo</span></div>
+        <div class="crow" data-cal="on on off off off off off off off off on on"><span class="csp" data-i18n="cal_sp5">Becada</span></div>
+        <div class="crow" data-cal="on off off off off off off off off on on on"><span class="csp" data-i18n="cal_sp3">Perdiz roja</span></div>
+        <div class="crow" data-cal="mid mid off off off off off on on mid mid mid"><span class="csp" data-i18n="cal_sp4">Paloma zurita y torcaz</span></div>
+      </div>
+      <div class="legend">
+        <span><i class="dot on"></i><span data-i18n="cal_leg1">Temporada abierta</span></span>
+        <span><i class="dot mid"></i><span data-i18n="cal_leg2">Pasos y media veda</span></span>
+      </div>
     </div>
   </div>
 </section>
@@ -547,8 +695,7 @@
     <div class="phead reveal">
       <div class="section-eyebrow" data-i18n="pk_eyebrow">Tarifas</div>
       <h2 data-i18n="pk_title">Packs de caza</h2>
-      <p data-i18n="pk_sub">Cada jornada se adapta al grupo y a las fechas. Dinos qué buscas y te pasamos precio.</p>
-      <p data-i18n="pk_acc" style="margin-top:20px; font-weight:500; color:var(--moss)">El coto dispone de alojamiento en el centro del propio cazadero, a 5 minutos. Media pensión, parking privado y tu perro puede dormir contigo en la habitación.</p>
+      <p data-i18n="pk_sub">El terreno del coto es suave y fácil de andar: está adaptado también para cazadores de edad media y avanzada.</p>
     </div>
     <div class="slider-wrapper">
       <button class="slider-btn side-btn prev-side" id="pkPrevSide" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
@@ -557,7 +704,7 @@
       <div class="pack reveal">
         <div class="tier" data-i18n="pk1_tier">Un día</div>
         <h3 data-i18n="pk1_name">Jornada de caza</h3>
-        <div class="dur" data-i18n="pk1_dur">Ideal para una escapada</div>
+        <div class="dur" data-i18n="pk1_dur">Del 12 de octubre al primer domingo de enero</div>
         <ul>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk1_l1">Guía que conoce el terreno</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk1_l2">Acceso a las +3.000 ha del coto</span></li>
@@ -568,9 +715,9 @@
 
       <div class="pack featured reveal">
         <span class="badge-pop" data-i18n="pk_pop">El más popular</span>
-        <div class="tier" data-i18n="pk2_tier">2–3 días</div>
-        <h3 data-i18n="pk2_name">Escapada de fin de semana</h3>
-        <div class="dur" data-i18n="pk2_dur">Caza, alojamiento y buena mesa</div>
+        <div class="tier" data-i18n="pk2_tier">2 días · 1 noche</div>
+        <h3 data-i18n="pk2_name">Dos días de caza</h3>
+        <div class="dur" data-i18n="pk2_dur">Con una noche en nuestro hotel</div>
         <ul>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk2_l1">Varias jornadas guiadas</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk2_l2">Alojamiento en media pensión</span></li>
@@ -611,7 +758,7 @@
         <div class="dur" data-i18n="pk5_dur">Días sueltos</div>
         <div style="font-family:'Fraunces',serif;font-size:30px;color:var(--moss);line-height:1;margin:2px 0 16px"><span data-i18n="pk5_from">Desde</span> 50&nbsp;€ <span style="font-family:'Inter',sans-serif;font-size:13px;color:var(--muted)" data-i18n="pk5_unit">/ pase de zorzal</span></div>
         <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk5_l1">Caza en nuestra área privada</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk5_l1">Caza en toda el área del coto</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk5_l2">Precio variable según las especies a cazar</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pk5_l3">Flexibilidad total para tu escapada</span></li>
         </ul>
@@ -641,7 +788,7 @@
       <div class="svc reveal">
         <svg class="ic" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
         <h3 data-i18n="sv2_t">Alojamiento y media pensión</h3>
-        <p data-i18n="sv2_d">Dormirás en el centro del cazadero, a cinco minutos del monte. Media pensión, parking privado y tu perro puede dormir contigo en la habitación.</p>
+        <p data-i18n="sv2_d">Dormirás en el centro del cazadero, a cinco minutos del monte. Media pensión, parking y tu perro puede dormir contigo en la habitación.</p>
       </div>
       <div class="svc reveal">
         <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="9" r="3.5"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg>
@@ -650,8 +797,8 @@
       </div>
       <div class="svc reveal">
         <svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
-        <h3 data-i18n="sv4_t">Cupos de piezas</h3>
-        <p data-i18n="sv4_d">El número de piezas por día (zorzal, perdiz o conejo) se concreta según la fecha y el tipo de jornada. Consúltanos y te lo dejamos claro antes de venir.</p>
+        <h3 data-i18n="sv4_t">Seguro obligatorio para cazar</h3>
+        <p data-i18n="sv4_d">Te podemos gestionar el alta por meses o por años, con diferentes tipos de cobertura. Tú eliges la que mejor te encaje y nosotros nos encargamos del papeleo.</p>
       </div>
     </div>
   </div>
@@ -669,8 +816,8 @@
       <div class="cperiod reveal">
         <div class="num">01</div>
         <h3 data-i18n="cn1_t">Descaste de conejo</h3>
-        <div class="dates" data-i18n="cn1_dt">Mes de julio</div>
-        <p data-i18n="cn1_d">Conejo con perros y escopetas durante el mes de julio, los días que autorice la dirección del coto.</p>
+        <div class="dates" data-i18n="cn1_dt">8 días en julio · sáb y dom</div>
+        <p data-i18n="cn1_d">Conejo con perros y escopetas: 8 días durante el mes de julio, sábados y domingos hasta las 12 del mediodía.</p>
       </div>
       <div class="cperiod reveal">
         <div class="num">02</div>
@@ -681,14 +828,14 @@
       <div class="cperiod reveal">
         <div class="num">03</div>
         <h3 data-i18n="cn3_t">Temporada general</h3>
-        <div class="dates" data-i18n="cn3_dt">Temporada 2026–2027</div>
-        <p data-i18n="cn3_d">Todas las especies cinegéticas permitidas por la ley de caza vigente.</p>
+        <div class="dates" data-i18n="cn3_dt">Jueves, sábados y domingos</div>
+        <p data-i18n="cn3_d">Todas las especies cinegéticas permitidas por la ley de caza vigente. Se caza jueves, sábados y domingos.</p>
       </div>
       <div class="cperiod reveal">
         <div class="num">04</div>
         <h3 data-i18n="cn4_t">Prórroga del zorzal</h3>
-        <div class="dates" data-i18n="cn4_dt">Todo febrero</div>
-        <p data-i18n="cn4_d">Durante febrero, todos los días autorizados hasta el final de mes según la orden de vedas.</p>
+        <div class="dates" data-i18n="cn4_dt">Hasta el 2º domingo de febrero</div>
+        <p data-i18n="cn4_d">En febrero, todos los días autorizados hasta el segundo domingo de febrero, según la orden de vedas.</p>
       </div>
     </div>
   </div>
@@ -702,31 +849,40 @@
       <h2 data-i18n="gal_title">El coto en imágenes</h2>
     </div>
     <div class="gal-grid reveal">
-      <figure class="gal-item wide"><picture><source srcset="images/real/coto-paisaje.webp" type="image/webp"><img src="images/real/coto-paisaje.jpg" width="653" height="490" loading="lazy" decoding="async" alt="Paisaje del coto de Granyena de les Garrigues"></picture></figure>
-      <figure class="gal-item"><img src="images/real/cazadores.jpg" width="600" height="338" loading="lazy" decoding="async" alt="Cazadores en una jornada en el coto"></figure>
-      <figure class="gal-item"><img src="images/real/perros.jpg" width="184" height="154" loading="lazy" decoding="async" alt="Perros conejeros trabajando en el campo"></figure>
-      <figure class="gal-item big"><picture><source srcset="images/real/perchas-zorzal.webp" type="image/webp"><img src="images/real/perchas-zorzal.jpg" width="1600" height="1200" loading="lazy" decoding="async" alt="Percha de zorzales en Granyena de les Garrigues"></picture></figure>
-      <figure class="gal-item wide"><img src="images/real/dormida.jpg" width="498" height="300" loading="lazy" decoding="async" alt="Dormida de zorzales al atardecer"></figure>
+      <figure data-cat="vida" class="gal-item wide"><picture><source srcset="images/real/coto-paisaje.webp" type="image/webp"><img src="images/real/coto-paisaje.jpg" width="653" height="490" loading="lazy" decoding="async" alt="Paisaje del coto de Granyena de les Garrigues"></picture></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/cazadores.jpg" width="600" height="338" loading="lazy" decoding="async" alt="Cazadores en una jornada en el coto"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/perros.jpg" width="184" height="154" loading="lazy" decoding="async" alt="Perros conejeros trabajando en el campo"></figure>
+      <figure data-cat="vida" class="gal-item big"><picture><source srcset="images/real/perchas-zorzal.webp" type="image/webp"><img src="images/real/perchas-zorzal.jpg" width="1600" height="1200" loading="lazy" decoding="async" alt="Percha de zorzales en Granyena de les Garrigues"></picture></figure>
+      <figure data-cat="vida" class="gal-item wide"><img src="images/real/dormida.jpg" width="498" height="300" loading="lazy" decoding="async" alt="Dormida de zorzales al atardecer"></figure>
 
-      <figure class="gal-item"><img src="images/real/tordos-escopetas.jpg" width="489" height="357" loading="lazy" decoding="async" alt="Escopetas y zorzales tras la jornada"></figure>
-      <figure class="gal-item"><img src="images/real/caceria.jpg" width="362" height="241" loading="lazy" decoding="async" alt="Cacería en el monte de Les Garrigues"></figure>
-      <figure class="gal-item"><img src="images/real/perchas-tordos.jpg" width="368" height="309" loading="lazy" decoding="async" alt="Percha de tordos"></figure>
-      <figure class="gal-item"><img src="images/real/perdices.jpg" width="244" height="187" loading="lazy" decoding="async" alt="Perdices del coto"></figure>
-      <figure class="gal-item"><img src="images/real/perros2.jpg" width="184" height="154" loading="lazy" decoding="async" alt="Perros de caza en el coto"></figure>
-      <figure class="gal-item"><img src="images/real/dormida2.jpg" width="356" height="200" loading="lazy" decoding="async" alt="Atardecer sobre el campo antes de la dormida"></figure>
-      <figure class="gal-item"><img src="images/real/restaurante2.jpg" width="540" height="360" loading="lazy" decoding="async" alt="Mesa del restaurante del coto"></figure>
-      <figure class="gal-item big"><picture><source srcset="images/real/hero1.webp" type="image/webp"><img src="images/real/hero1.jpg" width="1632" height="1224" loading="lazy" decoding="async" alt="Paisaje del coto de Granyena de les Garrigues"></picture></figure>
-      <figure class="gal-item wide"><picture><source srcset="images/real/hero2.webp" type="image/webp"><img src="images/real/hero2.jpg" width="1632" height="1224" loading="lazy" decoding="async" alt="Campos de siembra y monte del coto"></picture></figure>
-      <figure class="gal-item"><picture><source srcset="images/real/hero3.webp" type="image/webp"><img src="images/real/hero3.jpg" width="1632" height="1224" loading="lazy" decoding="async" alt="Vista del terreno de caza"></picture></figure>
-      <figure class="gal-item wide"><img src="images/real/coto1.jpg" width="454" height="220" loading="lazy" decoding="async" alt="Monte bajo y pinares del coto"></figure>
-      <figure class="gal-item"><img src="images/real/coto2.jpg" width="454" height="220" loading="lazy" decoding="async" alt="Paisaje de Les Garrigues en el coto"></figure>
-      <figure class="gal-item wide"><img src="images/real/coto3.jpg" width="454" height="220" loading="lazy" decoding="async" alt="Terreno del coto de caza"></figure>
-      <figure class="gal-item"><img src="images/real/galeria1.jpg" width="400" height="300" loading="lazy" decoding="async" alt="Jornada de caza en el coto"></figure>
-      <figure class="gal-item"><img src="images/real/galeria2.jpg" width="400" height="300" loading="lazy" decoding="async" alt="Momento de la cacería en Granyena"></figure>
-      <figure class="gal-item tall"><img src="images/real/galeria3.jpg" width="400" height="500" loading="lazy" decoding="async" alt="Cazadores en el coto"></figure>
-      <figure class="gal-item"><img src="images/real/galeria4.jpg" width="400" height="320" loading="lazy" decoding="async" alt="Imagen del coto de caza"></figure>
-      <figure class="gal-item big"><picture><source srcset="images/real/equipo.webp" type="image/webp"><img src="images/real/equipo.jpg" width="1400" height="1050" loading="lazy" decoding="async" alt="Benito y el equipo del coto"></picture></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/tordos-escopetas.jpg" width="489" height="357" loading="lazy" decoding="async" alt="Escopetas y zorzales tras la jornada"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/caceria.jpg" width="362" height="241" loading="lazy" decoding="async" alt="Cacería en el monte de Les Garrigues"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/perchas-tordos.jpg" width="368" height="309" loading="lazy" decoding="async" alt="Percha de tordos"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/perdices.jpg" width="244" height="187" loading="lazy" decoding="async" alt="Perdices del coto"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/perros2.jpg" width="184" height="154" loading="lazy" decoding="async" alt="Perros de caza en el coto"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/dormida2.jpg" width="356" height="200" loading="lazy" decoding="async" alt="Atardecer sobre el campo antes de la dormida"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/restaurante2.jpg" width="540" height="360" loading="lazy" decoding="async" alt="Mesa del restaurante del coto"></figure>
+      <figure data-cat="vida" class="gal-item big"><picture><source srcset="images/real/hero1.webp" type="image/webp"><img src="images/real/hero1.jpg" width="1632" height="1224" loading="lazy" decoding="async" alt="Paisaje del coto de Granyena de les Garrigues"></picture></figure>
+      <figure data-cat="vida" class="gal-item wide"><picture><source srcset="images/real/hero2.webp" type="image/webp"><img src="images/real/hero2.jpg" width="1632" height="1224" loading="lazy" decoding="async" alt="Campos de siembra y monte del coto"></picture></figure>
+      <figure data-cat="vida" class="gal-item"><picture><source srcset="images/real/hero3.webp" type="image/webp"><img src="images/real/hero3.jpg" width="1632" height="1224" loading="lazy" decoding="async" alt="Vista del terreno de caza"></picture></figure>
+      <figure data-cat="vida" class="gal-item wide"><img src="images/real/coto1.jpg" width="454" height="220" loading="lazy" decoding="async" alt="Monte bajo y pinares del coto"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/coto2.jpg" width="454" height="220" loading="lazy" decoding="async" alt="Paisaje de Les Garrigues en el coto"></figure>
+      <figure data-cat="vida" class="gal-item wide"><img src="images/real/coto3.jpg" width="454" height="220" loading="lazy" decoding="async" alt="Terreno del coto de caza"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/galeria1.jpg" width="400" height="300" loading="lazy" decoding="async" alt="Jornada de caza en el coto"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/galeria2.jpg" width="400" height="300" loading="lazy" decoding="async" alt="Momento de la cacería en Granyena"></figure>
+      <figure data-cat="vida" class="gal-item tall"><img src="images/real/galeria3.jpg" width="400" height="500" loading="lazy" decoding="async" alt="Cazadores en el coto"></figure>
+      <figure data-cat="vida" class="gal-item"><img src="images/real/galeria4.jpg" width="400" height="320" loading="lazy" decoding="async" alt="Imagen del coto de caza"></figure>
+      <figure data-cat="vida" class="gal-item big"><picture><source srcset="images/real/equipo.webp" type="image/webp"><img src="images/real/equipo.jpg" width="1400" height="1050" loading="lazy" decoding="async" alt="Benito y el equipo del coto"></picture></figure>
     </div>
+
+    <a class="archive-cta reveal" href="galeria.html">
+      <div class="acta-text">
+        <span class="acta-eyebrow" data-i18n="ac_eyebrow">El archivo del coto · 2006–2016</span>
+        <h3 data-i18n="ac_title">Más de 100 fotos de nuestra historia</h3>
+        <p data-i18n="ac_sub">Temporadas desde 2006, los campeonatos de caza menor y los cursos de tiro. Casi veinte años de coto en imágenes.</p>
+      </div>
+      <span class="btn btn-primary" data-i18n="ac_btn">Abrir la galería completa →</span>
+    </a>
   </div>
 </section>
 
@@ -769,67 +925,28 @@
 
 <!-- ============ CONTACTO ============ -->
 <section class="contact" id="contact">
-  <div class="wrap grid">
+  <div class="wrap contact-solo">
     <div class="reveal">
       <div class="section-eyebrow light" data-i18n="ct_eyebrow">Contacto</div>
       <h2 data-i18n="ct_title">Cuéntanos y <em>preparamos tu jornada</em></h2>
-      <p class="lead" data-i18n="ct_p">Contacta con nosotros y preparamos tu cacería a medida para ti o tu grupo.</p>
+      <p class="lead" data-i18n="ct_p">Llámanos o escríbenos por WhatsApp y preparamos tu cacería a medida, para ti o para tu grupo.</p>
+      <div class="big-call">
+        <a class="phone" href="tel:+34699949737"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>699 94 97 37</a>
+        <a href="https://wa.me/34699949737" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="ct_wa">Escríbenos por WhatsApp</a>
+      </div>
       <ul class="contact-info">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.5-7-11a7 7 0 1114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Granyena de les Garrigues, Lleida</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@cazalleida.com">info@cazalleida.com</a></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg><a href="tel:+34973136275">973 13 62 75</a></li>
       </ul>
-      <a href="https://wa.me/34973136275" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:6px" data-i18n="ct_wa">Escríbenos por WhatsApp</a>
     </div>
-    <form class="lead-form reveal" id="leadForm">
-      <div class="row">
-        <div class="field"><label data-i18n="ct_f_name">Nombre</label><input type="text" name="nombre" required></div>
-        <div class="field"><label data-i18n="ct_f_email">Email</label><input type="email" name="email" required></div>
-      </div>
-      <div class="row">
-        <div class="field"><label data-i18n="ct_f_phone">Teléfono</label><input type="tel" name="telefono"></div>
-        <div class="field"><label data-i18n="ct_f_hunters">Núm. de cazadores</label><input type="number" name="cazadores" min="1" max="50" placeholder="1"></div>
-      </div>
-      <div class="row">
-        <div class="field"><label data-i18n="ct_f_prey">Qué quieres cazar</label>
-          <select name="presa">
-            <option data-i18n="opt_conejo">Conejo</option>
-            <option data-i18n="opt_zorzal">Zorzal</option>
-            <option data-i18n="opt_perdiz">Perdiz</option>
-            <option data-i18n="opt_paloma">Paloma</option>
-            <option data-i18n="opt_becada">Becada</option>
-            <option data-i18n="opt_mixto">Mixto</option>
-          </select></div>
-        <div class="field"><label data-i18n="ct_f_dates">Fechas</label><input type="text" name="fechas" placeholder="Oct – Feb"></div>
-      </div>
-      <div class="row">
-        <div class="field"><label data-i18n="ct_f_acc">¿Alojamiento?</label>
-          <select name="alojamiento">
-            <option value="no" data-i18n="opt_no">No</option>
-            <option value="yes" data-i18n="opt_yes">Sí</option>
-          </select>
-        </div>
-        <div class="field"><label data-i18n="ct_f_dogs">¿Trae perros?</label>
-          <select name="perros">
-            <option value="no" data-i18n="opt_no">No</option>
-            <option value="yes" data-i18n="opt_yes">Sí</option>
-          </select>
-        </div>
-      </div>
-      <div class="field"><label data-i18n="ct_f_msg">Mensaje extra / Dudas</label><textarea name="mensaje"></textarea></div>
-      <button type="submit" class="btn btn-primary" data-i18n="ct_send">Enviar solicitud →</button>
-      <div class="form-note" data-i18n="ct_note">Te responderemos lo antes posible. No compartimos tus datos.</div>
-      <div class="form-ok" id="formOk" data-i18n="ct_ok">¡Gracias! Hemos recibido tu solicitud. Te contestamos enseguida.</div>
-    </form>
   </div>
 </section>
 
 <footer>
   <div class="wrap grid">
-    <a class="brand" href="#"><img class="mark" src="images/logos/logo-6-escopetas.jpg" alt="Caza Lleida"><div><b>Caza Lleida</b><span>Les Garrigues · Lleida</span></div></a>
+    <a class="brand" href="#"><img class="mark" src="images/logo-oficial-512.jpg" alt="cazalleida.com"><div><b>Caza Lleida</b><span>Les Garrigues · Lleida</span></div></a>
     <div class="meta">
-      Granyena de les Garrigues, Lleida · <a href="tel:+34973136275">973 13 62 75</a> · <a href="mailto:info@cazalleida.com">info@cazalleida.com</a><br>
-      <span data-i18n="foot">Sociedad de Cazadores de Granyena · Coto privado de caza menor · Temporada 2026–2027</span>
+      Granyena de les Garrigues, Lleida · <a href="tel:+34699949737">699 94 97 37</a> · <a href="https://wa.me/34699949737" target="_blank" rel="noopener">WhatsApp</a><br>
+      <span data-i18n="foot">Sociedad de Cazadores de Granyena · Coto de caza menor · Temporada 2026–2027</span>
     </div>
   </div>
 </footer>
@@ -873,27 +990,31 @@
   // ---- i18n ----
   const T={
     es:{nav_where:"El coto",nav_species:"La caza",nav_contact:"Contacto",
-      hero_eyebrow:"Coto privado · Caza menor",
-      hero_title:'Descubre el mejor monte para la caza del <em>conejo y el zorzal</em><span class="place">Les Garrigues, Lleida</span>',
-      hero_sub:"Más de 3.000 hectáreas de monte, pinares y siembras: el conejo manda todo el año y, en otoño, llega el zorzal. Caza tradicional, a tu ritmo.",
+      hero_eyebrow:"Coto de caza menor",
+      hero_title:'Descubre el mejor monte para la caza del <em>conejo y el zorzal</em><span class="place">Granyena de les Garrigues · Lleida</span>',
+      hero_sub:"Cerca de 3.000 hectáreas de monte bajo, olivares, siembras y pinares: el conejo está presente todo el año y, en otoño, el coto se llena de especies migratorias como el zorzal y la becada.",
       hero_cta1:"Solicita tu jornada →",hero_cta2:"Conoce el coto",scroll:"Desliza",
-      where_eyebrow:"Dónde estamos",where_title:"En el corazón de Les Garrigues",
-      where_p1:"Nuestro coto está en el término de Granyena de les Garrigues. Una finca privada de monte bajo, pinares y campos de siembra.",
-      where_ha_num:"+3.000",where_ha_txt:"hectáreas<br>de terreno privado",
+      where_eyebrow:"Dónde estamos",where_title:"En el corazón de la comarca leridana de Les Garrigues",
+      where_p1:"Nuestro coto está en el término municipal de Granyena de les Garrigues. Se llega fácil: la zona de caza está bien comunicada por las carreteras principales.",
+      where_approx:"cerca de",where_ha_num:"3.000",where_ha_txt:"hectáreas<br>de terreno de caza",
       where_p2:"Llegar es fácil: estamos a un paso de las grandes ciudades, pero rodeados de campo de verdad.",
       map_title:"A tiro de piedra",map_lead:"Tiempo en coche",
       sp_title:"Qué se caza aquí",sp_sub:"Especies cinegéticas más habituales en nuestra zona.",
       sp_star:"El rey",sp1_n:"Conejo",sp1_w:"Casi todo el año",sp1_d:"En los últimos cinco años se ha multiplicado muchísimo. Hay tanto conejo que en verano nos toca hacer descaste para evitar daños en la agricultura.",
-      sp2_n:"Zorzal",sp2_w:"Oct · Feb",sp2_d:"Ave migratoria que llega cada otoño buscando la aceituna. Lleida cae en plena ruta de paso, así que cuando entran lo hacen por miles. Es lo que más ilusión le hace al cazador francés.",
+      sp2_n:"Zorzal común",sp2_w:"Oct · Feb",sp2_d:"El de toda la vida: pecho moteado y vuelo rápido entre olivos. Llega en octubre buscando la aceituna y se queda todo el invierno. Lleida cae en plena ruta de paso, así que cuando entran lo hacen por miles.",
+      sp6_n:"Zorzal alirrojo",sp6_w:"Nov · Feb",sp6_d:"Se le conoce por la ceja clara y el rojo teja que asoma bajo las alas. Entra más tarde que el común, empujado por los fríos fuertes del norte, y en los años buenos llena las dormidas.",
       sp3_n:"Perdiz roja",sp3_w:"Oct · Ene",sp3_d:"La perdiz roja salvaje es muy escasa en nuestra zona, pero cada temporada realizamos unas cuantas sueltas para reforzar su presencia en nuestro terreno.",
       sp4_n:"Paloma zurita y torcaz",sp4_w:"Pasos de temporada",sp4_d:"Estas especies son cada vez más presentes durante todo el año, siendo su momento más óptimo en la media veda en verano.",
       sp5_n:"Becada",sp5_w:"Tiempo de nevadas",sp5_d:"La Becada es cada vez más frecuente en nuestro territorio siendo un ave migratoria que durante el tiempo más frío en Europa nos visitan huyendo de las fuertes nevadas que le impiden comer con su largo pico lombrices, etc.",
       jor_eyebrow:"Un día en el coto",jor_title:"Cómo es cazar aquí",
-      jor_p:"Se sale temprano, con la escarcha todavía en los olivos. Un guía que conoce el terreno palmo a palmo te lleva a los mejores puestos. A media mañana, un alto para almorzar. Por la tarde, otra vuelta hasta que cae el sol. Sin prisas.",
+      jor_p:"La mañana empieza con la escarcha todavía en los olivos. Si lo necesitas, un lugareño que se conoce el terreno palmo a palmo te acompaña hasta los mejores puestos. Al mediodía, parada para saborear la gastronomía tradicional de la zona. Y por la tarde, otra vuelta hasta que cae el sol, esperando una buena dormida de zorzales.",
       nav_gallery:"Galería",
       gal_eyebrow:"Galería",gal_title:"El coto en imágenes",
       ct_eyebrow:"Contacto",ct_title:'Cuéntanos y <em>preparamos tu jornada</em>',
-      ct_p:"Contacta con nosotros y preparamos tu cacería a medida para ti o tu grupo.",
+      ct_p:"Llámanos o escríbenos por WhatsApp y preparamos tu cacería a medida, para ti o para tu grupo.",
+      ac_eyebrow:"El archivo del coto · 2006–2016",ac_title:"Más de 100 fotos de nuestra historia",
+      ac_sub:"Temporadas desde 2006, los campeonatos de caza menor y los cursos de tiro. Casi veinte años de coto en imágenes.",
+      ac_btn:"Abrir la galería completa →",
       ct_wa:"Escríbenos por WhatsApp",
       ct_f_name:"Nombre",ct_f_phone:"Teléfono",ct_f_email:"Email",
       ct_f_hunters:"Núm. de cazadores",ct_f_prey:"Qué quieres cazar",ct_f_dates:"Fechas aproximadas",
@@ -903,59 +1024,67 @@
       ct_send:"Enviar solicitud →",ct_note:"Te responderemos lo antes posible. No compartimos tus datos.",
       ct_ok:"¡Gracias! Hemos recibido tu solicitud. Te contestamos enseguida.",
       nav_packs:"Tarifas",
-      pk_eyebrow:"Tarifas",pk_title:"Packs de caza",pk_sub:"Cada jornada se adapta al grupo y a las fechas. Dinos qué buscas y te pasamos precio.",
-      pk_acc:"El coto dispone de alojamiento en el centro del propio cazadero, a 5 minutos. Media pensión, parking privado y tu perro puede dormir contigo en la habitación.",
+      pk_eyebrow:"Tarifas",pk_title:"Packs de caza",pk_sub:"El terreno del coto es suave y fácil de andar: está adaptado también para cazadores de edad media y avanzada.",
       pk_pop:"El más popular",pk_cta:"Pide precio →",
-      pk1_tier:"Un día",pk1_name:"Jornada de caza",pk1_dur:"Ideal para una escapada",
-      pk1_l1:"Guía que conoce el terreno",pk1_l2:"Acceso a las +3.000 ha del coto",pk1_l3:"Conejo, perdiz o zorzal según la fecha",
-      pk2_tier:"2–3 días",pk2_name:"Escapada de fin de semana",pk2_dur:"Caza, alojamiento y buena mesa",
+      pk1_tier:"Un día",pk1_name:"Jornada de caza",pk1_dur:"Del 12 de octubre al primer domingo de enero",
+      pk1_l1:"Guía que conoce el terreno",pk1_l2:"Acceso a las cerca de 3.000 ha del coto",pk1_l3:"Conejo, perdiz o zorzal según la fecha",
+      pk2_tier:"2 días · 1 noche",pk2_name:"Dos días de caza",pk2_dur:"Con una noche en nuestro hotel",
       pk2_l1:"Varias jornadas guiadas",pk2_l2:"Alojamiento en media pensión",pk2_l3:"Sitio para los perros y el material",pk2_l4:"Te echamos una mano con licencia y seguro",
       pk3_tier:"5–6 días",pk3_name:"Semana de zorzal",pk3_dur:"En plena migración de otoño",
       pk3_l1:"Los mejores días del paso",pk3_l2:"Alojamiento en media pensión",pk3_l3:"Pensado para grupos de cazadores",pk3_l4:"El pack estrella para los franceses",
       pk4_tier:"Temporada",pk4_name:"Tarjeta de temporada",pk4_dur:"3 días a la semana",
       pk4_l1:"Caza jueves, sábados, domingos y festivos",pk4_l2:"Acceso regular durante toda la temporada",pk4_l3:"Ideal para el cazador habitual",
       pk5_tier:"A medida",pk5_name:"Pase de día",pk5_dur:"Días sueltos",
-      pk5_l1:"Caza en nuestra área privada",pk5_l2:"Precio variable según las especies a cazar",pk5_l3:"Flexibilidad total para tu escapada",
-      foot:"Sociedad de Cazadores de Granyena · Coto privado de caza menor · Temporada 2026–2027",
+      pk5_l1:"Caza en toda el área del coto",pk5_l2:"Precio variable según las especies a cazar",pk5_l3:"Flexibilidad total para tu escapada",
+      foot:"Sociedad de Cazadores de Granyena · Coto de caza menor · Temporada 2026–2027",
       nav_services:"Servicios",nav_blog:"Blog",
-      hero_vtag:"El coto en vídeo",hero_call_label:"Para reservar, llama",
+      hero_vtag:"Reportaje del coto 2026",hero_call_label:"Para reservar, llama",
+      subs_label:"Subtítulos",subs_off:"No",
+      st1:"hectáreas de coto",st2:"cazando desde",st3:"especies principales",st4:"desde Barcelona",
+      cal_title:"Calendario de temporada",cal_note:"Fechas orientativas. Cada temporada se ajusta a la orden de vedas vigente.",
+      cal_sp1:"Conejo",cal_sp2:"Zorzal común y alirrojo",cal_sp3:"Perdiz roja",cal_sp4:"Paloma zurita y torcaz",cal_sp5:"Becada",
+      cal_leg1:"Temporada abierta",cal_leg2:"Pasos y media veda",
       pk5_from:"Desde",pk5_unit:"/ pase de zorzal",
       sv_eyebrow:"Servicios",sv_title:"Te lo ponemos fácil",sv_sub:"Pensado sobre todo para quien viene de fuera: te ayudamos con los trámites y con todo lo que necesites para cazar tranquilo.",
       sv1_t:"Licencia de caza",sv1_d:"Te ayudamos a tramitar la licencia de caza de Cataluña y a tener en regla el seguro obligatorio. Un servicio muy útil para cazadores de Francia e Italia.",
-      sv2_t:"Alojamiento y media pensión",sv2_d:"Dormirás en el centro del cazadero, a cinco minutos del monte. Media pensión, parking privado y tu perro puede dormir contigo en la habitación.",
+      sv2_t:"Alojamiento y media pensión",sv2_d:"Dormirás en el centro del cazadero, a cinco minutos del monte. Media pensión, parking y tu perro puede dormir contigo en la habitación.",
       sv3_t:"Perreras para tus perros",sv3_d:"Tenemos sitio para los perros que traen nuestros clientes, siempre que sean de talla mediana o pequeña y de pelo corto.",
-      sv4_t:"Cupos de piezas",sv4_d:"El número de piezas por día (zorzal, perdiz o conejo) se concreta según la fecha y el tipo de jornada. Consúltanos y te lo dejamos claro antes de venir.",
+      sv4_t:"Seguro obligatorio para cazar",sv4_d:"Te podemos gestionar el alta por meses o por años, con diferentes tipos de cobertura. Tú eliges la que mejor te encaje y nosotros nos encargamos del papeleo.",
       cn_eyebrow:"Carnet de temporada 2026–2027",cn_title:"Qué incluye el carnet",cn_sub:"Un carnet para toda la temporada con cuatro periodos de caza bien diferenciados.",
-      cn1_t:"Descaste de conejo",cn1_dt:"Mes de julio",cn1_d:"Conejo con perros y escopetas durante el mes de julio, los días que autorice la dirección del coto.",
+      cn1_t:"Descaste de conejo",cn1_dt:"8 días en julio · sáb y dom",cn1_d:"Conejo con perros y escopetas: 8 días durante el mes de julio, sábados y domingos hasta las 12 del mediodía.",
       cn2_t:"Media veda",cn2_dt:"15 ago – 15 sep · sáb y dom",cn2_d:"Conejo, paloma torcaz y tórtola. Del 15 de agosto al 15 de septiembre, sábados y domingos.",
-      cn3_t:"Temporada general",cn3_dt:"Temporada 2026–2027",cn3_d:"Todas las especies cinegéticas permitidas por la ley de caza vigente.",
-      cn4_t:"Prórroga del zorzal",cn4_dt:"Todo febrero",cn4_d:"Durante febrero, todos los días autorizados hasta el final de mes según la orden de vedas.",
+      cn3_t:"Temporada general",cn3_dt:"Jueves, sábados y domingos",cn3_d:"Todas las especies cinegéticas permitidas por la ley de caza vigente. Se caza jueves, sábados y domingos.",
+      cn4_t:"Prórroga del zorzal",cn4_dt:"Hasta el 2º domingo de febrero",cn4_d:"En febrero, todos los días autorizados hasta el segundo domingo de febrero, según la orden de vedas.",
       bl_eyebrow:"Blog",bl_title:"Consejos y vida del coto",bl_sub:"Lo que cuenta Benito sobre cazar en Granyena de les Garrigues.",
       bl1_tag:"El coto",bl1_t:"Por qué cazar en Granyena de les Garrigues",bl1_d:"El terreno es suave y se anda con facilidad, así que es un coto cómodo también para gente de más edad. Y las especies que más abundan, el zorzal y el conejo, dan jornadas muy entretenidas casi todo el año.",
       bl2_tag:"Zorzal",bl2_t:"Cómo es un día perfecto de zorzal",bl2_d:"El día redondo empieza con un buen paso matinal, con mucha densidad de pájaros sobre el campo, y se cierra con una buena dormida por la tarde para rematar y celebrar la jornada.",
       bl3_tag:"Perdiz roja",bl3_t:"Consejo para cazar la perdiz roja",bl3_d:"Si vienes a por la perdiz roja salvaje, lo mejor es quedar antes con la dirección del coto para preparar un día a la carta centrado en esta especie."},
     fr:{nav_where:"Le territoire",nav_species:"La chasse",nav_contact:"Contact",
-      hero_eyebrow:"Réserve privée · Petit gibier",
-      hero_title:'Découvrez le meilleur terrain pour la chasse au <em>lapin et à la grive</em><span class="place">Les Garrigues, Lérida</span>',
-      hero_sub:"Plus de 3 000 hectares de garrigue, de pinèdes et de cultures : le lapin règne toute l'année et, à l'automne, arrive la grive. Une chasse traditionnelle, à votre rythme.",
+      hero_eyebrow:"Territoire de petit gibier",
+      hero_title:'Découvrez le meilleur terrain pour la chasse au <em>lapin et à la grive</em><span class="place">Granyena de les Garrigues · Lérida</span>',
+      hero_sub:"Près de 3 000 hectares de garrigue, d'oliveraies, de cultures et de pinèdes : le lapin est présent toute l'année et, à l'automne, le territoire se remplit d'oiseaux migrateurs comme la grive et la bécasse.",
       hero_cta1:"Demandez votre séjour →",hero_cta2:"Découvrir le territoire",scroll:"Défiler",
-      where_eyebrow:"Où nous trouver",where_title:"Au cœur des Garrigues",
-      where_p1:"Notre territoire se situe sur la commune de Granyena de les Garrigues. Une propriété privée de garrigue, de pinèdes et de champs cultivés.",
-      where_ha_num:"+3 000",where_ha_txt:"hectares<br>de terrain privé",
+      where_eyebrow:"Où nous trouver",where_title:"Au cœur des Garrigues, dans la province de Lérida",
+      where_p1:"Notre territoire se trouve sur la commune de Granyena de les Garrigues. L'accès est facile : la zone de chasse est bien desservie par les routes principales.",
+      where_approx:"près de",where_ha_num:"3 000",where_ha_txt:"hectares<br>de terrain de chasse",
       where_p2:"Facile d'accès : à deux pas des grandes villes, mais en pleine campagne.",
       map_title:"À deux pas",map_lead:"Temps en voiture",
       sp_title:"Ce que l'on chasse ici",sp_sub:"Les espèces cynégétiques les plus présentes chez nous.",
       sp_star:"Le roi",sp1_n:"Lapin",sp1_w:"Presque toute l'année",sp1_d:"Il s'est multiplié énormément ces cinq dernières années. Il y en a tellement qu'en été nous devons réguler la population pour éviter les dégâts dans les cultures.",
-      sp2_n:"Grive",sp2_w:"Oct · Fév",sp2_d:"Oiseau migrateur qui arrive chaque automne pour les olives. Lleida est en plein couloir de passage : quand elles entrent, c'est par milliers. C'est ce qui fait le plus rêver le chasseur français.",
+      sp2_n:"Grive musicienne",sp2_w:"Oct · Fév",sp2_d:"Celle de toujours : poitrine tachetée et vol rapide entre les oliviers. Elle arrive en octobre pour les olives et reste tout l'hiver. Lleida est en plein couloir de passage : quand elles entrent, c'est par milliers.",
+      sp6_n:"Grive mauvis",sp6_w:"Nov · Fév",sp6_d:"On la reconnaît à son sourcil clair et au roux qui apparaît sous les ailes. Elle arrive plus tard que la musicienne, poussée par les grands froids du nord, et les bonnes années elle remplit les dortoirs.",
       sp3_n:"Perdrix rouge",sp3_w:"Oct · Jan",sp3_d:"La perdrix rouge sauvage se fait rare dans notre région, mais chaque saison nous effectuons quelques lâchers pour renforcer sa présence sur notre territoire.",
       sp4_n:"Pigeon colombin et ramier",sp4_w:"Passages de saison",sp4_d:"Ces espèces sont de plus en plus présentes tout au long de l'année, leur période optimale étant la demi-saison en été.",
       sp5_n:"Bécasse",sp5_w:"Période de neige",sp5_d:"La bécasse est de plus en plus fréquente sur notre territoire, étant un oiseau migrateur qui nous rend visite pendant les périodes les plus froides en Europe, fuyant les fortes chutes de neige qui l'empêchent de manger des vers de terre avec son long bec.",
       jor_eyebrow:"Une journée sur le territoire",jor_title:"Comment on chasse ici",
-      jor_p:"On part tôt, alors que le givre couvre encore les oliviers. Un guide qui connaît le terrain par cœur vous mène aux meilleurs postes. En milieu de matinée, une pause pour casser la croûte. L'après-midi, une nouvelle sortie jusqu'au coucher du soleil. Sans précipitation.",
+      jor_p:"La matinée commence avec le givre encore sur les oliviers. Si besoin, quelqu'un du pays qui connaît le terrain par cœur vous accompagne aux meilleurs postes. À midi, pause pour savourer la gastronomie traditionnelle du coin. Et l'après-midi, une nouvelle sortie jusqu'au coucher du soleil, en attendant un beau dortoir de grives.",
       nav_gallery:"Galerie",
       gal_eyebrow:"Galerie",gal_title:"Le territoire en images",
       ct_eyebrow:"Contact",ct_title:'Écrivez-nous et <em>on prépare votre séjour</em>',
-      ct_p:"Contactez-nous et nous préparerons une chasse sur mesure pour vous ou votre groupe.",
+      ct_p:"Appelez-nous ou écrivez-nous sur WhatsApp et nous préparerons une chasse sur mesure, pour vous ou votre groupe.",
+      ac_eyebrow:"Les archives du territoire · 2006–2016",ac_title:"Plus de 100 photos de notre histoire",
+      ac_sub:"Les saisons depuis 2006, les championnats de petit gibier et les cours de tir. Près de vingt ans de territoire en images.",
+      ac_btn:"Ouvrir la galerie complète →",
       ct_wa:"Écrivez-nous sur WhatsApp",
       ct_f_name:"Nom",ct_f_phone:"Téléphone",ct_f_email:"Email",
       ct_f_hunters:"Nb. de chasseurs",ct_f_prey:"Que voulez-vous chasser",ct_f_dates:"Dates approx.",
@@ -965,59 +1094,67 @@
       ct_send:"Envoyer la demande →",ct_note:"Nous vous répondrons au plus vite. Vos données restent confidentielles.",
       ct_ok:"Merci ! Nous avons bien reçu votre demande. On revient vers vous très vite.",
       nav_packs:"Tarifs",
-      pk_eyebrow:"Tarifs",pk_title:"Formules de chasse",pk_sub:"Chaque sortie s'adapte au groupe et aux dates. Dites-nous ce que vous cherchez et on vous fait un prix.",
-      pk_acc:"Le domaine dispose d'un hébergement au centre même du territoire de chasse, à 5 minutes. Demi-pension, parking privé et votre chien peut dormir avec vous dans la chambre.",
+      pk_eyebrow:"Tarifs",pk_title:"Formules de chasse",pk_sub:"Le terrain du territoire est doux et facile à marcher : il convient aussi aux chasseurs d'âge moyen et avancé.",
       pk_pop:"Le plus demandé",pk_cta:"Demander le prix →",
-      pk1_tier:"Une journée",pk1_name:"Journée de chasse",pk1_dur:"Idéale pour une échappée",
-      pk1_l1:"Un guide qui connaît le terrain",pk1_l2:"Accès aux +3 000 ha du territoire",pk1_l3:"Lapin, perdrix ou grive selon la date",
-      pk2_tier:"2–3 jours",pk2_name:"Week-end de chasse",pk2_dur:"Chasse, logement et bonne table",
+      pk1_tier:"Une journée",pk1_name:"Journée de chasse",pk1_dur:"Du 12 octobre au premier dimanche de janvier",
+      pk1_l1:"Un guide qui connaît le terrain",pk1_l2:"Accès aux près de 3 000 ha du territoire",pk1_l3:"Lapin, perdrix ou grive selon la date",
+      pk2_tier:"2 jours · 1 nuit",pk2_name:"Deux jours de chasse",pk2_dur:"Avec une nuit dans notre hôtel",
       pk2_l1:"Plusieurs sorties guidées",pk2_l2:"Logement en demi-pension",pk2_l3:"De la place pour les chiens et le matériel",pk2_l4:"On vous aide pour le permis et l'assurance",
       pk3_tier:"5–6 jours",pk3_name:"Semaine de la grive",pk3_dur:"En pleine migration d'automne",
       pk3_l1:"Les meilleurs jours du passage",pk3_l2:"Logement en demi-pension",pk3_l3:"Pensé pour les groupes de chasseurs",pk3_l4:"La formule phare pour les Français",
       pk4_tier:"Saison",pk4_name:"Carte de saison",pk4_dur:"3 jours par semaine",
       pk4_l1:"Chasse les jeudis, samedis, dimanches et jours fériés",pk4_l2:"Accès régulier pendant toute la saison",pk4_l3:"Idéal pour le chasseur régulier",
       pk5_tier:"Sur mesure",pk5_name:"Pass journalier",pk5_dur:"Jours isolés",
-      pk5_l1:"Chassez dans notre domaine privé",pk5_l2:"Prix variable selon les espèces",pk5_l3:"Flexibilité totale pour votre séjour",
-      foot:"Société de Chasseurs de Granyena · Réserve privée de petit gibier · Saison 2026–2027",
+      pk5_l1:"Chassez sur tout le territoire",pk5_l2:"Prix variable selon les espèces",pk5_l3:"Flexibilité totale pour votre séjour",
+      foot:"Société de Chasseurs de Granyena · Territoire de petit gibier · Saison 2026–2027",
       nav_services:"Services",nav_blog:"Blog",
-      hero_vtag:"Le territoire en vidéo",hero_call_label:"Pour réserver, appelez",
+      hero_vtag:"Reportage du territoire 2026",hero_call_label:"Pour réserver, appelez",
+      subs_label:"Sous-titres",subs_off:"Non",
+      st1:"hectares de territoire",st2:"à la chasse depuis",st3:"espèces principales",st4:"depuis Barcelone",
+      cal_title:"Calendrier de la saison",cal_note:"Dates indicatives. Chaque saison s'ajuste à l'arrêté de chasse en vigueur.",
+      cal_sp1:"Lapin",cal_sp2:"Grive musicienne et mauvis",cal_sp3:"Perdrix rouge",cal_sp4:"Pigeon colombin et ramier",cal_sp5:"Bécasse",
+      cal_leg1:"Saison ouverte",cal_leg2:"Passages et demi-saison",
       pk5_from:"À partir de",pk5_unit:"/ pass grive",
       sv_eyebrow:"Services",sv_title:"On vous simplifie la vie",sv_sub:"Pensé surtout pour ceux qui viennent de loin : on vous aide avec les démarches et tout ce qu'il faut pour chasser tranquille.",
       sv1_t:"Permis de chasse",sv1_d:"Nous vous aidons à obtenir le permis de chasse de Catalogne et à être en règle avec l'assurance obligatoire. Un service très utile pour les chasseurs français et italiens.",
-      sv2_t:"Hébergement en demi-pension",sv2_d:"Vous dormirez au centre du territoire, à cinq minutes du terrain. Demi-pension, parking privé et votre chien peut dormir avec vous dans la chambre.",
+      sv2_t:"Hébergement en demi-pension",sv2_d:"Vous dormirez au centre du territoire, à cinq minutes du terrain. Demi-pension, parking et votre chien peut dormir avec vous dans la chambre.",
       sv3_t:"Chenils pour vos chiens",sv3_d:"Nous avons de la place pour les chiens de nos clients, à condition qu'ils soient de taille moyenne ou petite et à poil court.",
-      sv4_t:"Quotas de prises",sv4_d:"Le nombre de prises par jour (grive, perdrix ou lapin) se précise selon la date et le type de sortie. Demandez-nous et on vous le dit clairement avant de venir.",
+      sv4_t:"Assurance chasse obligatoire",sv4_d:"Nous pouvons gérer votre souscription au mois ou à l'année, avec différents types de couverture. Vous choisissez celle qui vous convient et on s'occupe des papiers.",
       cn_eyebrow:"Carte de saison 2026–2027",cn_title:"Ce que comprend la carte",cn_sub:"Une carte pour toute la saison avec quatre périodes de chasse bien distinctes.",
-      cn1_t:"Régulation du lapin",cn1_dt:"Mois de juillet",cn1_d:"Lapin avec chiens et fusils pendant le mois de juillet, les jours autorisés par la direction du territoire.",
+      cn1_t:"Régulation du lapin",cn1_dt:"8 jours en juillet · sam et dim",cn1_d:"Lapin avec chiens et fusils : 8 jours au mois de juillet, samedis et dimanches jusqu'à midi.",
       cn2_t:"Demi-saison",cn2_dt:"15 août – 15 sept · sam et dim",cn2_d:"Lapin, pigeon ramier et tourterelle. Du 15 août au 15 septembre, les samedis et dimanches.",
-      cn3_t:"Saison générale",cn3_dt:"Saison 2026–2027",cn3_d:"Toutes les espèces chassables autorisées par la loi de chasse en vigueur.",
-      cn4_t:"Prolongation de la grive",cn4_dt:"Tout février",cn4_d:"En février, tous les jours autorisés jusqu'à la fin du mois selon l'arrêté de fermeture.",
+      cn3_t:"Saison générale",cn3_dt:"Jeudis, samedis et dimanches",cn3_d:"Toutes les espèces chassables autorisées par la loi de chasse en vigueur. On chasse les jeudis, samedis et dimanches.",
+      cn4_t:"Prolongation de la grive",cn4_dt:"Jusqu'au 2e dimanche de février",cn4_d:"En février, tous les jours autorisés jusqu'au deuxième dimanche de février, selon l'arrêté de fermeture.",
       bl_eyebrow:"Blog",bl_title:"Conseils et vie du territoire",bl_sub:"Ce que raconte Benito sur la chasse à Granyena de les Garrigues.",
       bl1_tag:"Le territoire",bl1_t:"Pourquoi chasser à Granyena de les Garrigues",bl1_d:"Le terrain est doux et facile à parcourir, c'est donc un territoire confortable aussi pour les personnes plus âgées. Et les espèces les plus abondantes, la grive et le lapin, offrent des sorties très animées presque toute l'année.",
       bl2_tag:"Grive",bl2_t:"À quoi ressemble une journée de grive parfaite",bl2_d:"La journée idéale commence par un beau passage matinal, avec une grande densité d'oiseaux sur les champs, et se termine par une belle dormida l'après-midi pour conclure et fêter la journée.",
       bl3_tag:"Perdrix rouge",bl3_t:"Conseil pour chasser la perdrix rouge",bl3_d:"Si vous venez pour la perdrix rouge sauvage, le mieux est de convenir d'abord avec la direction du territoire pour préparer une journée à la carte centrée sur cette espèce."},
     en:{nav_where:"The estate",nav_species:"The hunt",nav_contact:"Contact",
-      hero_eyebrow:"Private estate · Small game",
-      hero_title:'Discover the finest ground to hunt <em>rabbit and thrush</em><span class="place">Les Garrigues, Lleida</span>',
-      hero_sub:"Over 3,000 hectares of scrubland, pine woods and farmland: rabbit all year round and thrush in autumn. Traditional hunting, at your own pace.",
+      hero_eyebrow:"Small-game hunting ground",
+      hero_title:'Discover the finest ground to hunt <em>rabbit and thrush</em><span class="place">Granyena de les Garrigues · Lleida</span>',
+      hero_sub:"Close to 3,000 hectares of scrubland, olive groves, farmland and pine woods: rabbit is here all year round and, in autumn, the ground fills with migratory birds like thrush and woodcock.",
       hero_cta1:"Request your stay →",hero_cta2:"Explore the estate",scroll:"Scroll",
-      where_eyebrow:"Where we are",where_title:"In the heart of Les Garrigues",
-      where_p1:"Our estate sits in Granyena de les Garrigues. A private ground of scrubland, pine woods and farmland.",
-      where_ha_num:"+3,000",where_ha_txt:"hectares<br>of private land",
+      where_eyebrow:"Where we are",where_title:"In the heart of Les Garrigues, in the province of Lleida",
+      where_p1:"Our ground lies within the municipality of Granyena de les Garrigues. Getting here is easy: the hunting area is well connected by the main roads.",
+      where_approx:"close to",where_ha_num:"3,000",where_ha_txt:"hectares<br>of hunting ground",
       where_p2:"Easy to reach: a short drive from the big cities, yet surrounded by real countryside.",
       map_title:"A stone's throw away",map_lead:"By car",
       sp_title:"What you'll hunt here",sp_sub:"The game species you'll most often find in our area.",
       sp_star:"The king",sp1_n:"Rabbit",sp1_w:"Almost all year",sp1_d:"It has boomed over the last five years. There's so much of it that in summer we have to thin the population to keep it from damaging the crops.",
-      sp2_n:"Thrush",sp2_w:"Oct · Feb",sp2_d:"A migratory bird that arrives every autumn for the olives. Lleida sits right on the migration route, so when they come in, they come in their thousands. It's what French hunters look forward to most.",
+      sp2_n:"Song thrush",sp2_w:"Oct · Feb",sp2_d:"The classic one: spotted breast and fast flight between the olive trees. It arrives in October for the olives and stays all winter. Lleida sits right on the migration route, so when they come in, they come in their thousands.",
+      sp6_n:"Redwing",sp6_w:"Nov · Feb",sp6_d:"You'll know it by the pale eyebrow stripe and the rusty red flash under the wings. It arrives later than the song thrush, pushed south by hard northern cold, and in good years it fills the roosts.",
       sp3_n:"Red partridge",sp3_w:"Oct · Jan",sp3_d:"Wild red partridge is quite scarce in our area, but every season we carry out a few releases to reinforce its presence on our land.",
       sp4_n:"Stock dove & wood pigeon",sp4_w:"Seasonal passage",sp4_d:"These species are increasingly present all year round, being at their best during the summer half-season.",
       sp5_n:"Woodcock",sp5_w:"Snow season",sp5_d:"The woodcock is increasingly frequent in our territory. It is a migratory bird that visits us during the coldest periods in Europe, fleeing from heavy snowfalls that prevent it from eating earthworms with its long beak.",
       jor_eyebrow:"A day on the estate",jor_title:"What hunting here feels like",
-      jor_p:"You set out early, frost still on the olive trees. A guide who knows the ground inside out takes you to the best spots. Mid-morning, a break to eat. In the afternoon, another round until the sun goes down. No rush.",
+      jor_p:"The morning starts with frost still on the olive trees. If you need it, a local who knows the ground inside out will walk you to the best spots. At midday, a stop to enjoy the traditional food of the area. And in the afternoon, another round until the sun goes down, waiting for a good thrush roost.",
       nav_gallery:"Gallery",
       gal_eyebrow:"Gallery",gal_title:"The estate in pictures",
       ct_eyebrow:"Contact",ct_title:'Tell us and <em>we\'ll plan your day</em>',
-      ct_p:"Contact us and we will prepare a tailor-made hunting experience for you or your group.",
+      ct_p:"Call us or message us on WhatsApp and we'll prepare a tailor-made hunt, for you or your group.",
+      ac_eyebrow:"The estate archive · 2006–2016",ac_title:"Over 100 photos of our history",
+      ac_sub:"Seasons since 2006, the small-game championships and the shooting courses. Almost twenty years of the estate in pictures.",
+      ac_btn:"Open the full gallery →",
       ct_wa:"Message us on WhatsApp",
       ct_f_name:"Name",ct_f_phone:"Phone",ct_f_email:"Email",
       ct_f_hunters:"No. of hunters",ct_f_prey:"What to hunt",ct_f_dates:"Approx. dates",
@@ -1027,59 +1164,67 @@
       ct_send:"Send request →",ct_note:"We'll reply as soon as we can. We never share your data.",
       ct_ok:"Thanks! We've received your request and will get back to you shortly.",
       nav_packs:"Rates",
-      pk_eyebrow:"Rates",pk_title:"Hunting packages",pk_sub:"Every outing is tailored to your group and dates. Tell us what you're after and we'll quote you.",
-      pk_acc:"The estate offers accommodation right in the center of the hunting ground, just 5 minutes away. Half board, private parking and your dog can sleep with you in the room.",
+      pk_eyebrow:"Rates",pk_title:"Hunting packages",pk_sub:"The ground is gentle and easy to walk: well suited to middle-aged and older hunters too.",
       pk_pop:"Most popular",pk_cta:"Get a price →",
-      pk1_tier:"One day",pk1_name:"Day hunt",pk1_dur:"Great for a quick escape",
-      pk1_l1:"A guide who knows the ground",pk1_l2:"Access to the 3,000+ ha estate",pk1_l3:"Rabbit, partridge or thrush by season",
-      pk2_tier:"2–3 days",pk2_name:"Weekend escape",pk2_dur:"Hunting, lodging and good food",
+      pk1_tier:"One day",pk1_name:"Day hunt",pk1_dur:"From 12 October to the first Sunday of January",
+      pk1_l1:"A guide who knows the ground",pk1_l2:"Access to close to 3,000 ha of hunting ground",pk1_l3:"Rabbit, partridge or thrush by season",
+      pk2_tier:"2 days · 1 night",pk2_name:"Two days of hunting",pk2_dur:"With one night at our hotel",
       pk2_l1:"Several guided outings",pk2_l2:"Lodging with half board",pk2_l3:"Room for the dogs and the gear",pk2_l4:"We help with the licence and insurance",
       pk3_tier:"5–6 days",pk3_name:"Thrush week",pk3_dur:"At the peak of the autumn migration",
       pk3_l1:"The best days of the passage",pk3_l2:"Lodging with half board",pk3_l3:"Made for groups of hunters",pk3_l4:"The flagship package for French hunters",
       pk4_tier:"Season",pk4_name:"Season Card",pk4_dur:"3 days a week",
       pk4_l1:"Hunt on Thursdays, Saturdays, Sundays and holidays",pk4_l2:"Regular access throughout the season",pk4_l3:"Ideal for the regular hunter",
       pk5_tier:"Custom",pk5_name:"Day Pass",pk5_dur:"Single days",
-      pk5_l1:"Hunt in our private area",pk5_l2:"Price varies depending on the species",pk5_l3:"Total flexibility for your getaway",
-      foot:"Granyena Hunters' Association · Private small-game estate · 2026–2027 season",
+      pk5_l1:"Hunt across the whole ground",pk5_l2:"Price varies depending on the species",pk5_l3:"Total flexibility for your getaway",
+      foot:"Granyena Hunters' Association · Small-game hunting ground · 2026–2027 season",
       nav_services:"Services",nav_blog:"Blog",
-      hero_vtag:"The estate on video",hero_call_label:"To book, call",
+      hero_vtag:"2026 estate report",hero_call_label:"To book, call",
+      subs_label:"Subtitles",subs_off:"Off",
+      st1:"hectares of hunting ground",st2:"hunting since",st3:"main game species",st4:"from Barcelona",
+      cal_title:"Season calendar",cal_note:"Approximate dates. Each season follows the official hunting order.",
+      cal_sp1:"Rabbit",cal_sp2:"Song thrush & redwing",cal_sp3:"Red-legged partridge",cal_sp4:"Stock dove & wood pigeon",cal_sp5:"Woodcock",
+      cal_leg1:"Open season",cal_leg2:"Passage & summer season",
       pk5_from:"From",pk5_unit:"/ thrush pass",
       sv_eyebrow:"Services",sv_title:"We make it easy",sv_sub:"Designed above all for those coming from abroad: we help with the paperwork and everything you need to hunt with peace of mind.",
       sv1_t:"Hunting licence",sv1_d:"We help you obtain the Catalan hunting licence and sort out the compulsory insurance. A very useful service for French and Italian hunters.",
-      sv2_t:"Lodging with half board",sv2_d:"You'll sleep in the centre of the hunting ground, five minutes from the field. Half board, private parking and your dog can sleep with you in the room.",
+      sv2_t:"Lodging with half board",sv2_d:"You'll sleep in the centre of the hunting ground, five minutes from the field. Half board, parking and your dog can sleep with you in the room.",
       sv3_t:"Kennels for your dogs",sv3_d:"We have space for our clients' dogs, as long as they are medium or small in size and short-haired.",
-      sv4_t:"Bag limits",sv4_d:"The number of birds per day (thrush, partridge or rabbit) is set according to the date and type of outing. Ask us and we'll make it clear before you come.",
+      sv4_t:"Compulsory hunting insurance",sv4_d:"We can arrange your cover by the month or by the year, with different levels of protection. You pick the one that suits you and we handle the paperwork.",
       cn_eyebrow:"Season card 2026–2027",cn_title:"What the card includes",cn_sub:"One card for the whole season with four clearly defined hunting periods.",
-      cn1_t:"Rabbit control",cn1_dt:"Month of July",cn1_d:"Rabbit with dogs and shotguns during July, on the days authorised by the estate management.",
+      cn1_t:"Rabbit control",cn1_dt:"8 days in July · Sat & Sun",cn1_d:"Rabbit with dogs and shotguns: 8 days during July, Saturdays and Sundays until 12 noon.",
       cn2_t:"Half-season",cn2_dt:"15 Aug – 15 Sep · Sat & Sun",cn2_d:"Rabbit, wood pigeon and turtle dove. From 15 August to 15 September, Saturdays and Sundays.",
-      cn3_t:"General season",cn3_dt:"2026–2027 season",cn3_d:"All game species permitted by the hunting law in force.",
-      cn4_t:"Thrush extension",cn4_dt:"All of February",cn4_d:"During February, every authorised day until the end of the month according to the closing order.",
+      cn3_t:"General season",cn3_dt:"Thursdays, Saturdays & Sundays",cn3_d:"All game species permitted by the hunting law in force. Hunting on Thursdays, Saturdays and Sundays.",
+      cn4_t:"Thrush extension",cn4_dt:"Until the 2nd Sunday of February",cn4_d:"In February, every authorised day until the second Sunday of the month, according to the closing order.",
       bl_eyebrow:"Blog",bl_title:"Tips and life on the estate",bl_sub:"What Benito has to say about hunting in Granyena de les Garrigues.",
       bl1_tag:"The estate",bl1_t:"Why hunt in Granyena de les Garrigues",bl1_d:"The terrain is gentle and easy to walk, so it's a comfortable estate for older hunters too. And the most abundant species, thrush and rabbit, make for lively outings almost all year round.",
       bl2_tag:"Thrush",bl2_t:"What a perfect thrush day looks like",bl2_d:"The ideal day starts with a good morning passage, with plenty of birds over the fields, and ends with a fine evening roost to round off and celebrate the day.",
       bl3_tag:"Red partridge",bl3_t:"A tip for hunting red partridge",bl3_d:"If you're after wild red partridge, it's best to arrange it first with the estate management to set up a tailor-made day focused on this species."},
     it:{nav_where:"La riserva",nav_species:"La caccia",nav_contact:"Contatti",
-      hero_eyebrow:"Riserva privata · Piccola selvaggina",
-      hero_title:'Scopri il miglior terreno per la caccia a <em>coniglio e tordo</em><span class="place">Les Garrigues, Lleida</span>',
-      hero_sub:"Oltre 3.000 ettari di macchia, pinete e coltivazioni: il coniglio regna tutto l'anno e, in autunno, arriva il tordo. Caccia tradizionale, al tuo ritmo.",
+      hero_eyebrow:"Riserva di piccola selvaggina",
+      hero_title:'Scopri il miglior terreno per la caccia a <em>coniglio e tordo</em><span class="place">Granyena de les Garrigues · Lleida</span>',
+      hero_sub:"Quasi 3.000 ettari di macchia bassa, uliveti, campi e pinete: il coniglio è presente tutto l'anno e, in autunno, la riserva si riempie di specie migratorie come il tordo e la beccaccia.",
       hero_cta1:"Richiedi la tua giornata →",hero_cta2:"Scopri la riserva",scroll:"Scorri",
-      where_eyebrow:"Dove siamo",where_title:"Nel cuore delle Garrigues",
-      where_p1:"La nostra riserva si trova nel comune di Granyena de les Garrigues. Una tenuta privata di macchia, pinete e campi coltivati.",
-      where_ha_num:"+3.000",where_ha_txt:"ettari<br>di terreno privato",
+      where_eyebrow:"Dove siamo",where_title:"Nel cuore delle Garrigues, in provincia di Lleida",
+      where_p1:"La nostra riserva si trova nel comune di Granyena de les Garrigues. Arrivare è facile: la zona di caccia è ben collegata dalle strade principali.",
+      where_approx:"quasi",where_ha_num:"3.000",where_ha_txt:"ettari<br>di terreno di caccia",
       where_p2:"Facile da raggiungere: a un passo dalle grandi città, ma immersi nella vera campagna.",
       map_title:"A due passi",map_lead:"Tempo in auto",
       sp_title:"Cosa si caccia qui",sp_sub:"Le specie venatorie più comuni nella nostra zona.",
       sp_star:"Il re",sp1_n:"Coniglio",sp1_w:"Quasi tutto l'anno",sp1_d:"Negli ultimi cinque anni si è moltiplicato tantissimo. C'è così tanto coniglio che in estate dobbiamo fare abbattimenti per evitare danni all'agricoltura.",
-      sp2_n:"Tordo",sp2_w:"Ott · Feb",sp2_d:"Uccello migratore che arriva ogni autunno in cerca di olive. Lleida si trova in piena rotta migratoria, quindi quando entrano lo fanno a migliaia. È ciò che più fa sognare il cacciatore francese.",
+      sp2_n:"Tordo bottaccio",sp2_w:"Ott · Feb",sp2_d:"Quello di sempre: petto punteggiato e volo rapido tra gli ulivi. Arriva a ottobre in cerca di olive e resta tutto l'inverno. Lleida è in piena rotta migratoria: quando entrano, lo fanno a migliaia.",
+      sp6_n:"Tordo sassello",sp6_w:"Nov · Feb",sp6_d:"Si riconosce dal sopracciglio chiaro e dal rosso ruggine che spunta sotto le ali. Arriva più tardi del bottaccio, spinto dai grandi freddi del nord, e negli anni buoni riempie le dormite.",
       sp3_n:"Pernice rossa",sp3_w:"Ott · Gen",sp3_d:"La pernice rossa selvatica è molto scarsa nella nostra zona, ma ogni stagione effettuiamo alcuni rilasci per rafforzare la sua presenza nel nostro terreno.",
       sp4_n:"Colombella e colombaccio",sp4_w:"Passi stagionali",sp4_d:"Queste specie sono sempre più presenti tutto l'anno, con il loro momento ottimale nella mezza stagione in estate.",
       sp5_n:"Beccaccia",sp5_w:"Tempo di nevicate",sp5_d:"La beccaccia è sempre più frequente nel nostro territorio. È un uccello migratore che durante i periodi più freddi in Europa ci visita fuggendo dalle forti nevicate che le impediscono di mangiare lombrichi con il suo lungo becco.",
       jor_eyebrow:"Una giornata nella riserva",jor_title:"Com'è cacciare qui",
-      jor_p:"Si esce presto, con la brina ancora sugli ulivi. Una guida che conosce il terreno palmo a palmo ti porta nelle migliori postazioni. A metà mattinata, una pausa per pranzare. Nel pomeriggio, un altro giro fino al tramonto. Senza fretta.",
+      jor_p:"La mattina comincia con la brina ancora sugli ulivi. Se ti serve, una persona del posto che conosce il terreno palmo a palmo ti accompagna alle migliori postazioni. A mezzogiorno, sosta per assaporare la gastronomia tradizionale della zona. E nel pomeriggio, un altro giro fino al tramonto, aspettando una buona dormita di tordi.",
       nav_gallery:"Galleria",
       gal_eyebrow:"Galleria",gal_title:"La riserva in immagini",
       ct_eyebrow:"Contatti",ct_title:'Scrivici e <em>prepariamo la tua giornata</em>',
-      ct_p:"Contattaci e prepariamo la tua caccia su misura per te o per il tuo gruppo.",
+      ct_p:"Chiamaci o scrivici su WhatsApp e prepariamo la tua caccia su misura, per te o per il tuo gruppo.",
+      ac_eyebrow:"L'archivio della riserva · 2006–2016",ac_title:"Oltre 100 foto della nostra storia",
+      ac_sub:"Le stagioni dal 2006, i campionati di piccola selvaggina e i corsi di tiro. Quasi vent'anni di riserva in immagini.",
+      ac_btn:"Apri la galleria completa →",
       ct_wa:"Scrivici su WhatsApp",
       ct_f_name:"Nome",ct_f_phone:"Telefono",ct_f_email:"Email",
       ct_f_hunters:"Num. di cacciatori",ct_f_prey:"Cosa vuoi cacciare",ct_f_dates:"Date approx.",
@@ -1089,33 +1234,37 @@
       ct_send:"Invia richiesta →",ct_note:"Ti risponderemo il prima possibile. Non condividiamo i tuoi dati.",
       ct_ok:"Grazie! Abbiamo ricevuto la tua richiesta. Ti risponderemo a breve.",
       nav_packs:"Tariffe",
-      pk_eyebrow:"Tariffe",pk_title:"Pacchetti di caccia",pk_sub:"Ogni giornata si adatta al gruppo e alle date. Dicci cosa cerchi e ti forniremo il prezzo.",
-      pk_acc:"La riserva dispone di alloggi nel centro della stessa zona di caccia, a soli 5 minuti. Mezza pensione, parcheggio privato e il tuo cane può dormire con te in camera.",
+      pk_eyebrow:"Tariffe",pk_title:"Pacchetti di caccia",pk_sub:"Il terreno della riserva è dolce e facile da camminare: adatto anche ai cacciatori di età media e avanzata.",
       pk_pop:"Il più popolare",pk_cta:"Richiedi prezzo →",
-      pk1_tier:"Un giorno",pk1_name:"Giornata di caccia",pk1_dur:"Ideale per una fuga",
-      pk1_l1:"Guida che conosce il terreno",pk1_l2:"Accesso ai +3.000 ha della riserva",pk1_l3:"Coniglio, pernice o tordo a seconda del periodo",
-      pk2_tier:"2–3 giorni",pk2_name:"Fuga di fine settimana",pk2_dur:"Caccia, alloggio e buona cucina",
+      pk1_tier:"Un giorno",pk1_name:"Giornata di caccia",pk1_dur:"Dal 12 ottobre alla prima domenica di gennaio",
+      pk1_l1:"Guida che conosce il terreno",pk1_l2:"Accesso ai quasi 3.000 ha della riserva",pk1_l3:"Coniglio, pernice o tordo a seconda del periodo",
+      pk2_tier:"2 giorni · 1 notte",pk2_name:"Due giorni di caccia",pk2_dur:"Con una notte nel nostro hotel",
       pk2_l1:"Diverse giornate guidate",pk2_l2:"Alloggio in mezza pensione",pk2_l3:"Spazio per i cani e l'attrezzatura",pk2_l4:"Ti aiutiamo con licenza e assicurazione",
       pk3_tier:"5–6 giorni",pk3_name:"Settimana del tordo",pk3_dur:"In piena migrazione autunnale",
       pk3_l1:"I migliori giorni di passo",pk3_l2:"Alloggio in mezza pensione",pk3_l3:"Pensato per gruppi di cacciatori",pk3_l4:"Il pacchetto di punta per i francesi",
       pk4_tier:"Stagione",pk4_name:"Tessera stagionale",pk4_dur:"3 giorni a settimana",
       pk4_l1:"Caccia il giovedì, sabato, domenica e festivi",pk4_l2:"Accesso costante durante la stagione",pk4_l3:"Ideale per i cacciatori più assidui",
       pk5_tier:"Su misura",pk5_name:"Pass giornaliero",pk5_dur:"Giornate singole",
-      pk5_l1:"Caccia nella nostra area privata",pk5_l2:"Prezzo variabile a seconda delle specie",pk5_l3:"Massima flessibilità",
-      foot:"Società di Cacciatori di Granyena · Riserva privata di piccola selvaggina · Stagione 2026–2027",
+      pk5_l1:"Caccia in tutta l'area della riserva",pk5_l2:"Prezzo variabile a seconda delle specie",pk5_l3:"Massima flessibilità",
+      foot:"Società di Cacciatori di Granyena · Riserva di piccola selvaggina · Stagione 2026–2027",
       nav_services:"Servizi",nav_blog:"Blog",
-      hero_vtag:"La riserva in video",hero_call_label:"Per prenotare, chiama",
+      hero_vtag:"Reportage della riserva 2026",hero_call_label:"Per prenotare, chiama",
+      subs_label:"Sottotitoli",subs_off:"No",
+      st1:"ettari di riserva",st2:"a caccia dal",st3:"specie principali",st4:"da Barcellona",
+      cal_title:"Calendario della stagione",cal_note:"Date indicative. Ogni stagione segue il calendario venatorio vigente.",
+      cal_sp1:"Coniglio",cal_sp2:"Tordo bottaccio e sassello",cal_sp3:"Pernice rossa",cal_sp4:"Colombella e colombaccio",cal_sp5:"Beccaccia",
+      cal_leg1:"Stagione aperta",cal_leg2:"Passi e mezza stagione",
       pk5_from:"Da",pk5_unit:"/ pass tordo",
       sv_eyebrow:"Servizi",sv_title:"Ti semplifichiamo tutto",sv_sub:"Pensato soprattutto per chi viene da fuori: ti aiutiamo con le pratiche e con tutto ciò che ti serve per cacciare tranquillo.",
       sv1_t:"Licenza di caccia",sv1_d:"Ti aiutiamo a ottenere la licenza di caccia della Catalogna e a essere in regola con l'assicurazione obbligatoria. Un servizio molto utile per i cacciatori francesi e italiani.",
-      sv2_t:"Alloggio in mezza pensione",sv2_d:"Dormirai nel centro della zona di caccia, a cinque minuti dal terreno. Mezza pensione, parcheggio privato e il tuo cane può dormire con te in camera.",
+      sv2_t:"Alloggio in mezza pensione",sv2_d:"Dormirai nel centro della zona di caccia, a cinque minuti dal terreno. Mezza pensione, parcheggio e il tuo cane può dormire con te in camera.",
       sv3_t:"Recinti per i tuoi cani",sv3_d:"Abbiamo spazio per i cani dei nostri clienti, purché siano di taglia media o piccola e a pelo corto.",
-      sv4_t:"Carnieri",sv4_d:"Il numero di capi al giorno (tordo, pernice o coniglio) si stabilisce in base alla data e al tipo di giornata. Chiedici e te lo diciamo chiaramente prima di venire.",
+      sv4_t:"Assicurazione obbligatoria di caccia",sv4_d:"Possiamo gestire noi l'attivazione, mensile o annuale, con diversi tipi di copertura. Tu scegli quella che ti va meglio e noi ci occupiamo delle pratiche.",
       cn_eyebrow:"Tessera stagionale 2026–2027",cn_title:"Cosa include la tessera",cn_sub:"Una tessera per tutta la stagione con quattro periodi di caccia ben distinti.",
-      cn1_t:"Controllo del coniglio",cn1_dt:"Mese di luglio",cn1_d:"Coniglio con cani e fucili durante il mese di luglio, nei giorni autorizzati dalla direzione della riserva.",
+      cn1_t:"Controllo del coniglio",cn1_dt:"8 giorni a luglio · sab e dom",cn1_d:"Coniglio con cani e fucili: 8 giorni durante il mese di luglio, sabato e domenica fino a mezzogiorno.",
       cn2_t:"Mezza stagione",cn2_dt:"15 ago – 15 set · sab e dom",cn2_d:"Coniglio, colombaccio e tortora. Dal 15 agosto al 15 settembre, sabato e domenica.",
-      cn3_t:"Stagione generale",cn3_dt:"Stagione 2026–2027",cn3_d:"Tutte le specie cacciabili consentite dalla legge sulla caccia in vigore.",
-      cn4_t:"Proroga del tordo",cn4_dt:"Tutto febbraio",cn4_d:"A febbraio, tutti i giorni autorizzati fino alla fine del mese secondo l'ordinanza di chiusura.",
+      cn3_t:"Stagione generale",cn3_dt:"Giovedì, sabato e domenica",cn3_d:"Tutte le specie cacciabili consentite dalla legge sulla caccia in vigore. Si caccia giovedì, sabato e domenica.",
+      cn4_t:"Proroga del tordo",cn4_dt:"Fino alla 2ª domenica di febbraio",cn4_d:"A febbraio, tutti i giorni autorizzati fino alla seconda domenica del mese, secondo l'ordinanza di chiusura.",
       bl_eyebrow:"Blog",bl_title:"Consigli e vita della riserva",bl_sub:"Cosa racconta Benito sulla caccia a Granyena de les Garrigues.",
       bl1_tag:"La riserva",bl1_t:"Perché cacciare a Granyena de les Garrigues",bl1_d:"Il terreno è dolce e facile da percorrere, quindi è una riserva comoda anche per i cacciatori più anziani. E le specie più abbondanti, il tordo e il coniglio, regalano giornate molto divertenti quasi tutto l'anno.",
       bl2_tag:"Tordo",bl2_t:"Com'è una giornata perfetta di tordo",bl2_d:"La giornata ideale inizia con un buon passo mattutino, con grande densità di uccelli sui campi, e si chiude con una bella dormida nel pomeriggio per concludere e festeggiare la giornata.",
@@ -1172,36 +1321,6 @@
     if(pkNext) pkNext.onclick = () => pkGrid.scrollBy({left:step, behavior:'smooth'});
   }
 
-  // ---- formulario: envía el lead por WhatsApp (con respaldo a email) ----
-  const lf=document.getElementById('leadForm');
-  if(lf) lf.addEventListener('submit',e=>{
-    e.preventDefault();
-    if(!lf.reportValidity()) return;
-    const g=n=>{const el=lf.elements[n];return el&&el.value?el.value.trim():''};
-    const yesno=v=>v==='yes'?'Sí':'No';
-    const L=[
-      'Nueva solicitud de jornada — cazalleida.com','',
-      'Nombre: '+(g('nombre')||'—'),
-      'Email: '+(g('email')||'—'),
-      'Teléfono: '+(g('telefono')||'—'),
-      'Nº de cazadores: '+(g('cazadores')||'—'),
-      'Quiere cazar: '+(g('presa')||'—'),
-      'Fechas: '+(g('fechas')||'—'),
-      'Alojamiento: '+yesno(g('alojamiento')),
-      'Trae perros: '+yesno(g('perros'))
-    ];
-    if(g('mensaje')) L.push('Mensaje: '+g('mensaje'));
-    const body=L.join('\n');
-    // 1) WhatsApp directo al coto
-    window.open('https://wa.me/34973136275?text='+encodeURIComponent(body),'_blank','noopener');
-    // 2) Respaldo: cliente de correo
-    window.location.href='mailto:info@cazalleida.com?subject='
-      +encodeURIComponent('Solicitud de jornada de caza')+'&body='+encodeURIComponent(body);
-    lf.reset();
-    const ok=document.getElementById('formOk');
-    if(ok) ok.style.display='block';
-  });
-
   // ---- lightbox galería ----
   const galImgs=[...document.querySelectorAll('.gal-grid img')];
   const lb=document.getElementById('lightbox');
@@ -1224,6 +1343,50 @@
     if(e.key==='ArrowLeft')showLb(lbIdx-1);
     if(e.key==='ArrowRight')showLb(lbIdx+1);
   });
+
+  // ---- subtítulos del vídeo (CA/ES/FR/IT) ----
+  const film=document.getElementById('cotoFilm');
+  const vsubs=document.getElementById('vsubs');
+  function setSub(code){
+    if(!film) return;
+    for(const t of film.textTracks) t.mode=(t.language===code)?'showing':'hidden';
+    if(vsubs) vsubs.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.sub===code));
+  }
+  if(vsubs) vsubs.querySelectorAll('button').forEach(b=>b.onclick=()=>setSub(b.dataset.sub));
+  if(film) for(const t of film.textTracks) t.mode='hidden';
+
+  // ---- contadores de la banda de datos ----
+  const nf=new Intl.NumberFormat('es-ES');
+  const counters=[...document.querySelectorAll('[data-count]')];
+  function runCounter(el){
+    const end=+el.dataset.count, t0=performance.now(), dur=1400;
+    (function tick(){
+      const p=Math.min((performance.now()-t0)/dur,1), v=Math.round(end*(1-Math.pow(1-p,3)));
+      el.textContent=(end>=1000?'+':'')+nf.format(v);
+      if(p<1) setTimeout(tick,16);
+    })();
+  }
+  function checkCounters(){
+    for(let i=counters.length-1;i>=0;i--){
+      const r=counters[i].getBoundingClientRect();
+      if(r.top<innerHeight-40 && r.bottom>0){ runCounter(counters[i]); counters.splice(i,1); }
+    }
+  }
+  addEventListener('scroll',checkCounters,{passive:true});
+  checkCounters();
+
+  // ---- calendario: pinta los puntos por mes ----
+  document.querySelectorAll('.cal .crow[data-cal]').forEach(row=>{
+    row.dataset.cal.trim().split(/\s+/).forEach(state=>{
+      const d=document.createElement('i');
+      d.className='dot '+state;
+      row.appendChild(d);
+    });
+  });
 </script>
+
+<a class="wa-fab" href="https://wa.me/34699949737" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.5-.8l-.5-.3-4.9.9 1-4.7-.3-.5c-.9-1.5-1.4-3.2-1.4-4.9 0-5.3 4.3-9.6 9.6-9.6s9.6 4.3 9.6 9.6-4.3 10.3-9.6 10.3zm5.3-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
 </body>
 </html>
