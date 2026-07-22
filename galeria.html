@@ -102,6 +102,27 @@
   .reveal{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
 
+  /* pulido móvil: sin solapes arriba, pestañas en una línea, ritmo compacto */
+  @media(max-width:880px){
+    .ghero{padding:118px 0 52px}
+    .back{max-width:42%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;top:20px;left:16px}
+    .ghero .brandrow{margin-bottom:20px}
+    .ghero .brandrow img{width:46px;height:46px}
+    .badges{gap:8px;margin-top:22px}
+    .tabs .row{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:11px 0}
+    .tabs .row::-webkit-scrollbar{display:none}
+    .tabs button{flex:none;white-space:nowrap}
+    section.album{padding:48px 0 16px}
+    .album .ahead{margin-bottom:26px}
+    .endcta{padding:58px 0;margin-top:36px}
+    .grid{scrollbar-width:none}
+  }
+  @media(max-width:480px){
+    .back{top:16px;left:14px;max-width:60%}
+    .ghero > div:last-of-type{top:58px !important;right:14px !important}
+    .ghero{padding-top:132px}
+  }
+
   /* móvil cómodo: letra y botones grandes */
   @media(max-width:880px){
     .back{font-size:16px;padding:8px 0}

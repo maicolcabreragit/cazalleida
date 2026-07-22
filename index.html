@@ -429,6 +429,30 @@
     .wa-fab svg{width:34px;height:34px}
   }
 
+  /* pulido móvil: ritmo compacto y cómodo */
+  @media(max-width:880px){
+    .where{padding:64px 0}
+    .species,.packs,.services,.carnet,.contact{padding:64px 0}
+    .gallery{padding:56px 0}
+    .stats .row{padding:30px 0}
+    .jornada{min-height:auto}
+    .jornada-inner{padding:150px 0 64px}
+    .hero-grid{gap:22px}
+    .phead,.shead,.chead{margin-bottom:34px}
+    .species .head{margin-bottom:30px}
+    footer{padding:38px 0 26px}
+    footer .grid{flex-direction:column;align-items:center;text-align:center;gap:16px}
+    footer .meta{text-align:center}
+    .gal-grid{scroll-snap-type:x proximity;scroll-padding-left:20px;scrollbar-width:none}
+    .gal-grid::-webkit-scrollbar{display:none}
+    .gal-item{scroll-snap-align:start}
+    #spCards,#pkGrid{scrollbar-width:none}
+    #spCards::-webkit-scrollbar,#pkGrid::-webkit-scrollbar{display:none}
+    .archive-cta{margin-top:26px}
+    .big-call{margin:24px 0 6px}
+    .contact-solo .contact-info{margin-top:20px}
+  }
+
   /* cabecera compacta en pantallas estrechas: una sola línea, sin solapes */
   @media(max-width:560px){
     header{padding:10px 12px;gap:8px}
